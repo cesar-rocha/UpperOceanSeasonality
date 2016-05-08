@@ -245,12 +245,25 @@ driving a mild seasonal modulation at mesoscales \citep{sasaki_etal2014,qiu_etal
 The divergence part of the flow, however, peaks in late Summer/early Fall,
 when the upper-ocean is strongly stratified. Hence these results suggest a
 strong seasonal modulation of the dominant upper-ocean submesoscale dynamics
-with the dominance quasi-balanced turbulence in late Winter/early Spring and quasi-linear
-inertia-gravity waves in late Summer/early Fall.
+with the dominance quasi-balanced turbulence in late Winter/early Spring and
+quasi-linear inertia-gravity waves in late Summer/early Fall.
 
-\section{A 1/24$^\circ$ state estimate}
-We use the output of a 1/24$^\circ$ MITgcm spun-up from a ECCO2 state estimate.
+\section{The LLC2160 model output}
+We use the output of the latitude-longitude polar cap (LLC)
+MITgcm  numerical simulation. The output analyzed here, the LLC2160,
+is the 1/24$^\circ$ --- 90-vertical-levels simulation from a hierarchy of global
+forward numerical solutions on a LLC grid \citep{forget_etal2015} that were
+spun up from a ECCO2 adjoint-method state estimate. The LLC2160 was forced by
+tides and high-resolution surface fluxes similarly to the LLC4320 simulation
+used by \citet{rocha_etal2016} --- see their appendix D. We chose the second-higher
+resolution  simulation (LLC2160) of the LLC hierarchy because it was run for longer:
+the LLC2160 output spans two years form March 2011 to April 2013. The model time-step
+was 45 s and the model variables were saved hourly. LLC hierarchy model setup
+and control files are available online
+(at \texttt{http://mitgcm.org/viewvc/MITgcm/MITgcm$\_$contrib/
+llc$\_$hires}). The model output was provided by D. Menemenlis (JPL/NASA).
 
+A key aspects: (1) tides. \citep{sasaki_etal2014}.
 
 
 \section{Results}
@@ -394,7 +407,8 @@ are presently unknown.
 %  ACKNOWLEDGMENTS
 
 \begin{acknowledgments}
-Thanks to Dimitris Menemenlis (JPL/NASA) and the other MITgcm usual suspects.
+Thanks to D. Menemenlis (JPL/NASA) and the other MITgcm usual suspects.
+This research was funded by NSF and NASA.
 \end{acknowledgments}
 
 %% ------------------------------------------------------------------------ %%
