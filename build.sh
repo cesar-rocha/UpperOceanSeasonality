@@ -9,5 +9,5 @@
 # The current working directory is $GH_PUBLISHER_PROJECT_DIR.
 #
 
-#cd "$GH_PUBLISHER_PROJECT_DIR"
+cd "$GH_PUBLISHER_PROJECT_DIR"
 make
