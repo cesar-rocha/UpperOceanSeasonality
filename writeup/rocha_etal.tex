@@ -258,17 +258,42 @@ tides and high-resolution surface fluxes similarly to the LLC4320 simulation
 used by \citet{rocha_etal2016} --- see their appendix D. We chose the second-higher
 resolution  simulation (LLC2160) of the LLC hierarchy because it was run for longer:
 the LLC2160 output spans two years form March 2011 to April 2013. The model time-step
-was 45 s and the model variables were saved hourly. LLC hierarchy model setup
+was 45s and the model variables were saved hourly. LLC hierarchy setup
 and control files are available online
 (at \texttt{http://mitgcm.org/viewvc/MITgcm/MITgcm$\_$contrib/
-llc$\_$hires}). The model output was provided by D. Menemenlis (JPL/NASA).
+llc$\_$hires}). For the LLC hierarchy, the sea-surface height is calculated
+using a linearized equation. The model output was provided by D. Menemenlis
+(JPL/NASA).
 
-A key aspects: (1) tides. \citep{sasaki_etal2014}.
+A key aspect of the simulation analyzed here is that it is forced by
+the 16 most significant tidal components.
+Barotropic tides interact with topography and generate internal
+tides that project on mesoscales to submesoscales
+\citep{rocha_etal2016}. Hence, tidal forcing fundamentally differentiates our analysis
+from other modeling studies that investigated upper dynamics
+and its seasonality \citep{sasaki_etal2014,qiu_etal2014}.
 
+The region of focus is the northwest Pacific, in the vicinities of the Kuroshio
+Extension, where previous studies have
+shown strong seasonality in the quasi-gesotrophic surface velocity field.
+We analyze a sub-domain of the LLC2160 simulation of about 2000 km$^2$
+spanning 155-175$^\circ$E; 25-40$^\circ$N. We focus on the surface velocity field
+and near-surface stratification.
 
-\section{Results}
+\section{Seasonality in surface velocity and near-surface stratification}
 
-\subsection{The seasonal cycle in bulk quantities}
+We calculate the vertical vorticity, horizontal divergence, and the magnitude
+of the lateral rate of strain:
+\begin{equation}\label{vort}
+\zeta \equiv v_x - u_y\, ,
+\end{equation}
+\begin{equation}\label{div}
+\delta \equiv u_x + v_y\, ,
+\end{equation}
+and
+\begin{equation}\label{strain}
+S \equiv [(v_x+u_y)^2 + (u_x-v_y)^2]^{1/2}\, ,
+\end{equation}
 
 \begin{figure*}[ht]
 \begin{center}
