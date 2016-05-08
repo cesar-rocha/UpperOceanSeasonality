@@ -21,13 +21,10 @@ abstract: To be completed.
 
 authors:
 - name: Cesar B. Rocha
-  address: Scripps Institution of Oceanography
-  9500 Gilman Dr. 0213
-  La Jolla, CA 92093-0213
-  USA.
+  address: Scripps Institution of Oceanography, 9500 Gilman Dr. 0213, La Jolla, CA 92093-0213, USA.
 
 #- name: Clara McNarma
 #  address: School of Dance and Drama,<br />College of the Northern Light,<br />Dogger, Fisher, German Bight.
 github_username: crocha700
-github_repo: UpperOceanSeasonalityPaper
+github_repo: UpperOceanSeasonality
 iframe_src: rocha_etal.pdf
