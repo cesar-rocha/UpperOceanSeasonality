@@ -9,5 +9,8 @@
 # The current working directory is $GH_PUBLISHER_PROJECT_DIR.
 #
 
+echo "$PWD"
+
 cd "$GH_PUBLISHER_PROJECT_DIR"
-make
+cd writeup; make; cd ..
+cp writeup/rocha_etal.pdf ./
