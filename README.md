@@ -18,7 +18,7 @@ This research is supported by NSF and NASA.
 
 Acknowledgments 
 ----------------
-Thanks to Dimitris Menemenlis (JPL/NASA) and NASA Advanced Supercomputing Division.
+Thanks to Dimitris Menemenlis (JPL/NASA) and the technical support of NASA Advanced Supercomputing Division.
 
 
 
