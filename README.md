@@ -5,7 +5,7 @@ A manuscript to be submitted to GRL.
 
 Authors
 --------
-This project is led by Cesar B. Rocha in collaboration with Sarah T. Gille, Teresa K. Chereskin, and William R. Young. All @ Scripps Institution of Oceanography, UC San Diego.
+Cesar B. Rocha, Sarah T. Gille, Teresa K. Chereskin, and William R. Young. All @ Scripps Institution of Oceanography, UC San Diego.
 
 
 Code
