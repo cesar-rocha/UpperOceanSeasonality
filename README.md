@@ -1,4 +1,4 @@
-Seasonality in dominant upper-ocean dynamics at submesoscales
+Seasonality in governing upper-ocean dynamics at submesoscales
 ============
 
 A manuscript to be submitted to GRL.
