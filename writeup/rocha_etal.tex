@@ -79,6 +79,10 @@
 %\usepackage[dvipdf]{graphicx}
 \usepackage{graphicx}
 
+% CR added this
+\usepackage{color}
+
+
 %
 %  Uncomment the following command to allow illustrations to print
 %   when using Draft:
@@ -285,9 +289,8 @@ spanning 155-175$^\circ$E; 25-40$^\circ$N (figure \ref{fig1}a-b).
 Focusing on the lateral gradients of the horizontal velocity vector.
 The lateral gradients are calculated using a centered
 second-order finite differences scheme. We then calculate
-the vertical vorticity $\zeta \equiv v_x - u_y$,
-horizontal divergence $\delta \equiv u_x + v_y$, and the magnitude
-of the lateral rate of strain $S \equiv [(v_x+u_y)^2 + (u_x-v_y)^2]^{1/2}$.
+the vertical vorticity $\zeta \equiv v_x - u_y$ and 
+horizontal divergence $\delta \equiv u_x + v_y$.
 These quantities highlight the submesoscale structures in the flow
 and hint on their dynamics.
 
@@ -332,6 +335,7 @@ stratification.
  \caption{Snapshots of surface vorticity (a and b) and a transect
           of potential density at 165$^\circ$E (c and d). The snapshots were
           taken at 00:00 UTC.}
+\vspace{-1.5cm}
  \label{fig1}
  \end{center}
  \end{figure*}
@@ -339,8 +343,10 @@ stratification.
  \begin{figure*}[ht]
    \begin{center}
      \includegraphics[width=.9\textwidth]{figs/fig2.pdf}
-  \caption{Time series of the root-mean-square of kinetic energy (a), vorticity
-  (b), lateral strain (c), horizontal divergence (d), and stratification in the upper 50 m (e).}
+  \caption{Time series of the root-mean-square of vorticity (a),
+  horizontal divergence (b), and stratification in the upper 50 m (c).
+  \textcolor{red}{May add a time series of baroclinic production $\overline{w'b'}$ in
+  the mixed layer. }.}
   \label{fig2}
   \end{center}
 \end{figure*}
@@ -414,10 +420,9 @@ of hourly SSH.
 \end{figure*}
 
 \section{Projection on time scales}
-To better understand the which flows project onto high-wavenumbers, the projection
-of these flows on time scales, we calculate frequency spectra of surface KE
-(figure \ref{fig4}). To obtain statistically meaningful results, we average
-spectral estimates along a section at 165$^\circ$E.  There is also about 50
+To better understand the high-frequency/high-wavenumber flows  we calculate frequency
+spectra of surface KE (figure \ref{fig4}). To obtain statistically meaningful results,
+we average spectral estimates along a section at 165$^\circ$E.  There is also about 50
 independent realizations of spectral estimates.
 
 The surface KE spectra of subinertial flows very roughly follow a $-2$ power-law.
@@ -442,7 +447,7 @@ changes at sub-inertial frequencies (see dashed lines in figure \ref{fig4}).
     \includegraphics[width=.45\textwidth]{figs/fig4.pdf}
  \caption{Surface (horizontal) KE frequency spectra. Solid lines
  are spectra based on the 1/24$^\circ$ fields, dashed line are spectra
- based on 100-km-low-pass smoothed fields.}
+ based on 100-km-smoothed fields.}
  \label{fig4}
  \end{center}
 \end{figure}
