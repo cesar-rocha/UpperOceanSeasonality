@@ -270,33 +270,39 @@ the 16 most significant tidal components.
 Barotropic tides interact with topography and generate internal
 tides that project on mesoscales to submesoscales
 \citep{rocha_etal2016}. Hence, tidal forcing fundamentally differentiates our analysis
-from other modeling studies that investigated upper dynamics
+from recent modeling studies that investigated upper dynamics
 and its seasonality \citep{sasaki_etal2014,qiu_etal2014}.
 
 The region of focus is the northwest Pacific, in the vicinities of the Kuroshio
 Extension, where previous studies have
 shown strong seasonality in the quasi-gesotrophic surface velocity field.
 We analyze a sub-domain of the LLC2160 simulation of about 2000 km$^2$
-spanning 155-175$^\circ$E; 25-40$^\circ$N. We focus on the surface velocity field
-and near-surface stratification.
+spanning 155-175$^\circ$E; 25-40$^\circ$N (figure \ref{fig1}a-b).
 
 \section{Seasonality in surface velocity and near-surface stratification}
 
-We calculate the vertical vorticity, horizontal divergence, and the magnitude
-of the lateral rate of strain:
-\begin{equation}\label{vort}
-\zeta \equiv v_x - u_y\, ,
-\end{equation}
-\begin{equation}\label{div}
-\delta \equiv u_x + v_y\, ,
-\end{equation}
-and
-\begin{equation}\label{strain}
-S \equiv [(v_x+u_y)^2 + (u_x-v_y)^2]^{1/2}\, ,
-\end{equation}
-The velocity gradients are calculated using a centered
-second-order finite differences scheme. 
+Focusing on the lateral gradients of the horizontal velocity vector.
+The lateral gradients are calculated using a centered
+second-order finite differences scheme. We then calculate
+the vertical vorticity $\zeta \equiv v_x - u_y$,
+horizontal divergence $\delta \equiv u_x + v_y$, and the magnitude
+of the lateral rate of strain $S \equiv [(v_x+u_y)^2 + (u_x-v_y)^2]^{1/2}$.
+These quantities highlight the submesoscale structures in the flow
+and hint on their dynamics.
 
+Figures \ref{fig1}a-b show snapshots of vertical vorticity $\zeta$ in early Spring
+(April 15) and Fall (October 15). Clearly, a strong seasonality in vorticity
+exists: large values of fine-grained vertical vorticity are
+observed in early Spring with maximum values as high as $0.9f$, where $f$ is
+the local planetary vorticity, and root-mean-square (RMS) of about 0.25. In early
+Fall, the situation is the opposite: the vertical vorticity is coarse-grained,
+and its local maximum and RMS is no larger than $0.3f$ and $0.1f$, respectively.
+Indeed, the seasonal cycle in vorticity/strain is very strong (Figure~\ref{fig2}):
+the RMS vertical vorticity is about twice as large in late Winter/early Spring
+than it is in late Summer/early Fall. This picture is consistent with
+recent studies: shallow baroclinic instabilities energize the submesoscales
+in late Winter, drawing from the available potential energy stored in deep mixed
+layers \citep{sasaki_etal2014,callies_etal2015,callies_etal2016}.
 
 \begin{figure*}[ht]
 \begin{center}
@@ -308,14 +314,62 @@ second-order finite differences scheme.
  \end{center}
  \end{figure*}
 
+The bulk of the vertical vorticity is associated with subinertial flows
+($T_f = 2\pi/f_0\approx 23.5$h, where $f_0$ is the inertial frequency at
+the mean latitude): daily-averaging the velocity fields reduces the vertical
+vorticity by less than 20$\%$ and the seasonal cycle remains strong (see
+green lines in figure \ref{fig2}). Most of this seasonal cycle is associated
+with submesoscale flows: low-pass filtering the velocity field
+with a cut-off scale of 100 km reduces the RMS vorticity by at least 40$\%$,
+yielding bulk statistics of velocity gradient roughly consistent with AVISO
+geostrophic velocity data (see lines blue and black in figure \ref{fig2}).
+
+The horizontal divergent part of the flow is significant: the RMS is $\delta/f > 0.1$).
+Most of these horizontal divergent flows project are supra-inertial and project
+on scales smaller than 100 km: daily-averaging the velocity fields or low-pass
+filtering (100 km cutoff) reduces the horizontal divergence by about 70$\%$.
+Furthermore, the seasonal cycle in horizontal divergence is out-of-phase with that
+of vertical vorticity: the horizontal divergence is about 30$\%$ larger in late
+Summer/early Fall than it is in late Winter/early Spring. The divergence associated
+with submesoscale subinertial eddies is small and its seasonal cycle is in phase
+with that of vorticity (see green lines).  The seasonal cycle of the horizontal
+divergence is roughly in phase with the seasonal cycle of the near-surface (0-50m)
+stratification.
+
+
  \begin{figure*}[ht]
    \begin{center}
      \includegraphics[width=.9\textwidth]{figs/fig2.pdf}
-  \caption{Time series of horizontal velocity diagnostics at the surface
-          (a through d) and stratification in the upper 50 m (e).}
+  \caption{Time series of the root-mean-square of kinetic energy (a), vorticity
+  (b), lateral strain (c), horizontal divergence (d), and stratification in the upper 50 m (e).}
   \label{fig2}
   \end{center}
 \end{figure*}
+
+\section{Projection on horizontal scales}
+
+
+
+% Here we argue that those divergent motions are likely inertia-gravity waves.
+% We can show a couple of spectra and argue that they roughly satisfy polarization
+% relations.
+%
+% We can also try and show some observations here. Any cruises with ADCP data.
+% While it may be hard to have enough data for the errorbars to be small, a
+% rough consistency may be better than nothing.
+%
+% Perhaps a mooring data should show strong seasonal modulation at high-frequencies?
+%
+% We must be able to present some observational evidence that the model is not
+% misleading at high-frequencies.
+
+
+% Here we argue that high-frequency (supra-daily) flows significantly project
+% on the sea-surface, and thus estimation of submesoscale (10-100 km) geostrophic
+% velocity from sea-surface height (SSH) is not warranted. Calculating spectral
+% KE fluxes from both velocity and geostrophic velocity (from SSH) would
+% contrast with the results in Sasaki et al.
+
 
 \begin{figure*}[ht]
   \begin{center}
@@ -327,6 +381,12 @@ second-order finite differences scheme.
  \end{center}
 \end{figure*}
 
+\section{Projection on time scales}
+To better understand the dynamics the projection of these flows on horizontal
+scales, we calculate wavenumber spectra of kinetic energy and sea-surface height
+(SSH) variance.
+
+
 \begin{figure}[ht]
   \begin{center}
     \includegraphics[width=.45\textwidth]{figs/fig4.pdf}
@@ -337,26 +397,7 @@ second-order finite differences scheme.
  \end{center}
 \end{figure}
 
-\subsection{The high-frequency signal}
-Here we argue that those divergent motions are likely inertia-gravity waves.
-We can show a couple of spectra and argue that they roughly satisfy polarization
-relations.
 
-We can also try and show some observations here. Any cruises with ADCP data.
-While it may be hard to have enough data for the errorbars to be small, a
-rough consistency may be better than nothing.
-
-Perhaps a mooring data should show strong seasonal modulation at high-frequencies?
-
-We must be able to present some observational evidence that the model is not
-misleading at high-frequencies.
-
-\subsection{Geostrophic velocities from SSH}
-Here we argue that high-frequency (supra-daily) flows significantly project
-on the sea-surface, and thus estimation of submesoscale (10-100 km) geostrophic
-velocity from sea-surface height (SSH) is not warranted. Calculating spectral
-KE fluxes from both velocity and geostrophic velocity (from SSH) would
-contrast with the results in Sasaki et al.
 
 \section{Summary and Discussion}
 Our main finding is that
