@@ -262,8 +262,9 @@ was 45s and the model variables were saved hourly. LLC hierarchy setup
 and control files are available online
 (at \texttt{http://mitgcm.org/viewvc/MITgcm/MITgcm$\_$contrib/
 llc$\_$hires}). For the LLC hierarchy, the sea-surface height is calculated
-using a linearized equation. The model output was provided by D. Menemenlis
-(JPL/NASA).
+using a linearized equation. While the nominal horizontal resolution is 1/24$^\circ$,
+ horizontal wavenumber spectra suggests an effective resolution of about 20 km.
+
 
 A key aspect of the simulation analyzed here is that it is forced by
 the 16 most significant tidal components.
@@ -304,16 +305,6 @@ recent studies: shallow baroclinic instabilities energize the submesoscales
 in late Winter, drawing from the available potential energy stored in deep mixed
 layers \citep{sasaki_etal2014,callies_etal2015,callies_etal2016}.
 
-\begin{figure*}[ht]
-\begin{center}
-\includegraphics[width=1.\textwidth]{figs/fig1.pdf}
- \caption{Snapshots of surface vorticity (a and b) and a transect
-          of potential density at 165$^\circ$E (c and d). The snapshots were
-          taken at 00:00 UTC.}
- \label{fig1}
- \end{center}
- \end{figure*}
-
 The bulk of the vertical vorticity is associated with subinertial flows
 ($T_f = 2\pi/f_0\approx 23.5$h, where $f_0$ is the inertial frequency at
 the mean latitude): daily-averaging the velocity fields reduces the vertical
@@ -335,7 +326,15 @@ with submesoscale subinertial eddies is small and its seasonal cycle is in phase
 with that of vorticity (see green lines).  The seasonal cycle of the horizontal
 divergence is roughly in phase with the seasonal cycle of the near-surface (0-50m)
 stratification.
-
+\begin{figure*}[ht]
+\begin{center}
+\includegraphics[width=1.\textwidth]{figs/fig1.pdf}
+ \caption{Snapshots of surface vorticity (a and b) and a transect
+          of potential density at 165$^\circ$E (c and d). The snapshots were
+          taken at 00:00 UTC.}
+ \label{fig1}
+ \end{center}
+ \end{figure*}
 
  \begin{figure*}[ht]
    \begin{center}
@@ -348,7 +347,40 @@ stratification.
 
 \section{Projection on horizontal scales}
 
+To better understand the dynamics the projection of these flows on horizontal
+scales, we calculate wavenumber spectra of kinetic energy and sea-surface height
+(SSH) variance. For simplicity we calculate zonal wavenumber spectra at various
+latitudes. The two-year time averaged and any spatial linear trend were
+removed before calculating discrete Fourier transforms.Statistical significance
+is obtained by averaging over latitude and time. Using conservative temporal and
+spatial decorrelation estimate of 10 days and 250 km, we obtain roughly 50
+independent realizations of the spectra.
 
+Figure \ref{fig3}a depicts the horizontal wavenumber spectra of surface KE in
+April and October. At scales larger than 20km, the spectra based on hourly
+velocity snapshots are nearly indistinguishable within 95$\%$ confidence level
+(compare solid lines in figure \ref{fig3}a). Consistent with the results of
+\citet{rocha_etal2016} who analyzed the LLC4320 output in Drake Passage,
+there is significant high-frequency variabilty at submesoscales. Daily-averaging
+the velocity field suppresses spatial variability at scales small than about 250
+km both in April and October (compare solid lines against dashed lines in figure
+\ref{fig3}a). But this suppression is more dramatic in October, when the horizontally
+divergent flows peak. At scales
+smaller than 100km, 40$\%$ of the surface KE in April a is accounted for by suprainertial
+flows as opposed to 77$\%$ in October. The seasonal of subinertial submesoscale flows
+is significant, consistent with the results of \citet{sasaki_etal2014}, which are
+based on snapshots of a model without tidal forcing.
+
+These high-frequency submesoscale flows significantly project on the sea-surface.
+In October, when the horizontally divergent flows peak and the submesoscale
+balanced flows are minimum, there is a dramatic difference between the spectra
+based on hourly and daily-averaged SSH: at scales smaller than 100 km, the spectra
+of hourly SSH roughly follows a $-2$ power-law, whereas the spectra of daily-averaged
+SSH roughly follows a $-5$ power-law. At scales
+smaller than 100km, 44$\%$ of the surface KE in April is accounted for by suprainertial
+flows as opposed to 86$\%$ in October! The out-of-phase seasonal cycle of subinertial
+and suprainertial flows conspire to yield no significant seasonality in the spectra
+of hourly SSH.
 
 % Here we argue that those divergent motions are likely inertia-gravity waves.
 % We can show a couple of spectra and argue that they roughly satisfy polarization
@@ -382,10 +414,28 @@ stratification.
 \end{figure*}
 
 \section{Projection on time scales}
-To better understand the dynamics the projection of these flows on horizontal
-scales, we calculate wavenumber spectra of kinetic energy and sea-surface height
-(SSH) variance.
+To better understand the which flows project onto high-wavenumbers, the projection
+of these flows on time scales, we calculate frequency spectra of surface KE
+(figure \ref{fig4}). To obtain statistically meaningful results, we average
+spectral estimates along a section at 165$^\circ$E.  There is also about 50
+independent realizations of spectral estimates.
 
+The surface KE spectra of subinertial flows very roughly follow a $-2$ power-law.
+The high-frequency flows are split near-inertial flows, tidal signals and their
+higher harmonics. Hence these high-frequency flows are dominates by inertia-gravity
+waves. (Note that the the inertial peak nearly merges with the
+diurnal tide peak). There is statistically significant seasonality. The seasonal
+cycle of the sub-inertial motions (at least for periods between 5-20 days)
+is out-of-phase with the seasonal cycle of supra-inertial flows: the former
+are more energetic in April and the latter in October.
+
+Most of these high-frequency inertia-gravity waves project onto scales smaller
+than 100 km. The surface KE spectra of 100-km-smoothed velocity field is significantly
+suppressed in supra-inertial variability --- there are no statistically significant
+changes at sub-inertial frequencies (see dashed lines in figure \ref{fig4}).
+
+% say something about relative energy in smoother vs. unsmoothed fields.
+% also say something about comparison with observations.
 
 \begin{figure}[ht]
   \begin{center}
