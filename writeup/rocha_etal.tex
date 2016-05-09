@@ -269,7 +269,7 @@ A key aspect of the simulation analyzed here is that it is forced by
 the 16 most significant tidal components.
 Barotropic tides interact with topography and generate internal
 tides that project on mesoscales to submesoscales
-\citep{rocha_etal2016}. Hence, tidal forcing fundamentally differentiates our analysis
+\citep{rocha_etal2016}. Hence, tidal forcing fundamentally distinguishes our analysis
 from recent modeling studies that investigated upper dynamics
 and its seasonality \citep{sasaki_etal2014,qiu_etal2014}.
 
@@ -485,10 +485,33 @@ are presently unknown.
 %  this should go in a supplementary material
 \appendix
 \section{How well does the model captures high-frequency modes?}
+To assess how well the LLC2160 represents the high-frequency variability,
+we compare the model near-surface velocity field against two available
+mooring data: KEO (the data is available online at \texttt{http://www.pmel.noaa.gov/ocs/KEO})
+and KESS mooring $\#$7 (the data is available online at \texttt{http://uskess.whoi.edu}).
+For proper comparison, we use model data closest to these two moorings (west of
+the region considered in the present study). Focusing on high-frequencies, we
+calculate frequency spectral estimates every month. There are about 48 independent
+spectral realizations.
+
+Figure \ref{figA1} shows KE frequency spectra for the model and mooring data.
+At the uppermost common depth (20 m), very low frequencies (periods > 10 days)
+and the inertial, diurnal, and semi-diurnal frequencies agree well --- the KESS
+ data are more energetic at intermedia frequencies. At 40 m, the model and observations
+ have consistent spectra at periods larger than about 6 h. The data from moorings
+are more energetic at higher frequencies and tidal harmonics are not observed,
+except for the first two harmonics that are apparent in the KESS data at 40 m.
+Three reasons for the lack of tidal harmonics in the mooring data are: 1) The high-
+frequency variability is dominated by high-frequency noise due to mooring vertical
+excursions; 2) The model does not have enough resolution to resolve the full spectrum
+of ultraviolet catastrophic wave-wave interactions; 3) The model is not forced at
+frequencies higher that 6h.
+
  \begin{figure*}[ht]
    \begin{center}
      \includegraphics[width=.9\textwidth]{figs/figA1.pdf}
-  \caption{A comparison.}
+  \caption{A near-surface KE spectra comparison between model and two
+  available mooring observations.}
   \label{figA1}
   \end{center}
 \end{figure*}
