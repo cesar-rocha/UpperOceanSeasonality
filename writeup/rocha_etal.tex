@@ -256,7 +256,7 @@ spun up from a ECCO2 adjoint-method state estimate. The LLC2160 was forced by
 tides and 6-hourly surface fluxes similarly to the LLC4320 simulation
 used by \citet{rocha_etal2016} --- see their appendix D. We chose the second-higher
 resolution  simulation (LLC2160) of the LLC hierarchy because it was run for longer:
-the LLC2160 output spans two years form March 2011 to April 2013. The model time-step
+the LLC2160 output spans two years from March 2011 to April 2013. The model time-step
 was 45s and the model variables were saved hourly. LLC hierarchy setup
 and control files are available online
 (at \texttt{http://mitgcm.org/viewvc/MITgcm/MITgcm$\_$contrib/
@@ -271,19 +271,19 @@ the 16 most significant tidal components.
 Barotropic tides interact with topography and generate internal
 tides that project on mesoscales to submesoscales
 \citep{rocha_etal2016}. Hence, tidal forcing fundamentally distinguishes our analysis
-from recent modeling studies that investigated upper dynamics
+from recent modeling studies that investigated upper-ocean dynamics
 and its seasonality \citep{sasaki_etal2014,qiu_etal2014}.
 
 The region of focus is the northwest Pacific, in the vicinities of the Kuroshio
 Extension, where previous studies have
-shown strong seasonality in the quasi-gesotrophic surface velocity field.
+shown strong seasonality in submesoscale turbulence.
 We analyze a sub-domain of the LLC2160 simulation of about 2000 km$^2$
 spanning 155-175$^\circ$E; 25-40$^\circ$N (figure \ref{fig1}a-b).
 
 \section{Seasonality in surface velocity and near-surface stratification}
 
 Focusing on the submesoscale variability, we present estimates of bulk quantities
-associated with the the horizontal velocity lateral gradient.
+associated with the lateral gradient of the horizontal velocity.
 The lateral gradients are calculated using a centered
 second-order finite differences scheme. We then calculate
 the vertical vorticity $\zeta \equiv v_x - u_y$ and
@@ -298,7 +298,7 @@ observed in early Spring with maximum values as high as $0.9f$, where $f$ is
 the local planetary vorticity, and root-mean-square (RMS) of about 0.25. In early
 Fall, the situation is the opposite: the vertical vorticity is coarse-grained,
 and its local maximum and RMS is no larger than $0.3f$ and $0.1f$, respectively.
-Indeed, the seasonal cycle in vorticity/strain is very strong (Figure~\ref{fig2}):
+Indeed, the seasonal cycle in vorticity is very strong (Figure~\ref{fig2}):
 the RMS vertical vorticity is about twice as large in late Winter/early Spring
 than it is in late Summer/early Fall. This picture is consistent with
 recent studies: shallow baroclinic instabilities energize the submesoscales
@@ -311,15 +311,15 @@ the mean latitude): daily-averaging the velocity fields reduces the vertical
 vorticity by less than 20$\%$ and the seasonal cycle remains strong (see
 green lines in figure \ref{fig2}). Most of this seasonal cycle is associated
 with submesoscale flows: smoothing the velocity field
-with a cut-off scale of 100 km reduces the RMS vorticity by at least 40$\%$,
-yielding bulk statistics of velocity gradient roughly consistent with AVISO
-geostrophic velocities (see lines blue and black in figure \ref{fig2}).
+with a Hanning filter with cut-off scale of 100 km reduces the RMS vorticity by
+at least 40$\%$, yielding bulk statistics of velocity gradient roughly consistent
+with AVISO geostrophic velocities (see lines blue and black in figure \ref{fig2}).
 
 The horizontal divergent part of the flow is significant: the RMS is $\delta/f > 0.1$).
 Most of these horizontal divergent flows are supra-inertial and project
 on scales smaller than 100 km: daily-averaging or smoothing the velocity fields
  (100 km cutoff) reduces the horizontal divergence by about 70$\%$.
-Furthermore, the seasonal cycle in horizontal divergence is out-of-phase with the
+Interestingly, the seasonal cycle in horizontal divergence is out-of-phase with the
 seasonal cycle of vertical vorticity: the horizontal divergence is about 30$\%$ larger in late
 Summer/early Fall than it is in late Winter/early Spring. The divergence associated
 with submesoscale subinertial eddies is small and its seasonal cycle is in phase
@@ -354,7 +354,7 @@ To better understand the projection of these flows onto different horizontal
 scales, we calculate wavenumber spectra of kinetic energy and sea-surface height
 (SSH) variance. For simplicity we calculate zonal wavenumber spectra at various
 latitudes. The two-year time averaged and spatial linear trend were
-removed before calculating discrete Fourier transforms.Statistical significance
+removed, and the ensuing fields were Hanning spectral ``window''. Statistical significance
 is obtained by averaging over latitude and time. Using conservative temporal and
 spatial decorrelation estimate of 10 days and 250 km, we obtain roughly 50
 independent realizations of the spectra.
@@ -365,11 +365,11 @@ velocity snapshots are nearly indistinguishable within 95$\%$ confidence level
 (compare solid lines in figure \ref{fig3}a). Consistent with the results of
 \citet{rocha_etal2016} who analyzed the LLC4320 output in Drake Passage,
 there is significant high-frequency variabilty at submesoscales. Daily-averaging
-the velocity field suppresses spatial variability at scales small than about 250
+the velocity field suppresses spatial variability at scales smaller than about 250
 km both in April and October (compare solid lines against dashed lines in figure
 \ref{fig3}a). But this suppression is more dramatic in October, when the horizontally
 divergent flows peak. At scales
-smaller than 100 km, 40$\%$ of the surface KE in April a is accounted for by suprainertial
+smaller than 100 km, 40$\%$ of the surface KE in April is accounted for by supra-inertial
 flows as opposed to 77$\%$ in October. The seasonality of subinertial submesoscale flows
 is significant, consistent with the results of \citet{sasaki_etal2014}, which are
 based on snapshots of a model without tidal forcing.
@@ -382,7 +382,7 @@ of hourly SSH roughly follows a $-2$ power-law, whereas the spectra of daily-ave
 SSH roughly follows a $-5$ power-law. At scales
 smaller than 100 km, 44$\%$ of the surface KE in April is accounted for by suprainertial
 flows as opposed to 86$\%$ in October! The out-of-phase seasonal cycle of subinertial
-and suprainertial flows conspire to yield no significant seasonality in the spectra
+and suprainertial flows conspire to yield nearly insignificant seasonality in the spectra
 of hourly SSH.
 
 % Here we argue that those divergent motions are likely inertia-gravity waves.
@@ -428,7 +428,7 @@ higher harmonics. Hence these high-frequency flows are dominated by inertia-grav
 waves. (Note that the inertial peak nearly merges with the
 diurnal tide peak.) There is statistically significant seasonality. The seasonal
 cycle of the sub-inertial motions (at least for periods between 5-20 days)
-is out-of-phase with the seasonal cycle of supra-inertial flows: the former
+is out-of-phase with the seasonal cycle of supra-inertial flows: the former flows
 are more energetic in April and the latter in October.
 
 Most of these high-frequency inertia-gravity waves project onto scales smaller
@@ -461,14 +461,14 @@ seasonal modulation of the dominant upper-ocean dynamics at submesoscales
 in late Winter/early Spring
 and inertia-gravity waves dominate in late Summer/early Fall.
 
-That the surface velocity and SSH submesoscale (10-100 km) variability may be
+That the  surface velocity and SSH submesoscale variability may be
 dominated by ageostrophic flows in
 Summer/Fall has consequences for the interpretation of data from
 the future SWOT and COMPIRA altimeter missions,
 which will deliver SSH measurements at submesoscales. To the extent that
 high-frequency flows are dominated by spatially incoherent internal tides and other
 internal waves, it may be very difficult (if not impossible) to
-separate submesoscale SSH variability associated with geostrophic motions
+separate SSH submesoscale variability associated with geostrophic motions
 from high-frequency, ageostrophic flows. Thus, previous claims that
 one will be able to easily obtain submesoscale surface
 geostrophic velocities and monitor such seasonal cycle on global scales
