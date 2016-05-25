@@ -5,7 +5,7 @@ A manuscript to be submitted to GRL.
 
 Authors
 --------
-Cesar B. Rocha, Sarah T. Gille, Teresa K. Chereskin, and William R. Young. All @ Scripps Institution of Oceanography, UC San Diego.
+Cesar B. Rocha et al.
 
 
 Code
@@ -18,7 +18,7 @@ This research is supported by NSF and NASA.
 
 Acknowledgments 
 ----------------
-Thanks to Dimitris Menemenlis (JPL/NASA) and the technical support of NASA's Advanced Supercomputing Division.
+Thanks to the technical support of NASA's Advanced Supercomputing Division.
 
 
 
