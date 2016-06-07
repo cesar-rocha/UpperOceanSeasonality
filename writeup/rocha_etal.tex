@@ -81,7 +81,7 @@
 
 % CR added this
 \usepackage{color}
-
+\usepackage{amsmath}
 
 %
 %  Uncomment the following command to allow illustrations to print
@@ -178,13 +178,12 @@
 % \item And here is the third keypoint
 % }
 
-\keypoints{\item Submesoscale (10-100 km) vertical vorticity and horizontal divergence
-                 divergence undergo a strong seasonal cycle that are out-of-phase.
-           \item Quasi-balanced  turbulence dominates the
-                  variability in late Winter/early Spring; inertia-gravity waves
-                  dominate in late Summer/early Fall.
-            \item These results have implications for the diagnosis of
-                  surface velocity from high-resolution altimeters.
+\keypoints{\item Upper-ocean submesoscale (10-100 km) turbulence and innertia-gravity waves
+                 undergo strong seasonal cycles that are out-of-phase.
+           \item Submesoscale turbulence dominates the horizontal  velocity and
+                  sea-surface height variability in late Winter/early Spring.
+            \item Inertia-gravity waves are summertime enhanced near the surface and
+                  dominate the surface variability in late Summer/early Fall.
                   }
 
 %% Keypoints will print underneath the abstract.
@@ -248,75 +247,96 @@ strong seasonal modulation of the dominant upper-ocean submesoscale dynamics:
 quasi-balanced turbulence in late Winter/early Spring and
 quasi-linear inertia-gravity waves in late Summer/early Fall.
 
-\section{The LLC model outputs}
-We use the output of a latitude-longitude polar cap (LLC)
-MITgcm  numerical simulation  \citep{forget_etal2015}. The output analyzed here, the LLC2160,
-is the 1/24$^\circ$ --- 90-vertical-levels simulation from a hierarchy of global
-forward numerical solutions on a LLC grid that were
-spun up from a ECCO2 adjoint-method state estimate. The LLC2160 was forced by
-tides and 6-hourly surface fluxes similarly to the LLC4320 simulation
-used by \citet{rocha_etal2016} --- see their appendix D. We chose the second-higher
-resolution  simulation (LLC2160) of the LLC hierarchy because it was run for longer:
-the LLC2160 output spans two years from March 2011 to April 2013. The model time-step
-was 45s and the model variables were saved hourly. LLC hierarchy setup
-and control files are available online
-(at \texttt{http://mitgcm.org/viewvc/MITgcm/MITgcm$\_$contrib/
-llc$\_$hires}). For the LLC hierarchy, the sea-surface height is calculated
-using a linearized equation. While the nominal horizontal resolution  of the
-LLC2160 simulation is 1/24$^\circ$,
- horizontal wavenumber spectra suggests an effective resolution of about 20 km.
- (see figure \ref{fig3}).
+\section{The LLC numerical simulations}
+We use the output of two latitude-longitude polar cap (LLC)
+MITgcm realstic numerical simulations. The outputs
+ analyzed here, LLC2160 and LLC4320,
+are the 1/24$^\circ$ and 1/48$^\circ$  --- 90-vertical-levels simulations from
+a hierarchy of global
+forward numerical solutions on a LLC grid   \citep{forget_etal2015} that were
+spun up from a ECCO2 adjoint-method state estimate. Both simulations were forced by
+tides and 6-hourly surface fluxes. The LLC2160
+output spans two years from March 2011 to April 2013; the LLC4320 was spun up from
+the LLC2160 simulation, spanning one year from September 2011 to September 2012.
+The LLC4320 simulation is an extension of the then 5-month long output used by
+\citet{rocha_etal2016}.
 
 A key aspect of the simulation analyzed here is that it is forced by
 the 16 most significant tidal components.
 Barotropic tides interact with topography and generate internal
 tides that project on mesoscales to submesoscales
-\citep{rocha_etal2016}. Hence, tidal forcing fundamentally distinguishes our analysis
+\citep{rocha_etal2016}. Tidal forcing fundamentally distinguishes our analysis
 from recent modeling studies that investigated upper-ocean dynamics
-and its seasonality \citep{sasaki_etal2014,qiu_etal2014}.
+and its seasonality \citep{sasaki_etal2014,qiu_etal2014}. The LLC2160 and LLC4320
+simulations fully resolve internal tides and
+other hydrostatic internal waves and other submesoscale processes at scales as
+small as about 5 km.
 
-The region of focus is the northwest Pacific, in the vicinities of the Kuroshio
-Extension, where previous studies have
-shown strong seasonality in submesoscale turbulence.
-We analyze a sub-domain of the LLC2160 simulation of about 2000 km$^2$
-spanning 155-175$^\circ$E; 25-40$^\circ$N (figure \ref{fig1}a-b).
+To study seasonal variations in the upper-ocean dynamics, we focus on the northwest
+Pacific, in the vicinities of the Kuroshio
+Extension, where previous studies have suggested strong submesoscale seasonality.
+We analyze a sub-domain of the LLC4320 and LLC2160 simulations of about 2000 km$^2$
+spanning 155-175$^\circ$E; 25-40$^\circ$N (figure \ref{fig1}a). The stratification
+in this mesoscale-rich subtropical region undergoes a strong seasonal cycle: wintertime
+enhance small-scale turbulence de-stratify the upper ocean, yielding mixed-layers
+as deep as 300m. In late Spring/early Summer enhanced solar radiation and mixed-layer
+instabilities re-stratify the upper ocean, yielding mixed-layers as shallow as 40m.
+The stratification and its seasonality is well-captured by both LLC simulations.
+The excellent comparisons of model stratification to Argo climatology lends confidence
+to the present analysis (supplemental material).
 
-\section{Seasonality in surface velocity and near-surface stratification}
 
-Focusing on the submesoscale variability, we present estimates of bulk quantities
-associated with the lateral gradient of the horizontal velocity.
-The lateral gradients are calculated using a centered
+\section{Statistics of surface lateral velocity tensor}
+
+We present estimates of bulk quantities
+associated with the lateral velocity tensor
+\begin{equation}
+\nabla_h \bf{u}_h = \left[\begin{matrix} u_x & u_y\\ v_x&v_y \end{matrix}\right] \,.
+\end{equation}
+The components of the lateral velocity tensor are calculated using a centered
 second-order finite differences scheme. We then calculate
-the vertical vorticity $\zeta \equiv v_x - u_y$ and
-horizontal divergence $\delta \equiv u_x + v_y$.
-These quantities highlight the submesoscale structures in the flow
-and hint on their dynamics.
+the vertical vorticity $\zeta \equiv v_x - u_y$, lateral rate of strain
+$\alpha \equiv [(u_x-v_y)^2 + (u_y + v_x)^2]^{1/2}$, and horizontal divergence $\delta \equiv u_x + v_y$.
+These diagnostics highlight the submesoscale structures in the flow
+and their analysis hint on the governing dynamics in the upper ocean
+\citep{capet_etal2008a,shcherbina_etal2013}.
 
-Figures \ref{fig1}a-b show snapshots of vertical vorticity $\zeta$ in early Spring
-(April 15) and Fall (October 15). Clearly, a strong seasonality in vorticity
+Figures \ref{fig1}b-c show snapshots of vertical vorticity $\zeta$ in early Spring
+(April 15) and Fall (October 15) in the LLC4320 (1/48$^\circ$) simulation.
+The model solutions captures theseasonality in vorticity
 exists: large values of fine-grained vertical vorticity are
-observed in early Spring with maximum values as high as $0.9f$, where $f$ is
-the local planetary vorticity, and root-mean-square (RMS) of about 0.25. In early
-Fall, the situation is the opposite: the vertical vorticity is coarse-grained,
-and its local maximum and RMS is no larger than $0.3f$ and $0.1f$, respectively.
-Indeed, the seasonal cycle in vorticity is very strong (Figure~\ref{fig2}):
-the RMS vertical vorticity is about twice as large in late Winter/early Spring
-than it is in late Summer/early Fall. This picture is consistent with
-recent studies: shallow baroclinic instabilities energize the submesoscales
-in late Winter, drawing from the available potential energy stored in deep mixed
-layers \citep{sasaki_etal2014,callies_etal2015,callies_etal2016}.
+observed in early Spring with maximum values as high as $1.5f$, where $f$ is
+the local planetary vorticity, and root-mean-square (RMS) of about 0.4. In early
+Fall, the situation is the opposite: the vertical vorticity is relatively coarse-grained,
+and its local maximum and RMS are no larger than $0.5f$ and $0.2f$, respectively.
+Indeed, the seasonal cycle in vorticity is very strong (figure~\ref{fig2}):
+in both simulations, the RMS vertical vorticity and lateral strain rate are about twice as large in
+late Winter/early Spring
+than it is in late Summer/early Fall. Because the wintertime vorticity and strain
+are dominated by the smallest scales in the flow, increasing the resolution from
+1/24$^\circ$ to 1/48$^\circ$ significantly increases the wintertime RMS vorticity
+and strain by about 40$\%$.
 
-The bulk of the vertical vorticity is associated with subinertial flows
+The bulk of vertical vorticity and lateral strain rate is associated with subinertial flows
 ($T_f = 2\pi/f_0\approx 23.5$h, where $f_0$ is the inertial frequency at
-the mean latitude): daily-averaging the velocity fields reduces the vertical
-vorticity by less than 20$\%$ and the seasonal cycle remains strong (see
-green lines in figure \ref{fig2}). Most of this seasonal cycle is associated
-with submesoscale flows: smoothing the velocity field
-with a Hanning filter with cut-off scale of 100 km reduces the RMS vorticity by
-at least 40$\%$, yielding bulk statistics of velocity gradient roughly consistent
-with AVISO geostrophic velocities (see lines blue and black in figure \ref{fig2}).
+the mean latitude): daily-averaging the velocity fields reduces the RMS
+vorticity by less than 40$\%$ and the RMS strain by less than 10$\%$; the seasonal
+cycle remains strong (see
+dashed lines in figures \ref{fig2}a-b). Most of this seasonal cycle is associated
+with submesoscale flows: smoothing the velocity fields
+with a Hanning filter with cut-off scale of 100 km significantly reduces the RMS
+vorticity and strain. The reduction in variance is dramatic ($>$80$\%$) in winter
+yielding RMS vorticity and strain roughly consistent the ones diagnosed from
+AVISO gridded geostrophic velocities (compare blue lines with black lines in figures \ref{fig2}a-b).
+The overall picture that emerges is consistent with recent studies: shallow baroclinic
+instabilities energize the submesoscales in late Winter, drawing from the available
+potential energy stored in deep mixed layers \citep{sasaki_etal2014,callies_etal2015,callies_etal2016}.
 
-The horizontal divergent part of the flow is significant: the RMS is $\delta/f > 0.1$).
+The seasonal cycle of the horizontal divergent part of the flow, however, add complexity
+to the submesoscale-turbulence-centred scenario depicted by those invertigators.
+
+
+ is significant: the RMS is $\delta/f > 0.1$).
 Most of these horizontal divergent flows are supra-inertial and project
 on scales smaller than 100 km: daily-averaging or smoothing the velocity fields
  (100 km cutoff) reduces the horizontal divergence by about 70$\%$.
@@ -362,6 +382,9 @@ stratification.
  \label{fig3}
  \end{center}
 \end{figure*}
+
+\section{Seasonality in governing submesoscale dynamics}
+
 
 \section{Projection on horizontal scales}
 
@@ -425,7 +448,7 @@ of hourly SSH.
   \begin{center}
     \includegraphics[width=.9\textwidth]{figs/fig4.pdf}
  \caption{Surface (horizontal) KE (a) and SSH variance wavenumber spectra (b)
- in the1/48$^\circ$ simulation. Solid lines
+ in the 1/48$^\circ$ simulation. Solid lines
  are spectra based on hourly snapshots, dashed lines are spectra based on daily-averaged
  fields.}
  \label{fig3}
@@ -506,6 +529,20 @@ are presently unknown.
 \section{Supplemental material 1: Spectral errors}
 
 \section{Supplemental material 2: On the LLC simulations}
+
+The time-step was 45s for
+the LLC2160 simulation and 25s for the LLC4320 simulation. Details of the LLC simulations
+are provided in the supplemental material.
+
+ LLC hierarchy setup
+and control files are available online
+(at \texttt{http://mitgcm.org/viewvc/MITgcm/MITgcm$\_$contrib/
+llc$\_$hires}). For the LLC hierarchy, the sea-surface height is calculated
+using a linearized equation. While the nominal horizontal resolution  of the
+LLC2160 simulation is 1/24$^\circ$,
+ horizontal wavenumber spectra suggests an effective resolution of about 20 km.
+ (see figure \ref{fig3}).
+
 
 \subsection{Seasonality in the upper-ocean stratification}
 
