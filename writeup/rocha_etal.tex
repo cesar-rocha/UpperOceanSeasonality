@@ -272,16 +272,14 @@ the LLC2160 simulation, spanning one year from September 2011 to September 2012.
 The LLC4320 simulation is an extension of the then 5-month long output used by
 \citet{rocha_etal2016}.
 
-A key aspect of the simulation analyzed here is that it is forced by
+A key aspect of the LLC simulations is that there were forced by
 the 16 most significant tidal components.
-Barotropic tides interact with topography and generate internal
+Because barotropic tides interact with topography and generate internal
 tides that project on mesoscales to submesoscales
-\citep{rocha_etal2016}. Tidal forcing fundamentally distinguishes our analysis
+\citep[e.g., ][]{rocha_etal2016}, tidal forcing fundamentally distinguishes our analysis
 from recent modeling studies that investigated upper-ocean dynamics
-and its seasonality \citep{sasaki_etal2014,qiu_etal2014}. The LLC2160 and LLC4320
-simulations fully resolve internal tides and
-other hydrostatic internal waves and other submesoscale processes at scales as
-small as about 5 km.
+and its seasonality \citep{sasaki_etal2014,qiu_etal2014}. Details of the LLC simulations
+are provided in the supplemental material.
 
 To study seasonal variations in the upper-ocean dynamics, we focus on the northwest
 Pacific, in the vicinities of the Kuroshio
@@ -289,11 +287,11 @@ Extension, where previous studies have suggested strong submesoscale seasonality
 We analyze a sub-domain of the LLC4320 and LLC2160 simulations of about 2000 km$^2$
 spanning 155-175$^\circ$E; 25-40$^\circ$N (figure \ref{fig1}a). The stratification
 in this mesoscale-rich subtropical region undergoes a strong seasonal cycle: wintertime
-enhance small-scale turbulence de-stratify the upper ocean, yielding mixed-layers
+enhance small-scale turbulence de-stratify the upper ocean, yielding mixed layers
 as deep as 300m. In late Spring/early Summer enhanced solar radiation and mixed-layer
-instabilities re-stratify the upper ocean, yielding mixed-layers as shallow as 40m.
-The stratification and its seasonality is well-captured by both LLC simulations.
-The excellent comparisons of model stratification to Argo climatology lends confidence
+instabilities re-stratify the upper ocean, yielding mixed layers as shallow as 40m.
+The stratification and its seasonality is well-captured by both LLC simulations:
+the skillful comparisons of model stratification to Argo climatology lends confidence
 to the present analysis (supplemental material).
 
 \begin{figure*}[ht]
@@ -311,9 +309,7 @@ to the present analysis (supplemental material).
  \end{figure*}
 
 \section{Statistics of surface lateral velocity tensor}
-
-We present estimates of bulk quantities
-associated with the lateral velocity tensor
+To study the seasonality in the surface velocity, we calculate the lateral velocity tensor
 \begin{equation}
 \nabla_h \bf{u}_h = \left[\begin{matrix} u_x & u_y\\ v_x&v_y \end{matrix}\right] \,.
 \end{equation}
@@ -323,23 +319,33 @@ the vertical vorticity $\zeta \equiv v_x - u_y$, lateral rate of strain
 $\alpha \equiv [(u_x-v_y)^2 + (u_y + v_x)^2]^{1/2}$, and horizontal divergence $\delta \equiv u_x + v_y$.
 These diagnostics highlight the submesoscale structures in the flow
 and their analysis hint on the governing dynamics in the upper ocean
-\citep{capet_etal2008a,shcherbina_etal2013}.
+\citep[e.g.,][]{capet_etal2008a,shcherbina_etal2013}.
 
 Figures \ref{fig1}b-c show snapshots of vertical vorticity $\zeta$ in early Spring
 (April 15) and Fall (October 15) in the LLC4320 (1/48$^\circ$) simulation.
-The model solutions captures theseasonality in vorticity
-exists: large values of fine-grained vertical vorticity are
-observed in early Spring with maximum values as high as $1.5f$, where $f$ is
+The model solutions depict seasonality in vorticity: large values of
+fine-grained vertical vorticity are observed in early Spring with maximum
+values as large as $4f$, where $f$ is
 the local planetary vorticity, and root-mean-square (RMS) of about 0.4. In early
 Fall, the situation is the opposite: the vertical vorticity is relatively coarse-grained,
 and its local maximum and RMS are no larger than $0.5f$ and $0.2f$, respectively.
-Indeed, the seasonal cycle in vorticity is very strong (figure~\ref{fig2}):
-in both simulations, the RMS vertical vorticity and lateral strain rate are about twice as large in
+Indeed, the seasonal cycle of vorticity and rate of strain is very strong (figure~\ref{fig2}):
+in both simulations, the RMS vorticity and strain are about twice as large in
 late Winter/early Spring
-than it is in late Summer/early Fall. Because the wintertime vorticity and strain
+than in late Summer/early Fall. Because the wintertime vorticity and strain rate
 are dominated by the smallest scales in the flow, increasing the resolution from
 1/24$^\circ$ to 1/48$^\circ$ significantly increases the wintertime RMS vorticity
 and strain by about 40$\%$.
+
+
+ \begin{figure*}[ht]
+   \begin{center}
+     \includegraphics[width=.8\textwidth]{figs/fig2.pdf}
+  \caption{Time series of the root-mean-square (RMS) of vorticity (a) and
+  lateral rate of strain (b), and horizontal divergence (c) in the LLC outputs and gridded AVISO data.}
+  \label{fig2}
+  \end{center}
+\end{figure*}
 
 The bulk of vertical vorticity and lateral strain rate is associated with subinertial flows
 ($T_f = 2\pi/f_0\approx 23.5$h, where $f_0$ is the inertial frequency at
@@ -348,39 +354,36 @@ vorticity by less than 40$\%$ and the RMS strain by less than 10$\%$; the season
 cycle remains strong (see
 dashed lines in figures \ref{fig2}a-b). Most of this seasonal cycle is associated
 with submesoscale flows: smoothing the velocity fields
-with a Hanning filter with cut-off scale of 100 km significantly reduces the RMS
-vorticity and strain. The reduction in variance is dramatic ($>$80$\%$) in winter
+with a Hanning filter with cut-off scale of 100 km dramatically reduces the RMS
+vorticity and strain. The reduction in variance is about 80$\%$ in winter,
 yielding RMS vorticity and strain roughly consistent the ones diagnosed from
 AVISO gridded geostrophic velocities (compare blue lines with black lines in figures \ref{fig2}a-b).
 The overall picture that emerges is consistent with recent studies: shallow baroclinic
 instabilities energize the submesoscales in late Winter, drawing from the available
 potential energy stored in deep mixed layers \citep{sasaki_etal2014,callies_etal2015,callies_etal2016}.
 
-The seasonal cycle of the horizontal divergent part of the flow, however, add complexity
-to the submesoscale-turbulence-centred scenario depicted by those invertigators.
+The seasonal cycle of the horizontal divergence, however, showcases the complexity
+of the upper-ocean annual variability. If submesoscale eddies and fronts dominated
+the near-surface variability all year, then the seasonal cycle of horizontal divergence,
+vertical vorticity, and lateral strain rate would be in phase \citep[e.g.,][]{sasaki_etal2014}.
+While there is a clear wintertime peak in divergence of daily-averaged velocity
+(see dashed lines in figure \ref{fig2}a; RMS divergence $\sim$0.22 f in the 1/48$^\circ$
+simulation), the hourly fields show
+a stronger enhancement of
+lateral divergence in late Summer/early Fall (RMS divergence $\sim$0.22 f the 1/48$^\circ$
+simulation). Because the 1/48$^\circ$ simulation better resolve
+smaller-scale submesoscale flows, the
+winter peak in divergence is nearly as strong the summertime's. Of course, part of
+these submesoscale fronts and eddies evolve relatively fast and there is no clear
+temporal and spatial scale separation between those motions and inertia-gravity waves:
+daily-averaging the velocity fields efficiently suppresses the summertime horizontally
+divergent flows, but also reduces the wintertime lateral divergence by about 50$\%$.
 
-
- is significant: the RMS is $\delta/f > 0.1$).
-Most of these horizontal divergent flows are supra-inertial and project
-on scales smaller than 100 km: daily-averaging or smoothing the velocity fields
- (100 km cutoff) reduces the horizontal divergence by about 70$\%$.
-Interestingly, the seasonal cycle in horizontal divergence is out-of-phase with the
-seasonal cycle of vertical vorticity: the horizontal divergence is about 30$\%$ larger in late
-Summer/early Fall than it is in late Winter/early Spring. The divergence associated
-with submesoscale subinertial eddies is small and its seasonal cycle is in phase
-with that of vorticity (see green lines).  The seasonal cycle of the horizontal
-divergence is roughly in phase with the seasonal cycle of the near-surface (0-50m)
-stratification.
-
-
- \begin{figure*}[ht]
-   \begin{center}
-     \includegraphics[width=.9\textwidth]{figs/fig2.pdf}
-  \caption{Time series of the root-mean-square (RMS) of vorticity (a) and
-  lateral rate of strain (b), and horizontal divergence (c) in the LLC outputs and gridded AVISO data.}
-  \label{fig2}
-  \end{center}
-\end{figure*}
+\section{Seasonality in governing submesoscale dynamics}
+The overall results of figure \ref{fig2}c strongly suggest that the
+summertime submesoscale surface variability stems from different dynamics than
+then wintertime variability. To better understand these differences, we calculate
+joint probability distributions... 
 
 \begin{figure*}[ht]
   \begin{center}
@@ -394,9 +397,6 @@ stratification.
  \label{fig3}
  \end{center}
 \end{figure*}
-
-\section{Seasonality in governing submesoscale dynamics}
-
 
 \section{Projection on horizontal scales}
 
@@ -467,25 +467,25 @@ of hourly SSH.
  \end{center}
 \end{figure*}
 
-\section{Projection on time scales}
-To better understand the high-frequency/high-wavenumber flows  we calculate frequency
-spectra of surface KE (figure \ref{fig4}). To obtain statistically meaningful results,
-we average spectral estimates along a section at 165$^\circ$E.  There is about 50
-independent spectral realizations.
-
-The surface KE spectra of subinertial flows very roughly follow a $-2$ power-law.
-The high-frequency flows are split near-inertial flows, tidal signals and their
-higher harmonics. Hence these high-frequency flows are dominated by inertia-gravity
-waves. (Note that the inertial peak nearly merges with the
-diurnal tide peak.) There is statistically significant seasonality. The seasonal
-cycle of the sub-inertial motions (at least for periods between 5-20 days)
-is out-of-phase with the seasonal cycle of supra-inertial flows: the former flows
-are more energetic in April and the latter in October.
-
-Most of these high-frequency inertia-gravity waves project onto scales smaller
-than 100 km. The surface KE spectra of 100-km-smoothed velocity field is significantly
-suppressed in supra-inertial frequencies --- there are no statistically significant
-changes at sub-inertial frequencies (see dashed lines in figure \ref{fig4}).
+% \section{Projection on time scales}
+% To better understand the high-frequency/high-wavenumber flows  we calculate frequency
+% spectra of surface KE (figure \ref{fig4}). To obtain statistically meaningful results,
+% we average spectral estimates along a section at 165$^\circ$E.  There is about 50
+% independent spectral realizations.
+%
+% The surface KE spectra of subinertial flows very roughly follow a $-2$ power-law.
+% The high-frequency flows are split near-inertial flows, tidal signals and their
+% higher harmonics. Hence these high-frequency flows are dominated by inertia-gravity
+% waves. (Note that the inertial peak nearly merges with the
+% diurnal tide peak.) There is statistically significant seasonality. The seasonal
+% cycle of the sub-inertial motions (at least for periods between 5-20 days)
+% is out-of-phase with the seasonal cycle of supra-inertial flows: the former flows
+% are more energetic in April and the latter in October.
+%
+% Most of these high-frequency inertia-gravity waves project onto scales smaller
+% than 100 km. The surface KE spectra of 100-km-smoothed velocity field is significantly
+% suppressed in supra-inertial frequencies --- there are no statistically significant
+% changes at sub-inertial frequencies (see dashed lines in figure \ref{fig4}).
 
 % say something about relative energy in smoother vs. unsmoothed fields.
 % also say something about comparison with observations.
