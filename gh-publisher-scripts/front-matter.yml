@@ -7,8 +7,16 @@
 # Remove the # from the front of each line, and then edit appropriately.
 #
 
-title: Seasonality in governing upper-ocean dynamics at submesoscales
-abstract: Submesoscale (10-100 km) vertical vorticity and lateral strain peak in late Winter/early Spring; divergence and stratification peak in late Summer/early Fall. Quasi-balanced turbulence dominates the variability in late Winter/early Spring; inertia-gravity waves dominate in late Summer/early Fall.  These results have implications for the diagnosis of surface velocity from the upcomming SWOT and COMPIRA satellite missions.
+title: Two new high-resolution numerical simulations with embedded tides suggest a
+        strong modulation in the governing near-surface dynamics at submesoscales
+            (roughly 10-100 km). Consistent with recent studies, deep late Winter mixed layers
+                are prone to baroclinic instabilities and submesoscale turbulence
+                    prevails in late Winter/early Spring. Inertia-gravity waves, on the other hand, are enhanced near
+                        the surface when the upper ocean in strongly stratified. Thus the summertime
+                            re-stratification weakens submesoscale turbulence and enhances intertia-gravity
+                                 waves near the surface. In the Kuroshio Extension region,
+                                     inertia-gravity waves strongly dominate the surface kinetic energy and
+                                         sea-surface height variance in late Summer/early Fall at scales as large as 80 km!
 
 # This controls which file is shown on the right-hand side of the published
 # HTML page.  By default it will take the first PDF or HTML file that it
