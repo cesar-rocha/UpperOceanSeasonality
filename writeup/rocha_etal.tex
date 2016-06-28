@@ -207,8 +207,8 @@
     the surface when the upper ocean is strongly stratified. Thus the summertime
     re-stratification weakens submesoscale turbulence and enhances intertia-gravity
      waves near the surface. In the Kuroshio Extension,
-    inertia-gravity waves strongly dominate the surface kinetic energy and
-    sea-surface height variance in late Summer/early Fall at submesoscales.
+    inertia-gravity waves strongly dominate the submesoscale surface kinetic energy and
+    sea-surface height variance in late Summer/early Fall.
 \end{abstract}
 
 %% ------------------------------------------------------------------------ %%
@@ -262,11 +262,12 @@ summertime submesoscale SSH variability.
 \section{The LLC numerical simulations}
 We use the output of two latitude-longitude polar cap (LLC)
 realistic numerical simulations. The outputs
-analyzed here, LLC2160 (1/24$^\circ$) and LLC4320 (1/48$^\circ$)  have
-90-vertical-levels and are
+analyzed here, LLC2160 (1/24$^\circ$) and LLC4320 (1/48$^\circ$),   are
 forward Massachusetts Institute of Technology general circulation model (MITgcm)
-numerical solutions on a LLC grid   \citep{forget_etal2015} that were
-spun up from a ECCO2 adjoint-method state estimate. Both simulations were forced by
+numerical solutions on a LLC grid  \citep{forget_etal2015} with
+90-vertical-levels. The coarser-resolution LLC simulation was
+spun up from a ECCO2 adjoint-method state estimate, which synthetized millions
+of observations from 2009 through 2011. Both simulations were forced by
 tides and 6-hourly surface fluxes. The LLC2160
 output spans two years from March 2011 to April 2013; the LLC4320 was spun up from
 the LLC2160 simulation, spanning one year from September 2011 to September 2012.
@@ -292,7 +293,7 @@ in this mesoscale-rich subtropical region undergoes a vigorous seasonal cycle: w
 small-scale turbulence de-stratifies the upper ocean, yielding mixed layers
 as deep as 300m. In late Spring/early Summer enhanced solar radiation and mixed-layer
 instabilities re-stratify the upper ocean, yielding mixed layers as shallow as 40m.
-Fundamentally, the stratification and its seasonality are well-captured by both LLC simulations:
+Fundamentally, the upper-ocean density structure is well-captured by both LLC simulations:
 a comparison with Argo climatology shows that both simulations skillfully represent the Kuroshio
 Extension stratification and its seasonal variability  (supplemental material).
 
@@ -335,7 +336,8 @@ Indeed, the seasonal cycle of vorticity and rate of strain are strong (figure~\r
 in both simulations, the RMS vorticity and strain are about twice as large in
 late Winter/early Spring
 than in late Summer/early Fall. Because the wintertime vorticity and strain rate
-are dominated by the smallest scales in the flow, increasing the resolution from
+are dominated by the smallest scales in the flow (the KE spectra is shallower than
+a $-3$ power-law in Winter), increasing the resolution from
 1/24$^\circ$ to 1/48$^\circ$ significantly increases the wintertime RMS vorticity
 and strain by about 40$\%$.
 
@@ -344,7 +346,7 @@ and strain by about 40$\%$.
    \begin{center}
      \includegraphics[width=.65\textwidth]{figs/fig2.pdf}
   \caption{Time series of the root-mean-square (RMS) of vorticity (a) and
-  lateral rate of strain (b), and horizontal divergence (c) in the LLC outputs and gridded AVISO data.}
+  rate of strain (b), and horizontal divergence (c) in the LLC outputs and gridded AVISO data.}
   \label{fig2}
   \end{center}
 \end{figure*}
@@ -361,7 +363,7 @@ with a Hanning filter with cut-off scale of 100 km dramatically reduces the RMS
 vorticity and strain. The reduction in variance is about 80$\%$ in winter,
 yielding RMS vorticity and strain roughly consistent with the diagnostics from
 AVISO gridded geostrophic velocities (compare red lines to black lines in figures \ref{fig2}a-b).
-The overall picture that emerges is consistent with recent studies: shallow baroclinic
+The picture that emerges is consistent with recent studies: shallow baroclinic
 instabilities energize the submesoscales in late Winter, drawing from the available
 potential energy stored in deep mixed layers \citep{sasaki_etal2014,callies_etal2015,callies_etal2016}.
 
@@ -389,7 +391,7 @@ suppresses more than 80$\%$ of the RMS divergence.
 \section{Seasonality in governing submesoscale dynamics}
 The overall results of figure \ref{fig2}c suggest that submesoscale surface
  variability stems from different dynamics in Summer than Winter.
- To better understand these differences, we calculate
+ To characterize these differences, we calculate
 joint probability distributions (jPDF) of
 vorticity-strain and vorticity-Laplacian of sea-surface height (\ref{fig3}).
 
@@ -446,7 +448,7 @@ consistent with linear inertia-gravity waves.
 
 \section{Projection onto horizontal scales}
 
-To better understand the projection of these flows onto different horizontal
+To better quantify the projection of these flows onto different horizontal
 scales, we calculate wavenumber spectra of kinetic energy and sea-surface height
 (SSH) variance.  Before calculating the spectra, time-mean and spatial linear
 trends were removed, and the resulting fields were multiplied by a two-dimensional Hanning ``spectral window''.
@@ -476,8 +478,7 @@ velocity snapshots are nearly indistinguishable within 95$\%$ confidence level
 there is significant high-frequency variabilty at submesoscales. Daily-averaging
 the velocity field suppresses spatial variability at scales smaller than about 250
 km both in April and October (compare solid lines against dashed lines in figure
-\ref{fig4}a). But this suppression is dramatic in October, when the horizontally
-divergent flows peak. At scales
+\ref{fig4}a). But this suppression is dramatic in October, when the inertia-gravity waves peak. At scales
 smaller than 100 km, 39$\%$ of the surface KE in April is accounted for by super-inertial
 flows as opposed to 79$\%$ in October. The seasonality of subinertial submesoscale flows
 is more dramatic than the seasonal cycle of the total flow. This is consistent
@@ -490,7 +491,7 @@ In October, when the inertia-gravity waves are strongest the surface and submeso
 turbulence is weakest. There is a dramatic difference between the spectra
 based on hourly and daily-averaged SSH: at scales smaller than 100 km, the spectra
 of hourly SSH roughly follows a $-2$ power-law, whereas the spectra of daily-averaged
-SSH roughly follows a $-5$ power-law. At these scales, 33$\%$ of the SSH variance in April is accounted for by suprainertial
+SSH roughly follows a $-5$ power-law. At these scales, 33$\%$ of the SSH variance in April is accounted for by super-inertial
 flows as opposed to 83$\%$ in October! Curiously, the out-of-phase seasonal cycle of submesoscale
 turbulence and near-surface inertia-gravity waves conspire to yield very weak seasonality
 in the spectra of KE and SSH variance based on hourly fields.
@@ -526,7 +527,7 @@ submesoscale turbulence. We conjecture that the summertime dominance of inertia-
 enhancement of inertia-gravity waves due to re-stratification of
 the upper ocean. Of course, our study focuses on a single patch of ocean in the
 vicinity of the Kuroshio Extension, which may be typical of mesoscale-rich
-subtropical regions, but not
+subtropical regions, but is unlikely to be 
 representative of other regions such as low eddy kinetic energy eastern boundary currents
 and the middle of the subtropical gyre; care must be taken to avoid overgeneralizing
 these results.  We plan to report on the geographic variability of submesoscale
