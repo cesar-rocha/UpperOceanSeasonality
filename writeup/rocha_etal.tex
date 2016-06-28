@@ -416,7 +416,7 @@ is an ellipse with large eccentricity with main axis tilted by 45$^\circ$; figur
  \caption{Seasonal variation of joint probability distributions:  vorticity vs. strain rate (a through f).
           and vorticity vs. Laplacian of sea-surface height (g through l) in April (a through c;
           g  through i) and October (d through f;
-          j  through m).
+          j  through l).
           Dashed lines in (a) through (e) represent pure strain flow $\alpha = \pm\zeta$,
           characteristic of fronts. Dashed lines in (f) through
           (l) represent geostrophic flow $\zeta = \frac{g}{f}\nabla_h^2 \eta$.}
@@ -617,7 +617,6 @@ The altimeter products were produced by Ssalto/Duacs
 and distributed by Aviso, with support from CNES (\texttt{http://www.aviso.altimetry.fr/duacs/}).
 \end{acknowledgments}
 
-
 \bibliographystyle{agufull08}
 \bibliography{rocha_etal}
 
@@ -635,7 +634,7 @@ Table \ref{tab:llc} show details of the LLC spin-up hierarchy.
 Both simulation analyzed in the present paper, LLC2160 and LLC4320,
 were forced by surface fluxes are from the 0.14$^\circ$ European Centre for
 Medium-range Weather Forecasting (ECMWF) atmospheric operational model analysis,
- starting 2011 humidity and the 16 most significant  tidal components.
+ starting 2011 and the 16 most significant  tidal components.
 The LLC control files are available online
 (at \texttt{http://mitgcm.org/viewvc/MITgcm/MITgcm$\_$contrib/
 llc$\_$hires}).
@@ -644,12 +643,12 @@ For the LLC hierarchy, the sea-surface height is calculated
 using a linearized equation. While the nominal horizontal resolution  of the
 LLC4320 simulation is 1/48$^\circ$,
 horizontal wavenumber spectra suggests an effective resolution of about 8 km.
-(see figure \ref{fig3}), while wavenumber spectra suggests an effective resolution
+(see figure \ref{fig4}), and wavenumber spectra suggests an effective resolution
 of 20 km for  LLC2160 simulation.
 
 \begin{table*}[ht]
 \label{tab:llc}
-\caption{\small The MITgcm Latitute-Longitude Cap (LLC) spin-up hierarchy. This study will analyze
+\caption{\small The MITgcm Latitute-Longitude Cap (LLC) spin-up hierarchy. This study analyzes
          the output of LLC2160 and LLC4320. Model fields are available hourly.
          Adapted from \cite{rocha_etal2016}.}
 \begin{center}
@@ -719,7 +718,7 @@ at all seasons (not shown).
   \end{center}
 \end{figure*}
 
-\subsection*{How well do the LLC simulations captures high-frequency modes?}
+\subsection*{How well do the LLC simulations capture high-frequency modes?}
 To assess how well the LLC simulations represents the high-frequency variability,
 we compare the model near-surface velocity field against two available
 mooring data: KEO (the data is available online at \texttt{http://www.pmel.noaa.gov/ocs/KEO})
@@ -732,15 +731,15 @@ spectral realizations.
 Figure \ref{figA1} shows KE frequency spectra for the LLC simulations and mooring data.
 At the uppermost common depth (20 m), very low frequencies (periods $>$ 10 days)
 and the inertial, diurnal, and semi-diurnal frequencies agree well --- the KESS
-data are more energetic at intermedia frequencies. At 40 m, the LLC simulations and observations
-have consistent spectra at periods larger than about 6 h. The data from moorings
+data are more energetic at intermediate frequencies. At 40 m, the LLC simulations and observations
+have consistent spectra at periods larger than about 6 h. The data from the moorings
 are more energetic at higher frequencies,
 except for the first two harmonics that are apparent in the KESS data at 40 m.
 There are at least three reasons for the slightly more energetic super-inertial
 variability in the observations: 1) The high-
 frequency variability is dominated by high-frequency noise due to mooring vertical
 excursions; 2) The model does not have enough resolution to resolve the full internal
-wave spectrum; 3) The model is not forced at frequencies higher that 6h.
+wave spectrum; 3) The model is not forced at frequencies higher than 6h.
 
 \begin{figure*}[ht]
    \begin{center}
@@ -754,16 +753,15 @@ wave spectrum; 3) The model is not forced at frequencies higher that 6h.
 \section*{Supplemental material 3: Seasonality in pressure modes near-surface amplitude}
 
 Figure \ref{figS3}a shows the domain-averaged potential density from the WOA 2013
-climatology in April and October. Clearly, the the changes to the stratification
+climatology in April and October. Clearly, the changes to the stratification
 are dramatic, with the formation of a seasonal pycnocline in Summer. The strong
 seasonality of upper-ocean stratification yields a strong seasonality in the
 near-surface shape and amplitude of baroclinic pressure modes (\ref{figS3}b).
 In particular, the surface amplitude is much large in Summer. Thus the projection
 of baroclinic tides on the surface may vary significantly seasonally.
 
-\textcolor{red}{Perhaps include a model with a slab over a slowly varying
-pycnocline. The model is simple, but the solution is a bit messy and may
-scare GRL readers...}.
+\textcolor{red}{Perhaps include analytical results from a model with a slab over a slowly varying
+pycnocline.}
 
 \begin{figure*}[ht]
    \begin{center}
