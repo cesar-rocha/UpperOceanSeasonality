@@ -11,15 +11,13 @@ title:  Seasonality in governing dynamics at submesoscales
 
 abstract: Two new high-resolution numerical simulations with embedded tides suggest a
         strong modulation in the governing near-surface dynamics at submesoscales
-            (roughly 10-100 km). Consistent with recent studies, deep late Winter mixed layers
-                are prone to baroclinic instabilities and submesoscale turbulence
-                    prevails in late Winter/early Spring. Inertia-gravity waves, on the other hand, are enhanced near
-                        the surface when the upper ocean in strongly stratified. Thus the summertime
-                            re-stratification weakens submesoscale turbulence and enhances intertia-gravity
-                                 waves near the surface. In the Kuroshio Extension region,
-                                     inertia-gravity waves strongly dominate the surface kinetic energy and
-                                         sea-surface height variance in late Summer/early Fall at scales as large as 80 km!
-
+            (roughly 10-100 km) in the Kuroshio Extension. Consistent with recent studies, deep late-Winter mixed layers
+                are prone to baroclinic instabilities, and submesoscale turbulence
+                    prevails in late Winter/early Spring. While summertime
+                        re-stratification weakens submesoscale turbulence, it also enhances inertia-gravity
+                             waves near the surface. In the Kuroshio Extension,
+                                 inertia-gravity waves strongly dominate the submesoscale surface kinetic energy and
+                                     sea-surface height variance in late Summer/early Fall.
 # This controls which file is shown on the right-hand side of the published
 # HTML page.  By default it will take the first PDF or HTML file that it
 # finds.  If that doesn't work for you, you can specify the correct file here.
