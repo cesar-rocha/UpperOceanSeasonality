@@ -126,7 +126,7 @@
 %% ------------------------------------------------------------------------ %%
 
 
-\title{Seasonality in governing submesoscale dynamics in the Kuroshio Extension}
+\title{Seasonality of submesoscale dynamics in the Kuroshio Extension}
 %
 % e.g., \title{Terrestrial ring current:
 % Origin, formation, and decay $\alpha\beta\Gamma\Delta$}
@@ -199,7 +199,7 @@
 % >> the body of the abstract.
 
 \begin{abstract}
-    Two new high-resolution numerical simulations with embedded tides suggest a
+    Two new high-resolution numerical simulations with embedded tides show a
     strong modulation in the governing near-surface dynamics at submesoscales
     (roughly 10-100 km) in the Kuroshio Extension. Consistent with recent studies, deep late-winter mixed layers
     are prone to baroclinic instabilities, and submesoscale turbulence
@@ -235,7 +235,7 @@ Recent interest in upper-ocean dynamics has focused on the strong seasonal
 cycle of shallow baroclinic instabilities and their role in submesoscale (roughly 1-100 km)
 turbulence and mesoscale modulation \citep{sasaki_etal2014,qiu_etal2014,
 callies_etal2015, thompson_etal2016,buckingham_etal2016}. Contemporary studies
-have also suggested that inertia-gravity waves contribute significantly
+have also shown that inertia-gravity waves contribute significantly
 to the near-surface variability at submesoscales \citep{richman_etal2012,
 buhler_etal2014,rocha_etal2016}, but their seasonality has not been investigated.
 
@@ -253,9 +253,9 @@ Inertia-gravity waves, on the other hand, peak in late summer/early fall,
 when the upper ocean is strongly stratified. Thus there exists a
 strong seasonal modulation in the dominant upper-ocean submesoscale dynamics:
 submesoscale turbulence dominates the upper-ocean dynamics in late winter/early ,
-whereas quasi-linear inertia-gravity waves prevail in late summer/early fall.
+whereas submesoscale inertia-gravity waves prevail in late summer/early fall.
 Because submesoscale turbulence is weakest in late summer/early fall,
-the present results suggest that inertia-gravity waves account for most of the
+the present results indicate that inertia-gravity waves account for most of the
 summertime submesoscale SSH variability.
 
 \section{The LLC numerical simulations}
@@ -278,13 +278,12 @@ the 16 most-significant tidal components.
 Because barotropic tides interact with topography and generate internal
 tides that project onto mesoscales to submesoscales
 \citep[e.g., ][]{rocha_etal2016}, tidal forcing fundamentally distinguishes our analysis
-from recent modeling studies that investigated upper-ocean dynamics
-and its seasonality \citep{sasaki_etal2014,qiu_etal2014}. Details of the LLC simulations
+from other modeling studies of seasonality \citep{sasaki_etal2014,qiu_etal2014}. Details of the LLC simulations
 are provided in the supplemental material.
 
 To study seasonal variations in the upper-ocean dynamics, we focus on the northwest
 Pacific, in the vicinity of the Kuroshio
-Extension, where previous studies have suggested strong submesoscale seasonality
+Extension, where previous studies have presented strong mesoscale and submesoscale seasonality
 \citep{sasaki_etal2014,qiu_etal2014}.
 We analyze a sub-domain of the LLC4320 and LLC2160 simulations of about 2000 km$^2$
 spanning 155-175$^\circ$E; 25-40$^\circ$N winter \ref{fig1}a). The stratification
@@ -314,12 +313,22 @@ Extension stratification and its seasonal variability  (supplemental material).
 \section{Statistics of the surface lateral velocity tensor}
 To study the seasonality in the surface velocity, we calculate the lateral velocity gradient tensor
 \begin{equation}
-\nabla_h \bf{u}_h = \left[\begin{matrix} u_x & u_y\\ v_x&v_y \end{matrix}\right] \,.
+\left[\begin{matrix} u_x & u_y\\ v_x&v_y \end{matrix}\right]
 \end{equation}
-The components of the lateral velocity gradient tensor are calculated using a centered
+using a centered
 second-order finite difference scheme. We then diagnose
-the vertical vorticity $\zeta \equiv v_x - u_y$, lateral rate of strain
-$\alpha \equiv [(u_x-v_y)^2 + (u_y + v_x)^2]^{1/2}$, and horizontal divergence $\delta \equiv u_x + v_y$.
+the vertical vorticity, and horizontal divergence
+\begin{equation}
+\zeta \equiv v_x - u_y\, ,
+\end{equation}
+lateral rate of strain
+\begin{equation}
+  \alpha \equiv [(u_x-v_y)^2 + (u_y + v_x)^2]^{1/2}\,,\\
+\end{equation}
+and horizontal divergence
+\begin{equation}
+\delta \equiv u_x + v_y\, .
+\end{equation}
 These diagnostics highlight the submesoscale structures in the flow
 \citep[e.g.,][]{capet_etal2008a,shcherbina_etal2013}.
 
@@ -331,13 +340,13 @@ values as large as $4f$, where $f$ is
 the local planetary vorticity, and root-mean-square (RMS) of about $0.4f$. In early
 fall, the situation is the opposite: the vertical vorticity is relatively coarse-grained;
 its local maximum and RMS are both smaller than $0.5f$.
-Indeed, the seasonal cycle of vorticity and rate of strain are strong winter~\ref{fig2}):
+Indeed, the vorticity and rate of strain are strong in winter (Figure \ref{fig2}):
 in both simulations, the RMS vorticity and strain are about twice as large in
 late winter/early spring
 than in late summer/early fall. Because the wintertime vorticity and strain rate
 are dominated by the smallest scales in the flow (the KE spectra is shallower than
 a $-3$ power-law in winter), increasing the resolution from
-1/24$^\circ$ to 1/48$^\circ$ significantly increases the wintertime RMS vorticity
+1/24$^\circ$ to 1/48$^\circ$ increases the wintertime RMS vorticity
 and strain by about 40$\%$.
 
  \begin{figure*}[ht]
@@ -382,16 +391,16 @@ temporal and spatial scale separation between those motions and inertia-gravity 
 \citep{mcwilliams2016}:
 daily-averaging the velocity fields efficiently suppresses the summertime horizontally
 divergent flows, but also reduces the wintertime lateral divergence by about 50$\%$.
-The vorticity and strain rate winter \ref{fig2}a-b) show that most of the lateral divergence is associated
+Figure \ref{fig2}c) also shows that most of the lateral divergence is associated
 with submesoscale flows: smoothing the velocity fields with a 100km-cut-off
 suppresses more than 80$\%$ of the RMS divergence.
 
 \section{Seasonality in governing submesoscale dynamics}
-The overall results of figure \ref{fig2}c suggest that submesoscale surface
- variability stems from different dynamics in summer than winter.
+The results of figure \ref{fig2}a-c show that submesoscale surface
+ variability stems from different dynamics in summer than in winter.
  To characterize these differences, we calculate
 joint probability distributions (jPDF) of
-vorticity-strain and vorticity-Laplacian of sea-surface height (\ref{fig3}).
+vorticity-strain and vorticity-Laplacian of sea-surface height (Figure \ref{fig3}).
 
 The April vorticity-strain jPDF has a shape characteristic of submesoscale turbulence
  (see figures \ref{fig3}a-c). The alignment of vorticity and strain $\alpha \sim \pm\zeta$
@@ -440,7 +449,7 @@ Of course daily-averaging the model suppresses the ageostrophic flows, and
 the daily-averaged flow is essentially geostrophic as depicted by the 45$^\circ$-tilted
 ellipse in the vorticity-Laplacian of SSH jPDF.
 
- Time series of vorticity and divergence PDFs (supplemental material) suggest
+ Time series of PDFs of vorticity and divergence (supplemental material) show
  a strong oscillation between these two regimes. In late winter/early spring
  the vorticity is strongly positively skewed, whereas the divergence is moderately
  negatively skewed as predicted by frontogenesis \citep{capet_etal2008a,mcwilliams2016}
@@ -472,9 +481,9 @@ towards smaller scales (supplemental material).
 
 
 Figure \ref{fig4}a depicts the horizontal wavenumber spectra of surface KE in
-April and October. At scales larger than 20km, the spectra based on hourly
-velocity snapshots are nearly indistinguishable within 95$\%$ confidence level
-(compare solid lines in figure \ref{fig4}a). Consistent with the results of
+April and October. At scales larger than 20km, the April and October spectra based on hourly (the solid curves)
+velocity snapshots are nearly indistinguishable from each other within 95$\%$ confidence level.
+Consistent with the results of
 \citet{rocha_etal2016} who analyzed a 5-month output of the LLC4320 simulation in Drake Passage,
 there is significant high-frequency variabilty at submesoscales. Daily-averaging
 the velocity field suppresses spatial variability at scales smaller than about 250
@@ -488,9 +497,8 @@ based on daily-averaged velocity fields of a different model without tidal forci
 (P. Klein, personal communication).
 
 The inertia-gravity waves significantly project on the sea-surface.
-In October, when the inertia-gravity waves are strongest the surface and submesoscale
-turbulence is weakest. There is a dramatic difference between the spectra
-based on hourly and daily-averaged SSH: at scales smaller than 100 km, the spectra
+There is a dramatic difference between the spectra
+based on hourly and daily-averaged SSH in October (Figure \ref{4}b): at scales smaller than 100 km, the spectra
 of hourly SSH roughly follows a $-2$ power-law, whereas the spectra of daily-averaged
 SSH roughly follows a $-5$ power-law. At these scales, 33$\%$ of the SSH variance in April is accounted for by super-inertial
 flows as opposed to 83$\%$ in October! Curiously, the out-of-phase seasonal cycle of submesoscale
@@ -499,10 +507,17 @@ in the spectra of KE and SSH variance based on hourly fields.
 
 
 \section{Summary and Conclusion}
-Our main finding is that in global simulations with embedded tides the
+Our work adds to recent studies that presented modeling \citep{sasaki_etal2014}
+and observational \citep{callies_etal2015,buckingham_etal2016} evidence of vigorous seasonality in
+submesoscale turbulence. Our main finding is that in global simulations with embedded tides the
 near-surface inertia-gravity waves in the Kuroshio Extension undergo
 a strong seasonal cycle that is out-of-phase with the seasonal cycle of
-submesoscale turbulence. \cite{dasaro1978} showed that velocity of linear internal waves
+submesoscale turbulence. We conjecture that the summertime dominance of inertia-gravity waves
+ \citep{callies_etal2015} is a consequence both of suppression of submesoscale turbulence and
+enhancement of inertia-gravity waves due to re-stratification of
+the upper ocean.
+
+\cite{dasaro1978} showed that velocity of linear internal waves
 in the mixed-layer strongly depends on the density jump at the mixed-layer
 base, with largest mixed layer velocities when the jump is strongest.
 In summer, the shallow mixed layer overlays a strong seasonal pycnocline,
@@ -515,18 +530,15 @@ significantly more surface intensified in late summer/early fall
 If the internal wave source has weak seasonal dependence, then a strong
 seasonal cycle in the near-surface expression of internal waves is expected.
 Internal tide generation does not show a seasonal modulation \citep[e.g.,][]{alford2003},
-and therefore it is plausible to expect a strong seasonality in the near-surface
+and therefore one expects a strong seasonality in the near-surface
 expression of internal tides and
 other small-scale internal waves generated through internal tide interactions.
 Near-inertial wave generation peaks in winter, but those waves project on large
 horizontal scales \citep[e.g, ][]{qi_etal1995}.
 
-Our work adds to recent studies that presented modeling \citep{sasaki_etal2014}
-and observational \citep{callies_etal2015,buckingham_etal2016} evidence of vigorous seasonality in
-submesoscale turbulence. We conjecture that the summertime dominance of inertia-gravity waves
- \citep{callies_etal2015} is a consequence both of suppression of submesoscale turbulence and
-enhancement of inertia-gravity waves due to re-stratification of
-the upper ocean. Of course, this study focuses on a single patch of ocean in the
+
+
+An important caveat is that this study focuses on a single patch of ocean in the
 vicinity of the Kuroshio Extension, which may be typical of mesoscale-rich
 subtropical regions, but is unlikely to be
 representative of other regions such as low eddy kinetic energy eastern boundary currents
