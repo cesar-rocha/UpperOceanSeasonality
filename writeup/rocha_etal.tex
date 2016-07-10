@@ -112,10 +112,9 @@
 \titlerunninghead{Seasonality at submesoscales}
 
 %Corresponding author mailing address and e-mail address:
-%\authoraddr{Corresponding author: A. B. Smith,
-%Department of Hydrology and Water Resources, University of
-%Arizona, Harshbarger Building 11, Tucson, AZ 85721, USA.
-%(a.b.smith@hwr.arizona.edu)}
+\authoraddr{Corresponding author: Cesar B. Rocha,
+Scripps Institution of Oceanography, University of California San Diego, La Jolla, CA, USA.
+(crocha@ucsd.edu)}
 
 \begin{document}
 
@@ -618,10 +617,10 @@ and the middle of the subtropical gyre.  We plan to report on the geographic var
 %  ACKNOWLEDGMENTS
 
 \begin{acknowledgments}
- William R. Young provided feedback on the first draft. We thank the MITgcm community and our colleagues at the NASA Advanced
+ William R. Young provided helpful feedback on the first draft. We thank the MITgcm community and our colleagues at the NASA Advanced
 Supercomputing (NAS) Division for their awesome support.
 This research was funded by NSF (OCE1357047) and NASA (NNX13AE44G,NNX13AE85G,NNX16AH67G).
-Access to LLC outputs can be obtained directly from D. Menemenlis. The altimeter products were produced by Ssalto/Duacs
+The LLC outputs can be obtained from D. Menemenlis (menemenlis@jpl.nasa.gov). The altimeter products were produced by Ssalto/Duacs
 and distributed by Aviso, with support from CNES (\texttt{http://www.aviso.altimetry.fr/duacs/}).
 \end{acknowledgments}
 
@@ -635,182 +634,6 @@ and distributed by Aviso, with support from CNES (\texttt{http://www.aviso.altim
 
 %\section{Supplemental material 1: Spectral errors}
 
-\newpage
-\section*{Details of the LLC simulations}
-
-Table \ref{tab:llc} shows details of the LLC spin-up hierarchy.
-Both simulations analyzed in the present paper, LLC2160 and LLC4320,
-were forced by surface fluxes from the 0.14$^\circ$ European Centre for
-Medium-range Weather Forecasting (ECMWF) atmospheric operational model analysis,
- starting in 2011, and the 16 most significant  tidal components.
-The LLC control files are available online
-(at \texttt{http://mitgcm.org/viewvc/MITgcm/MITgcm$\_$contrib/
-llc$\_$hires}).
-
-For the LLC hierarchy, the sea-surface height is calculated
-using a linearized equation. While the nominal horizontal resolution  of the
-LLC4320 simulation is 1/48$^\circ$,
-horizontal wavenumber spectra suggests an effective resolution of about 8 km.
-(see figure \ref{fig4}), and wavenumber spectra suggests an effective resolution
-of 20 km for  LLC2160 simulation.
-
-The spin-up of the upper-ocean in the LLC4320 (1/48$^\circ$) simulation is
-a couple of days, as depicted the time series of surface horizontal divergence
-in Figure 2b of the main text (see initial rapid increase in RMS divergence in
-September 2011). To avoid the spin-up stage, we chose October to characterize the
-late summer/early fall. The late winter/early spring waves chosen to be 6 months
-out-of-phase with late summer/early fall (hence April).
-
-\begin{table*}[ht]
-\label{tab:llc}
-\caption{\small The MITgcm Latitute-Longitude Cap (LLC) spin-up hierarchy. This study analyzes
-         the output of LLC2160 and LLC4320. Model fields are available hourly.
-         Adapted from \cite{rocha_etal2016}.}
-\begin{center}
-\begin{tabular}{ | c | c | c | c | c |}
-\hline
-Simulation & Resolution & Time-step & Period  & Tides \\ \hline
-ECCO2 Adjoint & $1/6^{^\circ}$ & 1200 s & January 2009 - December 2011 & No\\
-LLC 1080   & $1/12^{^\circ}$ & 90 s & January 2010 - July 2012 & No\\
-LLC 2160   &  $1/24^{^\circ}$ & 45 s  & January 2011 - April 2013 & Yes\\
-LLC 4320   &  $1/48^{^\circ}$ & 25 s & September 2011 - September 2012 & Yes \\
-\hline
-\end{tabular}
-\end{center}
-\end{table*}
-
-\subsection*{Spectra}
-Kinetic energy and sea-surface height variance wavenumber spectra for the LLC2160
-and LLC4320 simulations are shown in figure \ref{figS2_3}. As expected, and
-consistent with the submesoscale regional study by \cite{capet_etal2008a}, the
-higher-resolution simulation (LLC4320) essentially extends the spectra of the
-lower-resolution simulation (LLC2160) towards smaller scale, demonstrating that
-the higher resolution is resolving a wider array of scales. Between 20 and 100 km
-the spectra of the two simulations are visually indistinguishable.
-
-
-\begin{figure*}[ht]
-   \begin{center}
-     \includegraphics[width=1.\textwidth]{figs/fig_s2_3.pdf}
-  \caption{A comparison between spectra of the two LLC simulations 1/24$^\circ$
-  (green) and 1/48$^\circ$ (purple). The statistical errorbars represent conservative
-  95$\%$ significance levels.}
-  \label{figS2_3}
-  \end{center}
-\end{figure*}
-
-\subsection*{Seasonality in probability density functions}
-
-Probability density functions (pdfs) of vertical vorticity and horizontal divergence
- at the surface (Figure \ref{figS2_2}) depicts the strong seasonality in the
- submesoscale dynamics. Time series of vorticity pdf indicate that
- the development of positive skewness in winter (Figures \ref{figS2_2}a-b) both in
- hourly ($\sim 1.4$) and daily-averaged ($\sim1.1$) fields. The skewness
- in divergence for hourly fields is very small year-round ($\sim -0.24$), suggesting the
- prevalence of inertia-gravity waves. Filtering out the waves by daily-averaging
- the velocity field increases the skewness in divergence, particularly in winter ($\sim-0.64$). Both
-positive vorticity (cyclonic) skewness and negative divergence (convergence) skewness
-are characteristics of submesoscale turbulence \citep{mcwilliams2016}.
-
-\begin{figure*}[ht]
-   \begin{center}
-     \includegraphics[width=1.\textwidth]{figs/fig_s2_2.pdf}
-  \caption{Time dependence of probability density functions of vertical vorticity (a, b)
-  and horizontal divergence (c, d). Monthly averages in April and October are
-  also shown (e, f).}
-  \label{figS2_2}
-  \end{center}
-\end{figure*}
-
-\subsection*{Seasonality in the upper-ocean stratification}
-
-Figure \ref{figS2_1} shows a comparison between potential density sections
-at 165$^\circ$E from
-the Roemmich-Gilson Argo Climatology \citep[updated from][]{roemmich_gilson2009}.
-and the LLC2160 and LLC4320 simulations. Of course, the Argo climatology is smoother
-owing to lower resolution and long-term averaging. Nonetheless, simulations reproduce well the strong
-seasonality in the stratification. The upper ocean is weakly stratified in late winter/early fall
-and re-stratifies in summer. Argo climatology and LLC simulations mixed-layer depths are consistent
-at all seasons (not shown).
-
-\begin{figure*}[ht]
-   \begin{center}
-     \includegraphics[width=1.\textwidth]{figs/fig_s2_1.pdf}
-  \caption{Potential density: a comparison between Roemmich-Gilson Argo
-          climatology (a, b) and the LLC simulations 1/24$^\circ$ (c, d)
-          and  1/48$^\circ$ (e, f).}
-  \label{figS2_1}
-  \end{center}
-\end{figure*}
-
-\subsection*{Depth-dependence}
-Figure \ref{figS2_2} shows the depth-dependence of the  root-mean-square of the velocity
-gradient lateral tensor for the LLC4320 simulation. The strong seasonality, as depicted
-at the surface in Figure 2 of the main manuscript, is confined to the mixed layer, which
-varies from 50 m in summer to about 350 m in winter.
-
-\begin{figure*}[ht]
-   \begin{center}
-     \includegraphics[width=.9\textwidth]{figs/fig_s2_2.png}
-  \caption{Depth-dependence of root-mean-square of vertical vorticity (a,d), rate of lateral strain (b,e)
-  and horizontal divergence (c,f) for hourly (a,b,c) and daily-averaged (d,e,f,) fields.}
-  \label{figS2_2}
-  \end{center}
-\end{figure*}
-
-\subsection*{How well do the LLC simulations capture high-frequency modes?}
-To assess how well the LLC simulations represents the high-frequency variability,
-we compare the model near-surface velocity field against two available
-mooring data: KEO (the data is available online at \texttt{http://www.pmel.noaa.gov/ocs/KEO})
-and KESS mooring $\#$7 (the data is available online at \texttt{http://uskess.whoi.edu}).
-For proper comparison, we use model data closest to these two moorings (west of
-the region considered in the present study). Focusing on high-frequencies, we
-calculate frequency spectral estimates every month. There are about 48 independent
-spectral realizations.
-
-Figure \ref{figA1} shows KE frequency spectra for the LLC simulations and mooring data.
-At the uppermost common depth (20 m), very low frequencies (periods $>$ 10 days)
-and the inertial, diurnal, and semi-diurnal frequencies agree well --- the KESS
-data are more energetic at intermediate frequencies. At 40 m, the LLC simulations and observations
-have consistent spectra at periods larger than about 6 h. The data from the moorings
-are more energetic at higher frequencies,
-except for the first two harmonics that are apparent in the KESS data at 40 m.
-There are at least three reasons for the slightly more energetic super-inertial
-variability in the observations: 1) The high-
-frequency variability is dominated by high-frequency noise due to mooring vertical
-excursions; 2) The model does not have enough resolution to resolve the full internal
-wave spectrum; 3) The model is not forced at frequencies higher than 6h.
-
-\begin{figure*}[ht]
-   \begin{center}
-     \includegraphics[width=.9\textwidth]{figs/figA1.pdf}
-  \caption{A comparison between frequency spectra of LLC simulations and two
-  available moored current meter records.}
-  \label{figA1}
-  \end{center}
-\end{figure*}
-
-\section*{Seasonality in pressure modes near-surface amplitude}
-
-Figure \ref{figS3}a shows the domain-averaged potential density from the WOA 2013
-climatology in April and October. Clearly, the changes to the stratification
-are dramatic, with the formation of a seasonal pycnocline in summer. The strong
-seasonality of upper-ocean stratification yields a strong seasonality in the
-near-surface shape and amplitude of baroclinic pressure modes (\ref{figS3}b).
-In particular, the surface amplitude is much large in summer. Thus the projection
-of baroclinic tides on the surface may vary significantly seasonally.
-
-%\textcolor{red}{Perhaps include analytical results from a model with a slab over a slowly varying
-%pycnocline.}
-
-\begin{figure*}[ht]
-   \begin{center}
-     \includegraphics[width=1.\textwidth]{figs/fig_s3.pdf}
-  \caption{The seasonal variability of the WOA 2013 stratification averaged  over
-  the domain and the associated three gravest pressure modes. Only the upper 450 m is shown.}
-  \label{figS3}
-  \end{center}
-\end{figure*}
 
 
 %%% End of body of article:
