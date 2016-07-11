@@ -202,7 +202,7 @@ Scripps Institution of Oceanography, University of California San Diego, La Joll
 
 \begin{abstract}
     Two new high-resolution numerical simulations with embedded tides show a
-    strong modulation in the governing near-surface dynamics at submesoscales
+    strong modulation of near-surface dynamics at submesoscales
     (roughly 10-100 km) in the Kuroshio Extension. Consistent with recent studies, deep late-winter mixed layers
     are prone to baroclinic instabilities, and submesoscale turbulence
     prevails in late winter/early spring. While summertime
@@ -235,7 +235,7 @@ Scripps Institution of Oceanography, University of California San Diego, La Joll
 
 Recent interest in upper-ocean dynamics has focused on the strong seasonal
 cycle of shallow baroclinic instabilities and their role in submesoscale (roughly 1-100 km)
-turbulence and mesoscale modulation \citep{sasaki_etal2014,qiu_etal2014,
+turbulence and mesoscale (roughly 100-300 km) modulation \citep{sasaki_etal2014,qiu_etal2014,
 callies_etal2015, thompson_etal2016,buckingham_etal2016}. Contemporary studies
 have also shown that inertia-gravity waves contribute significantly
 to the near-surface variability at submesoscales \citep{richman_etal2012,
@@ -253,7 +253,7 @@ driving a mild seasonal modulation of the mesoscales \citep{sasaki_etal2014,qiu_
 
 Inertia-gravity waves, on the other hand, peak in late summer/early fall,
 when the upper ocean is strongly stratified. Thus there exists a
-strong seasonal modulation in the dominant upper-ocean submesoscale dynamics:
+strong seasonal modulation of upper-ocean submesoscale dynamics:
 submesoscale turbulence dominates the upper-ocean dynamics in late winter/early,
 whereas submesoscale inertia-gravity waves prevail in late summer/early fall.
 Because submesoscale turbulence is weakest in late summer/early fall,
@@ -273,15 +273,14 @@ tides and 6-hourly surface fluxes. The LLC2160
 output spans two years from March 2011 to April 2013; the LLC4320 was spun up from
 the LLC2160 simulation, spanning one year from September 2011 to September 2012.
 The LLC4320 simulation is an extension of the 3-month long output used by
-\citet{rocha_etal2016}.
+\citet{rocha_etal2016}.  Details of the LLC simulations are provided in the supplemental material.
 
-A key aspect of the LLC simulations is that they were forced by
+A key aspect of the LLC2160 and LLC4320 simulations is that they were forced by
 the 16 most-significant tidal components.
 Because barotropic tides interact with topography and generate internal
 tides that project onto mesoscales to submesoscales
 \citep[e.g., ][]{rocha_etal2016}, tidal forcing fundamentally distinguishes our analysis
-from other modeling studies of seasonality \citep{sasaki_etal2014,qiu_etal2014}. Details of the LLC simulations
-are provided in the supplemental material.
+from other modeling studies of seasonality \citep{sasaki_etal2014,qiu_etal2014}.
 
 To study seasonal variations in the upper-ocean dynamics, we focus on the northwest
 Pacific, in the vicinity of the Kuroshio
@@ -366,7 +365,7 @@ the mean latitude): daily-averaging the velocity fields suppresses super-inertia
 motions and reduces the RMS
 vorticity by 40$\%$ and the RMS strain by 10$\%$; the seasonal
 cycle remains strong (see
-dashed lines in figures \ref{fig2}a-b). Most of this seasonal cycle is associated
+dashed lines in figures \ref{fig2}a-b). Indeed, most of this seasonal cycle is associated
 with submesoscale flows: smoothing the velocity fields
 with a Hanning filter with cut-off scale of 100 km dramatically reduces the RMS
 vorticity and strain rate. The reduction in variance is about 80$\%$ in winter,
@@ -374,7 +373,7 @@ yielding RMS vorticity and strain  rate roughly consistent with the diagnostics 
 AVISO gridded geostrophic velocities (compare red lines to black lines in figures \ref{fig2}a-b).
 The picture that emerges is consistent with recent studies: shallow baroclinic
 instabilities energize the submesoscales in late winter, drawing from the available
-potential energy stored in deep mixed layers \citep{sasaki_etal2014,callies_etal2015,callies_etal2016}.
+potential energy stored in large lateral buoyancy gradients in deep mixed layers \citep{sasaki_etal2014,callies_etal2015,callies_etal2016}.
 
 The seasonal cycle of the horizontal divergence, however, showcases the complexity
 of the upper-ocean annual variability. If submesoscale eddies and fronts dominated
@@ -411,7 +410,7 @@ suppresses more than 80$\%$ of the RMS divergence.
  \end{center}
 \end{figure*}
 
-\section{Seasonality in governing submesoscale dynamics}
+\section{Seasonality of submesoscale dynamics}
 The results of figure \ref{fig2}a-c show that submesoscale surface
  variability stems from different dynamics in summer than in winter.
  To characterize these differences, we calculate
@@ -480,7 +479,7 @@ Figure \ref{fig4}a depicts the horizontal wavenumber spectra of surface KE in
 April and October. At scales larger than 20km, the April and October spectra based on hourly (the solid curves)
 velocity snapshots are nearly indistinguishable from each other within 95$\%$ confidence level.
 Consistent with the results of
-\citet{rocha_etal2016}, who analyzed a 5-month output of the LLC4320 simulation in Drake Passage,
+\citet{rocha_etal2016}, who analyzed a 3-month output of the LLC4320 simulation in Drake Passage,
 there is significant high-frequency variabilty at submesoscales. Daily-averaging
 the velocity field suppresses spatial variability at scales smaller than about 250
 km both in April and October (compare solid lines against dashed lines in figure
@@ -514,7 +513,7 @@ enhancement of inertia-gravity waves due to re-stratification of
 the upper ocean.
 
 \cite{dasaro1978} showed that the velocity of linear internal waves
-in the mixed-layer strongly depends on the density jump at the mixed-layer
+in the mixed layer strongly depends on the density jump at the mixed-layer
 base, with largest mixed layer velocities when the jump is strongest.
 In summer, the shallow mixed layer overlays a strong seasonal pycnocline,
 and thus the internal waves projection onto the mixed-layer may be stronger
@@ -625,7 +624,7 @@ and distributed by Aviso, with support from CNES (\texttt{http://www.aviso.altim
 \end{acknowledgments}
 
 \bibliographystyle{agufull08}
-\bibliography{rocha_etal}
+%\bibliography{rocha_etal}
 
 
 
@@ -674,8 +673,116 @@ and distributed by Aviso, with support from CNES (\texttt{http://www.aviso.altim
 % \begin{thebibliography}{}
 % \bibitem{}
 % Text
-% \end{thebibliography}
-%
+\begin{thebibliography}{16}
+\providecommand{\natexlab}[1]{#1}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi:\discretionary{}{}{}#1}\else
+  \providecommand{\doi}{doi:\discretionary{}{}{}\begingroup
+  \urlstyle{rm}\Url}\fi
+
+\bibitem[{\textit{Alford}(2003)}]{alford2003}
+Alford, M.~H. (2003), {Redistribution of energy available for ocean mixing by
+  long-range propagation of internal wave}, \textit{Nature},
+  \textit{423}(6936), 159--162.
+
+\bibitem[{\textit{Buckingham et~al.}(2016)\textit{Buckingham, Naveira~Garabato,
+  Thompson, Brannigan, Lazar, Marshall, George~Nurser, Damerell, Heywood, and
+  Belcher}}]{buckingham_etal2016}
+Buckingham, C.~E., A.~C. Naveira~Garabato, A.~F. Thompson, L.~Brannigan,
+  A.~Lazar, D.~P. Marshall, A.~George~Nurser, G.~Damerell, K.~J. Heywood, and
+  S.~E. Belcher (2016), {Seasonality of submesoscale flows in the ocean surface
+  boundary layer}, \textit{Geophysical Research Letters}, \textit{43}(5),
+  2118--2126.
+
+\bibitem[{\textit{B{\"u}hler et~al.}(2014)\textit{B{\"u}hler, Callies, and
+  Ferrari}}]{buhler_etal2014}
+B{\"u}hler, O., J.~Callies, and R.~Ferrari (2014), {Wave--vortex decomposition
+  of one-dimensional ship-track data}, \textit{Journal of Fluid Mechanics},
+  \textit{756}, 1007--1026.
+
+\bibitem[{\textit{Callies et~al.}(2015)\textit{Callies, Ferrari, Klymak, and
+  Gula}}]{callies_etal2015}
+Callies, J., R.~Ferrari, J.~M. Klymak, and J.~Gula (2015), {Seasonality in
+  submesoscale turbulence}, \textit{Nature communications}, \textit{6}.
+
+\bibitem[{\textit{Callies et~al.}(2016)\textit{Callies, Flierl, Ferrari, and
+  Fox-Kemper}}]{callies_etal2016}
+Callies, J., G.~Flierl, R.~Ferrari, and B.~Fox-Kemper (2016), {The role of
+  mixed-layer instabilities in submesoscale turbulence}, \textit{Journal of
+  Fluid Mechanics}, \textit{788}, 5--41.
+
+\bibitem[{\textit{Capet et~al.}(2008)\textit{Capet, McWilliams, Molemaker, and
+  Shchepetkin}}]{capet_etal2008a}
+Capet, X., J.~C. McWilliams, M.~J. Molemaker, and A.~Shchepetkin (2008),
+  {Mesoscale to submesoscale transition in the California Current System. Part
+  I: Flow structure, eddy flux, and observational tests}, \textit{Journal of
+  Physical Oceanography}, \textit{38}(1), 29--43.
+
+\bibitem[{\textit{D'Asaro}(1978)}]{dasaro1978}
+D'Asaro, E.~A. (1978), {Mixed layer velocities induced by internal wave},
+  \textit{Journal of Geophysical Research: Oceans}, \textit{83}(C5),
+  2437--2438.
+
+\bibitem[{\textit{Forget et~al.}(2015)\textit{Forget, Campin, Heimbach, Hill,
+  Ponte, and Wunsch}}]{forget_etal2015}
+Forget, G., J.-M. Campin, P.~Heimbach, C.~Hill, R.~Ponte, and C.~Wunsch (2015),
+  {ECCO version 4: an integrated framework for non-linear inverse modeling and
+  global ocean state estimation}, \textit{Geosci. Model Dev.}, \textit{8},
+  3071--3104.
+
+\bibitem[{\textit{McWilliams}(2016)}]{mcwilliams2016}
+McWilliams, J.~C. (2016), {Submesoscale currents in the ocean}, in
+  \textit{Proc. R. Soc. A}, vol. 472, p. 20160117, The Royal Society.
+
+\bibitem[{\textit{Qi et~al.}(1995)\textit{Qi, De~Szoeke, Paulson, and
+  Eriksen}}]{qi_etal1995}
+Qi, H., R.~A. De~Szoeke, C.~A. Paulson, and C.~C. Eriksen (1995), {The
+  structure of near-inertial waves during ocean storms}, \textit{Journal of
+  Physical Oceanography}, \textit{25}, 2853--2871.
+
+\bibitem[{\textit{Qiu et~al.}(2014)\textit{Qiu, Chen, Klein, Sasaki, and
+  Sasai}}]{qiu_etal2014}
+Qiu, B., S.~Chen, P.~Klein, H.~Sasaki, and Y.~Sasai (2014), {Seasonal mesoscale
+  and submesoscale eddy variability along the North Pacific Subtropical
+  Countercurrent}, \textit{Journal of Physical Oceanography}, \textit{44}(12),
+  3079--3098.
+
+\bibitem[{\textit{Richman et~al.}(2012)\textit{Richman, Arbic, Shriver,
+  Metzger, and Wallcraft}}]{richman_etal2012}
+Richman, J.~G., B.~K. Arbic, J.~F. Shriver, E.~J. Metzger, and A.~J. Wallcraft
+  (2012), {Inferring dynamics from the wavenumber spectra of an eddying global
+  ocean model with embedded tides}, \textit{Journal of Geophysical Research:
+  Oceans}, \textit{117}(C12).
+
+\bibitem[{\textit{Rocha et~al.}(2016)\textit{Rocha, Chereskin, Gille, and
+  Menemenlis}}]{rocha_etal2016}
+Rocha, C.~B., T.~K. Chereskin, S.~T. Gille, and D.~Menemenlis (2016),
+  {Mesoscale to submesoscale wavenumber spectra in Drake Passage},
+  \textit{Journal of Physical Oceanography}, \textit{46}, 601--620.
+
+\bibitem[{\textit{Sasaki et~al.}(2014)\textit{Sasaki, Klein, Qiu, and
+  Sasai}}]{sasaki_etal2014}
+Sasaki, H., P.~Klein, B.~Qiu, and Y.~Sasai (2014), {Impact of oceanic-scale
+  interactions on the seasonal modulation of ocean dynamics by the atmosphere},
+  \textit{Nature communications}, \textit{5}.
+
+\bibitem[{\textit{Shcherbina et~al.}(2013)\textit{Shcherbina, D'Asaro, Lee,
+  Klymak, Molemaker, and McWilliams}}]{shcherbina_etal2013}
+Shcherbina, A.~Y., E.~A. D'Asaro, C.~M. Lee, J.~M. Klymak, M.~J. Molemaker, and
+  J.~C. McWilliams (2013), {Statistics of vertical vorticity, divergence, and
+  strain in a developed submesoscale turbulence field}, \textit{Geophysical
+  Research Letters}, \textit{40}(17), 4706--4711.
+
+\bibitem[{\textit{Thompson et~al.}(2016)\textit{Thompson, Lazar, Buckingham,
+  Naveira~Garabato, Damerell, and Heywood}}]{thompson_etal2016}
+Thompson, A.~F., A.~Lazar, C.~Buckingham, A.~C. Naveira~Garabato, G.~M.
+  Damerell, and K.~J. Heywood (2016), {Open-ocean submesoscale motions: A full
+  seasonal cycle of mixed layer instabilities from gliders}, \textit{Journal of
+  Physical Oceanography}, \textit{46}(4), 1285--1307.
+
+\end{thebibliography}
+
+
 % Or,
 %
 % If you use BiBTeX for your references, please use the agufull08.bst file (available at % ftp://ftp.agu.org/journals/latex/journals/Manuscript-Preparation/) to produce your .bbl
