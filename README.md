@@ -3,8 +3,9 @@ Seasonality of submesoscale dynamics in the Kuroshio Extension
 
 Authors
 --------
-Cesar B. Rocha<sup>1</sup>, Sarah T. Gille<sup>1</sup>, Teresa K. Chereskin<sup>1</sup>,
-and Dimitris Menemenlis<sup>2</sup>.
+[Cesar B. Rocha](https://crocha700.github.io)<sup>1</sup>, [Sarah T. Gille](http://www-pord.ucsd.edu/~sgille/)<sup>1</sup>
+, [Teresa K. Chereskin](http://tryfan.ucsd.edu)<sup>1</sup>,
+and [Dimitris Menemenlis](https://science.jpl.nasa.gov/people/Menemenlis/)<sup>2</sup>.
 
 1: Scripps Institution of Oceanography, University of California San Diego, La Jolla, CA, USA.
 
