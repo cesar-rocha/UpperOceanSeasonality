@@ -3,7 +3,7 @@ Seasonality of submesoscale dynamics in the Kuroshio Extension
 
 Authors
 --------
-Cesar B. Rocha, Sarah T. Gille, Teresa K. Chereskin, and Dimitris Menemenlis.
+Cesar B. Rocha^1, Sarah T. Gille, Teresa K. Chereskin, and Dimitris Menemenlis.
 
 Key Points
 ----------
@@ -28,7 +28,7 @@ Status
 ----------
   The [paper](https://crocha700.github.io/UpperOceanSeasonality/) is under review for [Geophysical Research Letters](http://agupubs.onlinelibrary.wiley.com/agu/journal/10.1002/(ISSN)1944-8007/).
   We appreciate feedback, which can be submitted through github [issues](https://github.com/crocha700/UpperOceanSeasonality/issues) or via e-mail to
-  Cesar Rocha @crocha700 (crocha@ucsd.edu).
+  Cesar Rocha (crocha@ucsd.edu).
 
 
 Code
