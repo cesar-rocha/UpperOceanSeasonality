@@ -42,7 +42,7 @@ Python stack.
 
 Data
 ------
-The LLC outputs can be obtained from the [ECCO project](http://ecco2.org/llc-_-hires).
+The LLC outputs can be obtained from the [ECCO project](http://ecco2.org/llc\_hires).
 The gridded altimeter data were produced by Ssalto/Duacs and distributed by
 [AVISO](http://www.aviso.altimetry.fr/duacs/), with support from CNES.
 
