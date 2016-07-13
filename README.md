@@ -45,7 +45,8 @@ Data
 ------
 The LLC outputs can be obtained from the [ECCO project](http://ecco2.org/llc\_hires).
 The gridded altimeter data were produced by Ssalto/Duacs and distributed by
-[AVISO](http://www.aviso.altimetry.fr/duacs/), with support from CNES.
+[AVISO](http://www.aviso.altimetry.fr/duacs/), with support from CNES. The Argo
+Roemmich-Gilson can be downloaded from the [SIO Argo group](http://sio-argo.ucsd.edu/RG_Climatology.html).
 
 Support
 -------
