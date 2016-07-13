@@ -34,4 +34,4 @@ This research was supported NSF (OCE1357047) and NASA (NNX13AE44G,NNX13AE85G,NNX
 
 Acknowledgments
 ----------------
-Thanks to the technical support of NASA's Advanced Supercomputing Division.
+William R. Young provided helpful feedback on the first draft. Thanks to the technical support of NASA's Advanced Supercomputing Division.
