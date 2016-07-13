@@ -7,6 +7,7 @@ Cesar B. Rocha<sup>1</sup>, Sarah T. Gille<sup>1</sup>, Teresa K. Chereskin<sup>
 and Dimitris Menemenlis<sup>2</sup>.
 
 1: Scripps Institution of Oceanography, University of California San Diego, La Jolla, CA, USA.
+
 2: Earth Sciences Division, Jet Propulsion Laboratory, California Institute of Technology, Pasadena, CA, USA.
 
 Key Points
