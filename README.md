@@ -8,7 +8,7 @@ Authors
 and [Dimitris Menemenlis](https://science.jpl.nasa.gov/people/Menemenlis/)<sup>2</sup>.
 
 1: [Scripps Institution of Oceanography](https://scripps.ucsd.edu),
-[University of California San Diego](www.ucsd.edu), La Jolla, CA, USA.
+[University of California San Diego](http://www.ucsd.edu), La Jolla, CA, USA.
 
 2: [Earth Sciences Division, Jet Propulsion Laboratory](Earth Sciences Division, Jet Propulsion Laboratory), [California Institute of Technology](https://www.caltech.edu), Pasadena, CA, USA.
 
