@@ -35,7 +35,6 @@ Status
   Comments, questions, and suggestions are warmly appreciated. Feedback can be submitted through github [issues](https://github.com/crocha700/UpperOceanSeasonality/issues) or via e-mail to
   Cesar Rocha (crocha@ucsd.edu).
 
-
 Code
 ----
 The analysis for this paper has been performed on NASA's [Pleiades Supercomputer](http://www.nas.nasa.gov/hecc/resources/pleiades.html). The project uses two small pieces of code available on github:  [llctools](https://github.com/crocha700/llctools) and [pyspec](https://github.com/pyspec/pyspec). Those codes leverage on the Scientific
@@ -53,4 +52,4 @@ This research was funded by NSF (OCE1357047) and NASA (NNX13AE44G,NNX13AE85G,NNX
 
 Acknowledgments
 ----------------
-William R. Young provided helpful feedback on the first draft. Thanks to the technical support of NASA's Advanced Supercomputing Division and to the MITgcm community.
+[William R. Young](http://www-pord.ucsd.edu/~wryoung) provided helpful feedback on the first draft. Thanks to the technical support of [NASA's Advanced Supercomputing Division](http://www.nas.nasa.gov) and to the MITgcm community.
