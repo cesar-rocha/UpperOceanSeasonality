@@ -35,6 +35,12 @@ Code
 ----
 The analysis for this paper has been performed on NASA's [Pleiades Supercomputer](http://www.nas.nasa.gov/hecc/resources/pleiades.html). The project uses two small pieces of code available on github:  [llctools](https://github.com/crocha700/llctools) and [pyspec](https://github.com/pyspec/pyspec).
 
+Data
+------
+The LLC outputs can be obtained from the [ECCO project](http://ecco2.org/llc hires).
+The gridded altimeter data were produced by Ssalto/Duacs and distributed by
+[AVISO](http://www.aviso.altimetry.fr/duacs/), with support from CNES.
+
 Support
 -------
 This research was supported NSF (OCE1357047) and NASA (NNX13AE44G,NNX13AE85G,NNX16AH67G).
