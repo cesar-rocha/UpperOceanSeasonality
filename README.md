@@ -24,6 +24,13 @@ Abstract
   inertia-gravity waves strongly dominate the submesoscale surface kinetic energy and
   sea-surface height variance in late summer/early fall.
 
+  Status
+  ------
+  The [paper](https://crocha700.github.io/UpperOceanSeasonality/) is under review for [Geophysical Research Letters](http://agupubs.onlinelibrary.wiley.com/agu/journal/10.1002/(ISSN)1944-8007/).
+  We appreciate feedback, which can be submitted through github [issues](https://github.com/crocha700/UpperOceanSeasonality/issues) or via e-mail to
+  Cesar Rocha @crocha700 (crocha@ucsd.edu).
+
+
 Code
 ----
 The analysis for this paper has been performed on NASA's [Pleiades Supercomputer](http://www.nas.nasa.gov/hecc/resources/pleiades.html). The project uses two small pieces of code available on github:  [llctools](https://github.com/crocha700/llctools) and [pyspec](https://github.com/pyspec/pyspec).
