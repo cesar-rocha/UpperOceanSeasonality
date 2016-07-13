@@ -47,7 +47,7 @@ The gridded altimeter data were produced by Ssalto/Duacs and distributed by
 
 Support
 -------
-This research was supported NSF (OCE1357047) and NASA (NNX13AE44G,NNX13AE85G,NNX16AH67G).
+This research was funded by NSF (OCE1357047) and NASA (NNX13AE44G,NNX13AE85G,NNX16AH67G).
 
 Acknowledgments
 ----------------
