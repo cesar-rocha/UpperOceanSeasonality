@@ -3,7 +3,7 @@ Seasonality of submesoscale dynamics in the Kuroshio Extension
 
 Authors
 --------
-Cesar B. Rocha^1, Sarah T. Gille, Teresa K. Chereskin, and Dimitris Menemenlis.
+Cesar B. Rocha <sup>1</sup>, Sarah T. Gille, Teresa K. Chereskin, and Dimitris Menemenlis.
 
 Key Points
 ----------
