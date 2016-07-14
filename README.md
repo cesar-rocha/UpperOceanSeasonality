@@ -62,4 +62,5 @@ This research was funded by NSF (OCE1357047) and NASA (NNX13AE44G,NNX13AE85G,NNX
 
 Acknowledgments
 ----------------
-[William R. Young](http://www-pord.ucsd.edu/~wryoung) provided helpful feedback on the first draft. Thanks to the technical support of [NASA Advanced Supercomputing Division](http://www.nas.nasa.gov) and  the MITgcm community.
+[William R. Young](http://www-pord.ucsd.edu/~wryoung) provided helpful feedback on the first draft. Thanks to our colleagues at the [NASA Advanced Supercomputing Division](http://www.nas.nasa.gov) and the MITgcm
+and SciPy communities for their awesome support.
