@@ -42,7 +42,7 @@ Code
 The analysis for this paper has been performed on NASA's [Pleiades Supercomputer](http://www.nas.nasa.gov/hecc/resources/pleiades.html). The project uses two small pieces of code developed by the first author and available on github:  [llctools](https://github.com/crocha700/llctools) and [pyspec](https://github.com/pyspec/pyspec). Those codes leverage on the [Scientific
 Python stack](https://www.scipy.org/install.html). Specific processing and plotting codes are available on Jupyter [notebooks](https://github.com/crocha700/UpperOceanSeasonality/blob/master/notebooks/index.ipynb).
 
-Once the heavy computations are performed on Pleiades and the files are saved in netCDF4, the whole subsequent processing and plotting and LaTeX compiling 
+Once the heavy computations are performed on Pleiades and the output files are saved in netCDF4, the whole subsequent processing and plotting and LaTeX compiling 
 is performed in a single-buttom reproducible workflow using [nbflow](https://github.com/jhamrick/nbflow).  The draft is online built and
 published using [gh-puslisher](https://github.com/ewanmellor/gh-publisher).
 
