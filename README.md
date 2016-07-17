@@ -34,7 +34,8 @@ Abstract
 Status
 ----------
   The [paper](https://crocha700.github.io/UpperOceanSeasonality/) is under review for [Geophysical Research Letters](http://agupubs.onlinelibrary.wiley.com/agu/journal/10.1002/(ISSN)1944-8007/).
-  [Supporting information](https://github.com/crocha700/UpperOceanSeasonality/blob/master/writeup/rocha_etal_supporting-info.pdf) and [figures](https://github.com/crocha700/UpperOceanSeasonality/blob/master/writeup/figs/) are also available. Comments, questions, and suggestions are extremely welcome. Feedback can be submitted through github [issues](https://github.com/crocha700/UpperOceanSeasonality/issues) or via e-mail to
+  [Supporting information](https://github.com/crocha700/UpperOceanSeasonality/blob/master/writeup/rocha_etal_supporting-info.pdf) and [figures](https://github.com/crocha700/UpperOceanSeasonality/blob/master/writeup/figs/) are also available. Comments, questions, and suggestions are extremely welcome
+  and warmly appreciated. Feedback can be submitted through github [issues](https://github.com/crocha700/UpperOceanSeasonality/issues) or via e-mail to
   Cesar Rocha (crocha@ucsd.edu).
 
 Code
@@ -42,7 +43,7 @@ Code
 The analysis for this paper has been performed on NASA's [Pleiades Supercomputer](http://www.nas.nasa.gov/hecc/resources/pleiades.html). The project uses two small pieces of code developed by the first author and available on github:  [llctools](https://github.com/crocha700/llctools) and [pyspec](https://github.com/pyspec/pyspec). Those codes leverage on the [Scientific
 Python stack](https://www.scipy.org/install.html). Specific processing and plotting codes are available on Jupyter [notebooks](https://github.com/crocha700/UpperOceanSeasonality/blob/master/notebooks/index.ipynb).
 
-Once the heavy computations are performed on Pleiades and the output files are saved in netCDF4, the whole subsequent processing and plotting and LaTeX compiling 
+Once the heavy computations are performed on Pleiades and the output files are saved in netCDF4, the whole subsequent processing and plotting and LaTeX compiling
 is performed in a single-button reproducible workflow using [nbflow](https://github.com/jhamrick/nbflow).  The draft is online built and
 published using [gh-puslisher](https://github.com/ewanmellor/gh-publisher).
 
