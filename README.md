@@ -44,7 +44,8 @@ Python stack](https://www.scipy.org/install.html).
 
 Specific processing and plotting codes are available on Jupyter [notebooks](https://github.com/crocha700/UpperOceanSeasonality/blob/master/notebooks/index.ipynb).
 
-The draft is built and
+Once the heavy computations are performed on Pleiades and the files are saved in netCDF4, the whole subsequent processing and plotting and LaTeX compiling 
+is performed in a single-buttom reproducible workflow using [nbflow](https://github.com/jhamrick/nbflow).  The draft is online built and
 published using [gh-puslisher](https://github.com/ewanmellor/gh-publisher).
 
 Data
