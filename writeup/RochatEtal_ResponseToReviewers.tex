@@ -1,0 +1,407 @@
+\documentclass[11pt]{article}
+
+%% WRY has commented out some unused packages %%
+%% If needed, activate these by uncommenting
+\usepackage{geometry}                % See geometry.pdf to learn the layout options. There are lots.
+%\geometry{letterpaper}                   % ... or a4paper or a5paper or ...
+\geometry{a4paper,left=2.5cm,right=2.5cm,top=2.5cm,bottom=2.5cm}
+%\geometry{landscape}                % Activate for rotated page geometry
+%\usepackage[parfill]{parskip}    % Activate to begin paragraphs with an empty line rather than an indent
+
+\usepackage{natbib}
+
+%for figures
+%\usepackage{graphicx}
+
+\usepackage{color}
+\definecolor{mygreen}{RGB}{28,172,0} % color values Red, Green, Blue
+\definecolor{mylilas}{RGB}{170,55,241}
+%% for graphics this one is also OK:
+\usepackage{epsfig}
+
+%% AMS mathsymbols are enabled with
+\usepackage{amssymb,amsmath}
+
+%% more options in enumerate
+\usepackage{enumerate}
+%\usepackage{enumitem}
+
+%% insert code
+\usepackage{listings}
+
+\usepackage[utf8]{inputenc}
+\usepackage{multicol}
+\setlength{\columnsep}{1cm}
+
+\usepackage{hyperref}
+
+\usepackage{fourier, heuristica}
+\usepackage{array, booktabs}
+\usepackage{graphicx}
+\usepackage[x11names]{xcolor}
+\usepackage{colortbl}
+\usepackage{caption}
+\DeclareCaptionFont{blue}{\color{LightSteelBlue3}}
+
+\newcommand{\foo}{\color{LightSteelBlue3}\makebox[0pt]{\textbullet}\hskip-0.5pt\vrule width 1pt\hspace{\labelsep}}
+
+\newcommand{\R}[1]{\textbf{R}\textbf{#1}}
+\newcommand{\ie}{i.e.}
+
+\newcommand{\sZ}{\mathsf{Z}}
+\newcommand{\sE}{\mathsf{E}}
+%\newcommand{\sA}{\mathsf{A}}
+
+\title{{\normalfont Response to reviewers of the manuscript \texttt{2016GL070261} }
+       ``Seasonality of submesoscale
+       dynamics \\in the Kuroshio Extension''}
+\author{Cesar B. Rocha,
+        Sarah T. Gille, Teresa K. Chereskin, \& Dimitris Menemenlis}
+\date{}
+\begin{document}
+
+%\include{symbols}
+
+\maketitle
+
+
+\section{Reviewer \#1}
+
+{\it This is a timely investigation into the submesoscale sea surface height (SSH) and
+velocity variations in the Kuroshio Extension region using global high-resolution
+OGCM simulations. The main conclusion of the study that the surface ocean submesoscale
+turbulence and inertia-gravity waves modulate out-of-phase seasonally, is novel and
+important. Overall, the manuscript is well presented and clearly written and I
+recommend its publication in GRL after the following comments are addressed.}\\
+
+We thank reviewer \#1 for the speedy review. Below we address the reviewer’s
+comments and suggestions.
+
+
+\begin{enumerate}
+
+
+\item {\it In the bottom paragraph on P.10, the authors emphasized that "At scales larger
+than 20km, the April and October spectra based on hourly velocity snapshots are
+nearly indistinguishable from each other". This emphasis appears to be contradictory
+to the statements in other places of the manuscript that the seasonality of subinertial
+submesoscale flows is strong (e.g., those relating to Figure 1b-c and Figure 2).}
+
+\item {\it Does the mesoscale eddy variability in the Kuroshio Extension region of the model
+have a similar energy level as those in the along-track altimeter data? This point
+is worth mentioning as it impacts on the relative importance between the instability-induced
+turbulence versus intia-gravity waves.}
+
+\item {\it P.4, line 2 from bottom: Missing a word after "early".}
+
+\item {\it P.6, line 5-7: Should October 15 be part of "late spring/early summer"?}
+
+\item {\it P.7, line 12: Change "KE spectra" to "KE spectrum"?}
+
+\item {\it P.8, bottom: The black line in Figure 2c shows a non-zero divergence value.
+      Shouldn't the gridded SSH data be non-divergent by definition?}
+
+\item {\it P.11, line 4-6: Figure 4a reveals that daily averaging not only reduces the
+      kinetic energy level for scales smaller than 250km, but also those longer
+      than 500km. What part of the large-scale flow signals are being removed?}
+
+\end{enumerate}
+
+%
+% Reviewer 2
+%
+
+\section{Reviewer \#2}
+{\it In this paper, the authors describe seasonality of submesoscale (10-100 km)
+activities in Kuroshio Extension region by using outputs from their new high
+resolution numerical simulations. Authors found that submesoscale turbulence
+dominates in late winter and early spring because of mixed layer instabilities, and
+inertial-internal waves in late summer and early fall because of internal tides and
+stratification near the surface. This new simulation, which includes tides and a high
+frequency wind forcing, and authors' attempts to analyze surface submesoscale
+turbulence and near-inertial waves are potentially important to oceanographic
+community. However, some discussions seem weak, possibly because it is very
+difficult to separate sub- and super-inertial motions in the submeso dynamics as
+authors mentioned.}\\
+
+We thank reviewer \#2 for the speedy review. Below we address the reviewer’s
+comments and suggestions.
+
+\subsection{Major points}
+
+\begin{enumerate}
+
+  \item {\it First of all, generation mechanism of submesoscale inertial-gravity waves in summer
+        and early fall is unclear to me. In the paper, authors attribute the mechanism to
+        internal tides (X-12, section 6, last sentence) and emphasize using the tidal forcing in
+        their model (X-5, section 2, 2nd paragraph). However, authors do not explain or show
+        any interaction mechanism of internal tides (please at least add some reference). With
+        the fixed frequencies of tidal constituents and existence of the critical latitude for the
+        diurnal tides, I am not sure what mechanism can represent the surface near-inertial
+        wave generation within the whole analyzed region by internal tides (with the
+        horizontal scales of 10-100km). If authors compare Figures 2 and 4 with those
+        estimated from the non-tidal forcing run in the Supplemental material, authors'
+        conclusion could be strengthened.}
+
+  \item {\it I also wonder why authors ignore wind-induced near-inertial waves (X-13, the first
+        line). It is well studied that wind-induced near-inertial motion in mixed layer in back
+        ground flow fields disperse quickly and propagate into the ocean interior (e.g., Young
+        and Ben-Jelloul 1997, J. Mar. Res., 55, 735-66). The distribution of those waves
+        depends on the distribution of vorticity (or Laplacian of vorticity) of background
+        flows (Klein and Llewellyn Smith 2001, J. Mar. Res., 59, 697-723; Klein et al. 2004, Q.
+        J. R. Meteorol. Soc., 130, 1153-1166). Therefore, those wind-induced near-inertial
+        waves could have the horizontal scales of 10-100km. Note that those studies are based
+        on geostrophically balanced or quasigeostrophic turbulent field. However, authors
+        may need to study interactions between submeso dynamics regime (Rossby number
+        and Richardson number are close to 1) and near-inertial waves in winter and spring
+        cases where I guess that non-linear terms may play a role. I don't think that authors
+        need to explain all internal wave dynamics in this GRL paper. I would rather suggest
+        to remove all discussions related to submesoscale inertial-gravity waves and focus on
+        describing differences between October and April.}
+
+  \item {\it Finally, I don't understand why authors define 10-100 km as a submesoscale and used
+        this scale for the spatial filtering (X-7, section 3). Authors should discuss Figure 4 first
+        and then give a reason why they define 10-100 km as a submesoscale and use this
+        scale for the filtering. In X-11, section 5, author point out that a part of the dynamics
+        around 250 km scale should be explained by near-inertial waves. Then, I wonder why
+        authors decide to discuss internal waves in 10-100 km scale.}
+\end{enumerate}
+
+\subsection{Minor points}
+
+\begin{enumerate}
+
+  \item {\it X-4, section 1, 2nd paragraph and X-13, section 6 last: Authors claimed that they
+        analyze the Kuroshio Extension region. However, their study region does not
+        include between $~$140E and $~$155E where the Kuroshio Extension is strongest in
+        Figure 1(a). Please explain why you exclude this region in the paper. Since those
+        longitudes includes the Izu-Ogasawara ridge (internal tide generation) and
+        formation region of Subtropical mode water (strong mixed layer front), I would
+        expect that including these latitudes would strengthen authors conclusions. I
+        would also like to point out that positions of KEO and KESS moorings in the
+        supplemental material are outside of the study region.}
+
+  \item {\it X-4, section 1, 3rd paragraph: “submesoscale inertial-gravity waves”. I feel that this
+        nomenclature is too sudden. It might be better to write “inertial-gravity waves
+        with a horizontal scales of 10-100 km (hereafter submesoscale inertial-gravity
+        waves)”?}
+
+  \item {\it X-9, section 4, 2nd paragraph: I wonder what we could learn from the sentence “In
+          other words, even in April, when submesoscale turbulence prevails, only the
+          daily-averaged fields are largely in geostrophic balance”. This suggests that the
+          balanced and upward cascade motion (originated from the submesoscale
+          instability) scenario in Sasaki et al., (2014, nature comm. 5) could be wrong
+          because they use the daily averaged data (X-11, section 5, last of 1st paragraph)?
+          Or it just means that the balanced regime is actually the submeso-dynamics
+          regime?}
+
+  \item {\it X-10, section 4, 2nd paragraph, the last sentence: Please add some reference.}
+
+\end{enumerate}
+
+
+\section{Reviewer \# 3}
+        {\it This manuscript provides model-based evidence of a seasonal cycle in submesoscale motions
+         in the western North Pacific (Kuroshio Extension). The manuscript summarizes the results of
+         a study in which two years of moderate-resolution (1/24th degree or 4.6 km) and one year of
+         high-resolution (1/48th degree or 2.3 km) model output were examined for evidence of
+         submesoscale activity. Measures of submesoscale activity include vorticity, divergence and
+         strain rate and the authors demonstrate that these quantities are enhanced in winter. Kinetic
+         energy and sea surface height (SSH) spectra also show seasonal trends. These results are
+         consistent with an existing suite of studies reporting seasonality to submesoscale flows.
+
+         What is relevant for the present study and distinguishes it from previous studies is that the
+         authors report an increase in internal wave activity during summer and which (they suggest)
+         projects onto the SSH variance. Because of the relevance of this study to challenges facing
+         the upcoming Surface Water Ocean Topography (SWOT) mission—which aims at measuring
+         submesoscale flows from space from nearly-balanced flows—this study will be of interest to
+         readers of GRL. The major error that should be addressed prior to publication is a more direct
+         connection of divergence and increased SSH variance to inertia-gravity waves. At present,
+         this connection is entirely speculative since any ageostrophic flows can give rise to
+        divergence and SSH variance. Edits should be made to the text and figures, as well.}\\
+
+        We thank  Christian Buckingham for the speedy and thorough review. Below we address
+                  Buckingham's comments and suggestions.
+
+
+\subsection{Major comments}
+
+\begin{enumerate}
+
+  \item {\it The authors must clearly demonstrate that increased inertia-gravity waves (IGWs) are
+        responsible for the seasonal signal in horizontal divergence and SSH spectra at high
+        wavenumbers. The authors argue that this is so but it is not demonstrated with sufficient
+        clarity. It is true that a portion of this energy/variance will be attributed to internal waves
+        modified by rotation but other flows give rise to divergence (and thus, SSH variance). Thus,
+        the seasonal changes reported by the authors might be the result of seasonal changes in these
+        other flows. Given that this is the main message of the paper, the authors must make this
+        modification.}
+
+  \item {\it There is very little introduction in this manuscript. The authors must address this
+          shortcoming prior to publication. The obvious method of addressing this issue is to discuss
+          the seasonality of IGWs in the context of SWOT and why this might matter. The introduction
+          should, therefore, place this study matter?”}
+
+  \item {\it There needs to be a discussion about the effective resolution of your model. The fact that
+        the model has a resolution of dx = 2.3 km and 4.6 km does not mean it can resolve oceanic
+        phenomena at this scale. Its effective horizontal resolution is closer to 8 times the grid
+        resolution (Soufflet et al. 2013). This corresponds to 18 km and 35 km for LLC4320 and
+        LLC2160 output, respectively. [A more exact value could be obtained by estimating zonal
+        and meridional spectra (of u, v or SSH) and identifying the high wavenumbers / low
+        wavelengths at which the spectral energy falls precipitously.] This means the model is not
+        resolving a number of submesoscale coherent vortices (SCVs) that may occur as a result of
+        ML baroclinic instability; these have diameters close to 5 km. So the follow-up questions
+        from a dynamical point-of-view become (1) where does the unresolved energy come from or
+        go to? and (2) how does this affect your results? These questions need to be addressed or at
+        least discussed if the main topic of your paper is submesoscale dynamics.}
+
+ \item {\it If the authors could estimate the magnitude of the sea surface height signature within a
+        particular band as a function of season that might be helpful. For example, the authors could
+        integrate SSH spectra (Figure 4b) from hourly fields between 10 km and 33 km (i.e.,
+        wavenumber = 3 x 10-2 km-1 which appears to be the cross-over point for the two curves) to
+        obtain SSH variances within a particular wavenumber band. Additionally, under the
+        assumption that SSH variance in winter is dominated by balanced motions while SSH
+        variance in summer is the sum of balanced + unbalanced motions, the difference between
+        these two quantities yields a bound1 for the SSH variance due to unbalanced motions.}
+
+\end{enumerate}
+
+\subsection{Minor comments}
+
+\begin{enumerate}
+
+  \item {\it (Section 1, Paragraph 1) The authors use the term ``submesoscale'' and ``mesoscale'' as
+        descriptive of motions having (1-100-km) and (100-300 km) horizontal scales,
+        respectively. I find these definitions misleading.
+
+        One way to define mesoscale and submesoscale is to define what scales of motion a
+        particular sensor will resolve. While this would not be optimal, it is objective. This is
+        probably the motivation for the definition used by Callies and Ferrari (2013), since the
+        swath altimeter (as initially proposed) would resolve scales greater than 1 km but
+        smaller than the present-day, profiling satellite altimeters – i.e., eddy-like features
+        with diameters greater than 80-100 km (see Chelton et al. 2011, Progress).
+        Unfortunately, this definition has the adverse effect of changing for each sensor.
+
+        A better definition of the submesoscale might be founded on dynamical arguments.
+        Wunsch and Stammer (1998) introduce the geostrophic equations and note that the
+        lower limit for which this approximation is strictly valid is ~30 km. This conveniently
+        defines the lower limit of the mesoscale regime. I would therefore define the
+        submesoscale regime as anything smaller than this but one for which the hydrostatic
+        approximation remains valid (e.g., 1 km).
+
+      The motivation for wanting to use the term ``submesoscale'' in the title is clear –
+      submesoscale motions are a hot topic within the community and it catches individuals’
+      eyes. This is fine. But what must be made clear within the manuscript is what scales of
+      motion and what force balances (i.e., dynamical regimes) are being described.}
+
+
+  \item {\it (Abstract) The abstract could be rewritten to emphasize its connection to SWOT.}
+
+  \item {\it (Section 1, last paragraph) Adding “with implications for SWOT” at the end of the
+          introduction would also help this article.}
+
+  \item {\it (Section 1, Paragraph 1) The authors mention a suite of papers documenting
+        seasonality at the submesoscale but fail missed a few: Ostrovskii (1995) and
+        Brannigan et al. (2015). These are observation- and model-based studies, resp.}
+
+  \item {\it (Section 1, Paragraph 2) Model resolutions: it would be helpful for readers to place in
+        parentheses nominal horizontal resolutions corresponding to these spatial resolutions.}
+
+  \item {\it (Section 1, Paragraph 3) What types of horizontal and temporal scales for IGWs are
+        we talking about here? How would this fall onto the Garrett-Munk (GM) internal
+        wave spectrum? (Recall: the GM spectrum contains both balanced and unbalanced
+        flows, not just internal waves, despite that the name suggests this.)}
+
+ \item {\it Discretization of the underlying equations of motion. How do you expect the
+        combination of vertical and horizontal resolution modifies internal wave properties
+        that exist in your model? Might you be attributing characteristics to these waves that
+        would be different in the real ocean?}
+
+\item {\it There should be some discussion of the seasonality of the mixed layer deformation
+      radius. Buckingham et al. (2016) point out that all modeling and observational studies
+      to date necessarily introduce seasonally varying energy by virtue of the deformation
+      radius changing with season and falling below the grid resolution in certain seasons.
+      This might be worth a comment.}
+
+\item {\it (Section 2, Paragraph 1) ``The LLC4320 simulation is an extension of the 3-month
+      long output used by Rocha et al. (2016).'' I think this is good to mention, here, so
+      please keep. In contrast, in (Section 5, Paragraph 2) the authors note a consistency
+      between the results in the Kuroshio Extension and those in the Drake Passage. This is
+      not a consistency as it is a different location, different time. The author has already
+      made the reader aware of the previous study so there is no reason to cite again.}
+
+\item {\it (Section 5, Paragraph 1) eliminate ``spectral'' after Hanning window. Also, no need for
+        quotation marks.}
+
+\item {\it (Section 5, Paragraph 1) ``the projection of these flows onto different horizontal scales
+            ...'' Have you thought about computing scale-dependent vorticity, strain rate and
+            divergence? This is really what you would be doing
+            aforementioned flows into spectral space.}
+
+\item {\it (Section 5, Paragraph 3) Remove the exclamation mark.}
+
+\item {\it (Section 4, first paragraph) I understand the motivation for examining the Laplacian of
+      sea surface height but the average reader will not understand the connection.}
+
+\item {\it (Section 4, second paragraph) Last sentence. This is good. I understand this but to
+        make this legible for the general audience it should be explained why we expect a near
+        one-to-one line for the joint-PDF of vorticity and the Laplacian of SSH.}
+
+\item {\it (Section 4, last paragraph) ``consistent with linear inertia-gravity waves''.
+        It would be
+        helpful to have a reference after this statement.}
+
+\item {\it (Section 4) I find “jPDF” odd. Try “joint-PDF” or “PDF” in general.}
+
+\item {\it (Section 4, last paragraph) ``...whereas divergence is moderately, negatively skewed as
+        predicted by ...'' Specifically mention convergence/downwelling.}
+
+\item {\it (Figure 1) ** Place panels (d) and (e) before panels (b) and (c) since this is the order
+        in which you refer to them in the manuscript. ** Difficult to see contours in (d) and
+        (e). ** Consider overlaying mixed layer depth on these transects since it is mentioned
+        in the text.}
+
+\item {\it (Figure 2) Is the mean of the strain rate zero? Is the mean of the divergence zero? The
+        variance should be used rather than the root-mean-squared (RMS).}
+
+\item {\it (Figure 2) What is the sensitivity of the estimates to the stencil type? See Arbic et al.
+        paper describing this sensitivity for satellite altimetry.}
+
+\item {\it (Section 3 and Figures 2 \& 3) At what depth are you computing these quantities?}
+
+\item {\it (Section 2, last paragraph) It is not just solar radiation that enters the surface buoyancy
+      flux calculation.}
+
+\item {\it (Section 2, last paragraph) ``as shallow as 40 m'' – I bet that the mixed layer depths get
+      even shallower than this. At midlatitudes, 20-30 m is not uncommon.}
+
+\item {\it 24. (Section 3, Paragraph 1) ``These diagnostic highlight the submesoscale structures in
+      the flow.'' It might help the authors to motivate their calculations using the following:
+
+      Any horizontal velocity field, uh, can be expressed in terms of vorticity, divergence,
+      strain rate and mean flow. This can be seen by expressing uh as a Taylor series
+      expansion and then decomposing the velocity gradient into symmetric and anti-
+      symmetric parts [Landau and Lifshitz, 1987]. Because vortices, vertical motion and
+      fronts are ubiquitous at the submesoscale, this is a natural decomposition and
+      variances of these quantities are apt descriptors of submesoscale turbulence.}
+
+\item {\it (Figure 3) Would be nice to include a third row that contains the collapsed (i.e., one-
+      dimensional) PDFs of normalized vorticity to illustrate the skewness of hourly and
+      daily-averaged flow. I believe you already have this information in the supplementary
+      material but would be nice to illustrate to the reader. Also, in your normalization of
+      vorticity, are you accounting for the fact that the Coriolis parameter changes with
+      latitude? Your domain spans considerable changes in f and the relevant dynamical
+      parameter is the gradient Rossby number.}
+
+\item {\it (Figure 4b) Strictly speaking, the label on the y-axis should not be SSH variance. SSH
+      variance would be the integral of this curve. The y-axis should be labelled as the
+      power spectral density of sea surface height (SSH), or SSH Spectra.}
+
+
+\item {\it The authors may find the work of Brüggeman and Eden (2015) helpful in addressing
+      some of the aforementioned questions.}
+
+\end{enumerate}
+
+
+\end{document}
