@@ -52,6 +52,9 @@
 \newcommand{\sE}{\mathsf{E}}
 %\newcommand{\sA}{\mathsf{A}}
 
+\newcommand{\bdp}{\begin{description}}
+\newcommand{\edp}{\end{description}}
+
 \title{{\normalfont Response to reviewers of the manuscript \texttt{2016GL070261} }
        ``Seasonality of submesoscale
        dynamics \\in the Kuroshio Extension''}
@@ -351,7 +354,9 @@ comments and suggestions.
         It would be
         helpful to have a reference after this statement.}
 
-\item {\it (Section 4) I find “jPDF” odd. Try “joint-PDF” or “PDF” in general.}
+\item {\it (Section 4) I find “jPDF” odd. Try “joint-PDF” or “PDF” in general.}\\
+
+We changed jPDF with joint-PDF.
 
 \item {\it (Section 4, last paragraph) ``...whereas divergence is moderately, negatively skewed as
         predicted by ...'' Specifically mention convergence/downwelling.}
@@ -376,14 +381,16 @@ comments and suggestions.
       even shallower than this. At midlatitudes, 20-30 m is not uncommon.}
 
 \item {\it 24. (Section 3, Paragraph 1) ``These diagnostic highlight the submesoscale structures in
-      the flow.'' It might help the authors to motivate their calculations using the following:
+      the flow.'' It might help the authors to motivate their calculations using the following:}\\
 
-      Any horizontal velocity field, uh, can be expressed in terms of vorticity, divergence,
+\begin{description}
+      {\it Any horizontal velocity field, uh, can be expressed in terms of vorticity, divergence,
       strain rate and mean flow. This can be seen by expressing uh as a Taylor series
       expansion and then decomposing the velocity gradient into symmetric and anti-
       symmetric parts [Landau and Lifshitz, 1987]. Because vortices, vertical motion and
       fronts are ubiquitous at the submesoscale, this is a natural decomposition and
       variances of these quantities are apt descriptors of submesoscale turbulence.}
+\end{description}
 
 \item {\it (Figure 3) Would be nice to include a third row that contains the collapsed (i.e., one-
       dimensional) PDFs of normalized vorticity to illustrate the skewness of hourly and
@@ -395,7 +402,25 @@ comments and suggestions.
 
 \item {\it (Figure 4b) Strictly speaking, the label on the y-axis should not be SSH variance. SSH
       variance would be the integral of this curve. The y-axis should be labelled as the
-      power spectral density of sea surface height (SSH), or SSH Spectra.}
+      power spectral density of sea surface height (SSH), or SSH Spectra.}\\
+
+      \bdp
+      We labelled the y-axis of the SSH variance spectrum as \textit{SSH variance density}
+      --- short for \textit{SSH variance spectral density} --- not \textit{SSH variance} as the reviewer
+      suggests.  We chose to use the short term to avoid cluttering the label
+      since there is no ambiguity because we include the
+      units of SSH variance per unit wavenumber.
+      We disagree that the label of the y-axis should be \textit{power spectrum of SSH}
+      or \textit{SSH spectra} [{\it sic}]. On physical grounds, \textit{power spectrum} is a misleading term,
+      because SSH variance density has nothing to do with \textit{power}.\footnote{The
+      term \textit{power spectrum} was for the \textit{frequency} spectrum of some quantities.}
+      And ``SSH [wavenumber] spectrum'' is the plot of SSH variance spectral density
+      as a function of wavenumber, not the quantity in the y-axis.\footnote{This confusion is similar
+      to the pervasive axis mislabelling in plots of probability distribution function (PDF)
+      --- the correct label of the y-axis is \textit{probability density}
+      not PDF.}
+      \edp
+
 
 
 \item {\it The authors may find the work of Brüggeman and Eden (2015) helpful in addressing
