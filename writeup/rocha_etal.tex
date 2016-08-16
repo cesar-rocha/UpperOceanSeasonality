@@ -416,36 +416,36 @@ suppresses more than 80$\%$ of the RMS divergence.
 The results of figure \ref{fig2}a-c show that submesoscale surface
  variability stems from different dynamics in summer than in winter.
  To characterize these differences, we calculate
-joint probability distributions (jPDF) of
+joint probability distributions (joint-PDF) of
 vorticity-strain and vorticity-Laplacian of sea-surface height (Figure \ref{fig3}).
 
 The April vorticity-strain joint-PDF has a shape characteristic of submesoscale turbulence
  (Figures \ref{fig3}a-b). The alignment of vorticity and strain $\alpha \sim \pm\zeta$
  with strong positive skewness are fingerprints of submesoscale fronts
  \citep{shcherbina_etal2013,mcwilliams2016}. The shape of the vorticity-strain
- jPDF is similar for hourly and daily-averaged fields, although
+ joint-PDF is similar for hourly and daily-averaged fields, although
  the vorticity skewness reduces from 1.4 to 1.13 from hourly to daily-averaged.
  The April results are characteristic of winter, indicating that wintertime submesoscale
  surface velocity is strongly dominated by submesoscale turbulence.
  The hourly velocity and sea-surface heigh fields have an important
-ageostrophic component as depicted by the jPDF of vorticity-Laplacian of SSH
+ageostrophic component as depicted by the joint-PDF of vorticity-Laplacian of SSH
 winter (Figure \ref{fig3}e). In other words, even in April, when submesoscale turbulence
 prevails, only the daily-averaged fields
 are largely
-in  geostrophic balance (the jPDF of daily-averaged vorticity vs.\\ Laplacian of sea-surface height
+in  geostrophic balance (the joint-PDF of daily-averaged vorticity vs.\\ Laplacian of sea-surface height
 is an ellipse with large eccentricity and main axis tilted by 45$^\circ$; Figure \ref{fig3}f).
 
-The October vorticity-strain jPDF shows much weaker skewness (the vorticity skewness
+The October vorticity-strain joint-PDF shows much weaker skewness (the vorticity skewness
 is 0.68 and 0.67 for hourly and daily-averaged velocities). The shape of the
-vorticity-strain jPDF  appears to be a combination of two half-ellipses centered
+vorticity-strain joint-PDF  appears to be a combination of two half-ellipses centered
 about $\zeta=0$, one with a 45$^\circ$ slope (characteristic of submesocale fronts
 that persist in summer) and one with a very steep slope.
 That the submesoscale dynamics in October are mainly ageostrophic is clearly depicted
-in the shape of jPDF of vorticity-Laplacian of sea-surface height for hourly fields
+in the shape of joint-PDF of vorticity-Laplacian of sea-surface height for hourly fields
  (Figure \ref{fig3}g), which is an ellipse aligned in the vertical axis.
 Daily-averaging the model suppresses the ageostrophic, super-inertial flows, and, therefore,
 the daily-averaged flow is essentially geostrophic as depicted by the 45$^\circ$-tilted
-ellipse in the vorticity-Laplacian of sea-surface height jPDF.
+ellipse in the vorticity-Laplacian of sea-surface height joint-PDF.
 
  Time series of PDFs of vorticity and divergence (supporting information) show
  a strong oscillation between these two regimes. In late winter/early spring
@@ -454,9 +454,26 @@ ellipse in the vorticity-Laplacian of sea-surface height jPDF.
 . In late summer/early fall, the divergence is stronger, but PDFs are much less skewed,
 consistent with linear inertia-gravity waves.
 
+To confirm that inertia-gravity undergo a vigorous seasonal cycle near the surface,
+we calculate wavenumber-frequency spectrum of SSH variance. Focusing on the high-frequency
+content, we compute the wavenumber-frequency spectrum  every 10 days and average
+the results to obtain a spectral estimate. Before calculating the each spectrum we
+remove linear trends and multiply the data by a three-dimensional Hanning window.
+The spectral estimate is then azimuthally-averaged in wavenumber.
+
+Figures \ref{fig4}a-b show the wavenumber-frequency of SSH variance for the LLC4320
+simulation. Mesoscales flows and the lunar semi-diurnal tide contain most of the
+SSH variance. But the is significant SSH variance at submesoscales, both subinertial
+and super-inertial. Subinertial SSH variance at submesoscales is larger in April, whereas
+super-inertial SSH variance at submesoscales is larger in October.  Figure \ref{fig4}c,
+which shows the ratio between the two spectra, clearly depicts the out-of-phase
+seasonality of super-inertial and subinertial submesoscale flows. More importantly,
+inertia-gravity
+waves account for most of the enhancement of super-inertial SSH variance in October.
+
 \section{Projection onto horizontal scales}
 
-To better quantify the projection of these flows onto different horizontal
+To quantify the projection of these flows onto different horizontal
 scales, we calculate wavenumber spectra of kinetic energy and sea-surface height
  variance.  Before calculating the spectra, time-mean and spatial linear
 trends were removed, and the resulting fields were multiplied by a two-dimensional Hanning window.
@@ -476,7 +493,7 @@ towards smaller scales (supporting information).
           waves from mode 1 through mode 4 across the latitudinal domain; horizontal dashed lines represent the semi-diurnal
           lunar tidal frequency (M$_2$), and the inertial frequency at mid-latitude
           (f$_{32.5}$) and its first harmonic (2f$_{32.5}$).}
- \label{fig4}
+  \label{fig4}
  \end{center}
 \end{figure*}
 
