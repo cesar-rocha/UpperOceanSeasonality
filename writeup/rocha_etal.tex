@@ -546,7 +546,7 @@ than the April.
 %in the spectra of KE and sea-surface height variance based on hourly fields.
 %
 %
-\section{Summary and Conclusion}
+\section{Discussion and conclusion}
 Our work adds to recent modeling \citep{sasaki_etal2014}
 and observational \citep{callies_etal2015,buckingham_etal2016} evidence of vigorous seasonality in
 submesoscale turbulence. In particular, our main finding is that in global simulations with embedded tides the
@@ -564,17 +564,20 @@ In summer, the shallow mixed layer overlays a strong seasonal pycnocline,
 and thus the internal waves projection onto the mixed layer may be stronger
 according to \cite{dasaro1978}'s arguments. An
 alternative explanation is that the shape of the baroclinic modes
-changes seasonally. In particular the baroclinic modes are
-significantly more surface intensified in late summer/early fall
- (supporting information).
+changes seasonally (supporting information).
+
 If the internal wave source has weak seasonal dependence, then a strong
 seasonal cycle in the near-surface expression of internal waves is expected.
 Internal tide generation does not show a seasonal modulation \citep[e.g.,][]{alford2003},
 and therefore one expects a strong seasonality in the near-surface
 expression of internal tides and
 other submesoscale inertia-gravity waves generated through internal tide interactions.
-Near-inertial wave generation peaks in winter \citep[e.g.,][]{alford2003}, but
-those waves project onto large horizontal scales \citep[e.g, ][]{qi_etal1995}.
+Windy near-inertial wave (NIW) generation is bursty and peaks in winter \citep[e.g.,][]{alford2003}.
+While NIWs are generated at large scales, mesoscale turbulence can
+refract and disperse those waves in few inertial periods, thereby generating
+submesoscale (10-100 km) near-inertial waves \citep{young_benjelloul1997}. But in our
+simulations the wavy seasonality in submesoscale surface KE and SSH variance is mostly accounted for
+by inertia-gravity waves with periods shorter than 12.4 h (Figure \ref{fig4}a-b).
 
 An important caveat is that this study focuses on a single patch of ocean in the
 vicinity of the Kuroshio Extension. This may be typical of a mesoscale-rich
@@ -674,7 +677,7 @@ Codes and output files are available online at the project repository
 \end{acknowledgments}
 
 \bibliographystyle{agufull08}
-%\bibliography{rocha_etal}
+\bibliography{rocha_etal}
 
 
 
@@ -723,129 +726,6 @@ Codes and output files are available online at the project repository
 % \begin{thebibliography}{}
 % \bibitem{}
 % Text
-\begin{thebibliography}{18}
-\providecommand{\natexlab}[1]{#1}
-\expandafter\ifx\csname urlstyle\endcsname\relax
-  \providecommand{\doi}[1]{doi:\discretionary{}{}{}#1}\else
-  \providecommand{\doi}{doi:\discretionary{}{}{}\begingroup
-  \urlstyle{rm}\Url}\fi
-
-\bibitem[{\textit{Alford}(2003)}]{alford2003}
-Alford, M.~H. (2003), {Redistribution of energy available for ocean mixing by
-  long-range propagation of internal wave}, \textit{Nature},
-  \textit{423}(6936), 159--162.
-
-\bibitem[{\textit{Buckingham et~al.}(2016)\textit{Buckingham, Naveira~Garabato,
-  Thompson, Brannigan, Lazar, Marshall, George~Nurser, Damerell, Heywood, and
-  Belcher}}]{buckingham_etal2016}
-Buckingham, C.~E., A.~C. Naveira~Garabato, A.~F. Thompson, L.~Brannigan,
-  A.~Lazar, D.~P. Marshall, A.~George~Nurser, G.~Damerell, K.~J. Heywood, and
-  S.~E. Belcher (2016), {Seasonality of submesoscale flows in the ocean surface
-  boundary layer}, \textit{Geophysical Research Letters}, \textit{43}(5),
-  2118--2126.
-
-\bibitem[{\textit{B{\"u}hler et~al.}(2014)\textit{B{\"u}hler, Callies, and
-  Ferrari}}]{buhler_etal2014}
-B{\"u}hler, O., J.~Callies, and R.~Ferrari (2014), {Wave--vortex decomposition
-  of one-dimensional ship-track data}, \textit{Journal of Fluid Mechanics},
-  \textit{756}, 1007--1026.
-
-\bibitem[{\textit{Callies et~al.}(2015)\textit{Callies, Ferrari, Klymak, and
-  Gula}}]{callies_etal2015}
-Callies, J., R.~Ferrari, J.~M. Klymak, and J.~Gula (2015), {Seasonality in
-  submesoscale turbulence}, \textit{Nature communications}, \textit{6}.
-
-\bibitem[{\textit{Callies et~al.}(2016)\textit{Callies, Flierl, Ferrari, and
-  Fox-Kemper}}]{callies_etal2016}
-Callies, J., G.~Flierl, R.~Ferrari, and B.~Fox-Kemper (2016), {The role of
-  mixed-layer instabilities in submesoscale turbulence}, \textit{Journal of
-  Fluid Mechanics}, \textit{788}, 5--41.
-
-\bibitem[{\textit{Capet et~al.}(2008)\textit{Capet, McWilliams, Molemaker, and
-  Shchepetkin}}]{capet_etal2008a}
-Capet, X., J.~C. McWilliams, M.~J. Molemaker, and A.~Shchepetkin (2008),
-  {Mesoscale to submesoscale transition in the California Current System. Part
-  I: Flow structure, eddy flux, and observational tests}, \textit{Journal of
-  Physical Oceanography}, \textit{38}(1), 29--43.
-
-\bibitem[{\textit{D'Asaro}(1978)}]{dasaro1978}
-D'Asaro, E.~A. (1978), {Mixed layer velocities induced by internal wave},
-  \textit{Journal of Geophysical Research: Oceans}, \textit{83}(C5),
-  2437--2438.
-
-\bibitem[{\textit{Forget et~al.}(2015)\textit{Forget, Campin, Heimbach, Hill,
-  Ponte, and Wunsch}}]{forget_etal2015}
-Forget, G., J.-M. Campin, P.~Heimbach, C.~Hill, R.~Ponte, and C.~Wunsch (2015),
-  {ECCO version 4: an integrated framework for non-linear inverse modeling and
-  global ocean state estimation}, \textit{Geosci. Model Dev.}, \textit{8},
-  3071--3104.
-
-  \bibitem[{\textit{Marshall et~al.}(1997)\textit{Marshall, Hill, Perelman, and
-    Adcroft}}]{marshall_etal1997}
-  Marshall, J., C.~Hill, L.~Perelman, and A.~Adcroft (1997), Hydrostatic,
-    quasi-hydrostatic, and nonhydrostatic ocean modeling, \textit{Journal of
-    Geophysical Research: Oceans}, \textit{102}(C3), 5733--5752.
-
-  \bibitem[{\textit{McWilliams}(2016)}]{mcwilliams2016}
-  McWilliams, J.~C. (2016), {Submesoscale currents in the ocean}, in
-    \textit{Proc. R. Soc. A}, vol. 472, p. 20160117, The Royal Society.
-
-  \bibitem[{\textit{Menemenlis et~al.}(2008)\textit{Menemenlis, Campin, Heimbach,
-    Hill, Lee, Nguyen, Schodlok, and Zhang}}]{menemenlis_etal2008}
-  Menemenlis, D., J.-M. Campin, P.~Heimbach, C.~Hill, T.~Lee, A.~Nguyen,
-    M.~Schodlok, and H.~Zhang (2008), ECCO2: High resolution global ocean and sea
-    ice data synthesis, \textit{Mercator Ocean Quarterly Newsletter},
-    \textit{31}, 13--21.
-
-\bibitem[{\textit{Qi et~al.}(1995)\textit{Qi, De~Szoeke, Paulson, and
-  Eriksen}}]{qi_etal1995}
-Qi, H., R.~A. De~Szoeke, C.~A. Paulson, and C.~C. Eriksen (1995), {The
-  structure of near-inertial waves during ocean storms}, \textit{Journal of
-  Physical Oceanography}, \textit{25}, 2853--2871.
-
-\bibitem[{\textit{Qiu et~al.}(2014)\textit{Qiu, Chen, Klein, Sasaki, and
-  Sasai}}]{qiu_etal2014}
-Qiu, B., S.~Chen, P.~Klein, H.~Sasaki, and Y.~Sasai (2014), {Seasonal mesoscale
-  and submesoscale eddy variability along the North Pacific Subtropical
-  Countercurrent}, \textit{Journal of Physical Oceanography}, \textit{44}(12),
-  3079--3098.
-
-\bibitem[{\textit{Richman et~al.}(2012)\textit{Richman, Arbic, Shriver,
-  Metzger, and Wallcraft}}]{richman_etal2012}
-Richman, J.~G., B.~K. Arbic, J.~F. Shriver, E.~J. Metzger, and A.~J. Wallcraft
-  (2012), {Inferring dynamics from the wavenumber spectra of an eddying global
-  ocean model with embedded tides}, \textit{Journal of Geophysical Research:
-  Oceans}, \textit{117}(C12).
-
-\bibitem[{\textit{Rocha et~al.}(2016)\textit{Rocha, Chereskin, Gille, and
-  Menemenlis}}]{rocha_etal2016}
-Rocha, C.~B., T.~K. Chereskin, S.~T. Gille, and D.~Menemenlis (2016),
-  {Mesoscale to submesoscale wavenumber spectra in Drake Passage},
-  \textit{Journal of Physical Oceanography}, \textit{46}, 601--620.
-
-\bibitem[{\textit{Sasaki et~al.}(2014)\textit{Sasaki, Klein, Qiu, and
-  Sasai}}]{sasaki_etal2014}
-Sasaki, H., P.~Klein, B.~Qiu, and Y.~Sasai (2014), {Impact of oceanic-scale
-  interactions on the seasonal modulation of ocean dynamics by the atmosphere},
-  \textit{Nature communications}, \textit{5}.
-
-\bibitem[{\textit{Shcherbina et~al.}(2013)\textit{Shcherbina, D'Asaro, Lee,
-  Klymak, Molemaker, and McWilliams}}]{shcherbina_etal2013}
-Shcherbina, A.~Y., E.~A. D'Asaro, C.~M. Lee, J.~M. Klymak, M.~J. Molemaker, and
-  J.~C. McWilliams (2013), {Statistics of vertical vorticity, divergence, and
-  strain in a developed submesoscale turbulence field}, \textit{Geophysical
-  Research Letters}, \textit{40}(17), 4706--4711.
-
-\bibitem[{\textit{Thompson et~al.}(2016)\textit{Thompson, Lazar, Buckingham,
-  Naveira~Garabato, Damerell, and Heywood}}]{thompson_etal2016}
-Thompson, A.~F., A.~Lazar, C.~Buckingham, A.~C. Naveira~Garabato, G.~M.
-  Damerell, and K.~J. Heywood (2016), {Open-ocean submesoscale motions: A full
-  seasonal cycle of mixed layer instabilities from gliders}, \textit{Journal of
-  Physical Oceanography}, \textit{46}(4), 1285--1307.
-
-\end{thebibliography}
-
-
 % Or,
 %
 % If you use BiBTeX for your references, please use the agufull08.bst file (available at % ftp://ftp.agu.org/journals/latex/journals/Manuscript-Preparation/) to produce your .bbl
