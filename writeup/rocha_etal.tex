@@ -461,27 +461,37 @@ ellipse in the vorticity-Laplacian of sea-surface height joint-PDF.
 consistent with linear IGWs.
 
 \section{Wavenumber-frequency spectrum}
-
-To confirm that inertia-gravity undergo a vigorous seasonal cycle near the surface,
+To confirm that submesoscale IGWs undergo a vigorous seasonal cycle near the surface,
 we calculate wavenumber-frequency spectrum of SSH variance. Focusing on the high-frequency
 content, we compute the wavenumber-frequency spectrum  every 10 days and average
 the results to obtain a spectral estimate. Before calculating the each spectrum we
 remove linear trends and multiply the data by a three-dimensional Hanning window.
-The spectral estimate is then azimuthally-averaged in wavenumber.
+We azimuthally-average the spectrum in wavenumber.
 
 Figures \ref{fig4}a-b show the wavenumber-frequency of SSH variance for the LLC4320
 simulation. Mesoscales flows and the lunar semi-diurnal tide contain most of the
 SSH variance. But the is significant SSH variance at submesoscales, both subinertial
 and super-inertial. Subinertial SSH variance at submesoscales is larger in April, whereas
-super-inertial SSH variance at submesoscales is larger in October.  Figure \ref{fig4}c,
-which shows the ratio between the two spectra, clearly depicts the out-of-phase
-seasonality of super-inertial and subinertial submesoscale flows.  At scales smaller
+super-inertial SSH variance at submesoscales is larger in October. At scales smaller
 than 100 km (submesoscales), there the SSH variance is 66$\%$ larger in October than in April.
-More importantly, most of this SSH variance increase is accounted for
-IGWs, particularly modes two through four --- higher vertical
-modes are more sensitive to changes in stratification (supporting information).
+IGWs, particularly modes two through four, account for most of the SSH variance
+increase in summer, --- higher vertical
+modes are more sensitive to changes in near-surface stratification (supporting information).
 Similarly, the submesoscale superinertial surface KE is 63$\%$ larger in October
-than the April.
+than the April (supporting information).
+
+Figure \ref{fig4}c shows the integral over frequency
+of wavenumber-frequency spectra in figures \ref{fig4}a-b. The
+SSH wavenumber spectrum approximately follows a -2 power-law at submesoscales,
+both in April and October (solid lines in figure \ref{fig4}c)  --- there is
+small difference between the spectra owing to the phase cancellation between the
+seasonal cycle of submesoscale turbulence and inertia-gravity waves. The sub-inertial flow
+has steeper submesoscale SSH variance wavenumber spectrum (dashed lines in figure \ref{fig4}c).
+ The difference between the SSH variance wavenumber spectrum for all frequencies and
+ sub-inertial frequencies is dramatic in October when super-inertial flows account for
+ about 80\% of the SSH variance and KE at submesoscales. We obtain similar results by computing
+SSH variance and KE wavenumber spectra directly from hourly and daily-averaged
+SSH velocity fields.
 
 \begin{figure*}[ht]
   \begin{center}
@@ -579,9 +589,9 @@ NIW energy appears to have similar energy level in October and April
 While NIWs are generated at large scales, mesoscale turbulence can
 refract and disperse those waves in few inertial periods, thereby generating
 submesoscale (10-100 km) near-inertial waves \citep[][and references therein]{alford_etal2016}.
-But in our simulations the inertia-gravity-wave seasonality in submesoscale surface KE and SSH
-variance is mostly accounted for
-by higher frequency waves  (Figure \ref{fig4}a-b), likely because submesoscale
+But in our simulations the higher frequency inertia-gravity-wave
+account for most of the seasonality in super-inertial surface KE and SSH
+(Figure \ref{fig4}a-b), likely because submesoscale
 NIWs quickly propagate into the interior and weakly project onto SSH.
 
 In the context of the SWOT mission, our results suggest that if one is interested
