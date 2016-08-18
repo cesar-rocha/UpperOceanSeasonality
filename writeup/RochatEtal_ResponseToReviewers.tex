@@ -370,7 +370,7 @@ comments and suggestions.
 
           We understand that our definition is imperfect --- we may amuse some readers but
           irritate others. But
-          besides consistency with our recent
+          besides unsettled definitons by our community abd consistency with our recent
           work (Rocha et al. 2016), there are at least two reasons for sticking to
           our definition: (i) this is the definition used by the SWOT community (Fu \& Ferrari
               2008); incidentally current altimeters do not resolve
@@ -382,10 +382,19 @@ comments and suggestions.
       \edp
 
 
-  \item {\it (Abstract) The abstract could be rewritten to emphasize its connection to SWOT.}
+  \item {\it (Abstract) The abstract could be rewritten to emphasize its connection to SWOT.}\\
+
+        \bdp
+          We now describe that there are implications for the accuracy of high-resolution
+          altimeters.
+        \edp
 
   \item {\it (Section 1, last paragraph) Adding “with implications for SWOT” at the end of the
           introduction would also help this article.}
+
+          \bdp
+            Added.
+          \edp
 
   \item {\it (Section 1, Paragraph 1) The authors mention a suite of papers documenting
         seasonality at the submesoscale but fail missed a few: Ostrovskii (1995) and
@@ -395,6 +404,10 @@ comments and suggestions.
 
   \item {\it (Section 1, Paragraph 2) Model resolutions: it would be helpful for readers to place in
         parentheses nominal horizontal resolutions corresponding to these spatial resolutions.}
+
+        \bdp
+          We have added both nominal and effective resolutions.
+        \edp
 
   \item {\it (Section 1, Paragraph 3) What types of horizontal and temporal scales for IGWs are
         we talking about here? How would this fall onto the Garrett-Munk (GM) internal
@@ -442,7 +455,9 @@ comments and suggestions.
       please keep. In contrast, in (Section 5, Paragraph 2) the authors note a consistency
       between the results in the Kuroshio Extension and those in the Drake Passage. This is
       not a consistency as it is a different location, different time. The author has already
-      made the reader aware of the previous study so there is no reason to cite again.}
+      made the reader aware of the previous study so there is no reason to cite again.}\\
+
+        Removed.
 
 \item {\it (Section 5, Paragraph 1) eliminate ``spectral'' after Hanning window. Also, no need for
         quotation marks.}\\
@@ -451,8 +466,18 @@ comments and suggestions.
 
 \item {\it (Section 5, Paragraph 1) ``the projection of these flows onto different horizontal scales
             ...'' Have you thought about computing scale-dependent vorticity, strain rate and
-            divergence? This is really what you would be doing
-            aforementioned flows into spectral space.}
+            divergence? This is really what you would be doing if you did a breakdown
+            of the aforementioned flows into spectral space.}
+
+            \bdp
+                Following the reviewer's suggestion, we have replaced the old section
+                5 with a discussion of the wavenumber-frequency spectrum of SSH variance.
+                To better illustrate the projection of different flows across
+                different horizontal scales, figure 5c shows the integral of the
+                wavenumber-frequency spectrum over frequencies --- the result is
+                very similar to calculating the wavenumber spectrum directly from
+                hourly and daily-averaged fields (old figure 4b).
+            \edp
 
 \item {\it (Section 5, Paragraph 3) Remove the exclamation mark.}\\
 
@@ -461,9 +486,15 @@ comments and suggestions.
 \item {\it (Section 4, first paragraph) I understand the motivation for examining the Laplacian of
       sea surface height but the average reader will not understand the connection.}
 
+      \bdp
+      Any reader familiar with basic geostrophy concepts is likely to understand the connection.
+      \edp
+
 \item {\it (Section 4, second paragraph) Last sentence. This is good. I understand this but to
         make this legible for the general audience it should be explained why we expect a near
         one-to-one line for the joint-PDF of vorticity and the Laplacian of SSH.}
+
+      As above.
 
 \item {\it (Section 4, last paragraph) ``consistent with linear inertia-gravity waves''.
         It would be
@@ -482,7 +513,11 @@ We changed jPDF with joint-PDF; it does look much better.
         in the text.}
 
         \bdp
-          We changed the order of the panels.
+          We changed the order of the panels. All figures are provided in high-quality
+          resolution. We avoid plotting the mixed-layer depth because it is noisy,
+          hindering an important detail we would like the judicious reader to note,
+          particularly in figure 1c: the wiggles in the mixed-layer base
+          indicate internal waves.
         \edp
 
 \item {\it (Figure 2) Is the mean of the strain rate zero? Is the mean of the divergence zero? The
@@ -507,14 +542,24 @@ We changed jPDF with joint-PDF; it does look much better.
 \item {\it 24. (Section 3, Paragraph 1) ``These diagnostic highlight the submesoscale structures in
       the flow.'' It might help the authors to motivate their calculations using the following:}\\
 
-\begin{description}
-      {\it Any horizontal velocity field, uh, can be expressed in terms of vorticity, divergence,
+      {\it ``Any horizontal velocity field, uh, can be expressed in terms of vorticity, divergence,
       strain rate and mean flow. This can be seen by expressing uh as a Taylor series
       expansion and then decomposing the velocity gradient into symmetric and anti-
       symmetric parts [Landau and Lifshitz, 1987]. Because vortices, vertical motion and
       fronts are ubiquitous at the submesoscale, this is a natural decomposition and
-      variances of these quantities are apt descriptors of submesoscale turbulence.}
-\end{description}
+      variances of these quantities are apt descriptors of submesoscale turbulence.''}\\
+
+      \bdp
+        Adding the elementary motivation above is yet another controversy: some
+        readers may appreciate it but others may find it condescending.
+        We argue that most physical oceanographers interested in our paper will
+        likely know this material. Even readers from other areas, who did not take
+        basic fluid mechanics, will have the intuition that if the flow peaks
+        at mesoscales (energy-containing), then second-order statistics of the
+        velocity gradient will better highlight the submesoscales than the
+        KE (second-order statistic of the velocity).
+      \edp
+
 
 \item {\it (Figure 3) Would be nice to include a third row that contains the collapsed (i.e., one-
       dimensional) PDFs of normalized vorticity to illustrate the skewness of hourly and
@@ -523,6 +568,12 @@ We changed jPDF with joint-PDF; it does look much better.
       vorticity, are you accounting for the fact that the Coriolis parameter changes with
       latitude? Your domain spans considerable changes in f and the relevant dynamical
       parameter is the gradient Rossby number.}
+
+      \bdp
+        Added. Yes, as we mention in the text, we have normalized by those
+        quantities by the \textit{local} inertial frequency, not the inertial
+        frequency at mid-latitude.
+      \edp
 
 \item {\it (Figure 4b) Strictly speaking, the label on the y-axis should not be SSH variance. SSH
       variance would be the integral of this curve. The y-axis should be labelled as the
