@@ -180,7 +180,7 @@ Scripps Institution of Oceanography, University of California San Diego, La Joll
 % \item And here is the third keypoint
 % }
 
-\keypoints{\item  Upper-ocean submesoscale (10-100 km) turbulence and inertia-gravity
+\keypoints{\item  Upper-ocean submesoscale (here 10-100 km) turbulence and inertia-gravity
                   waves
                   undergo strong seasonal cycles that are out of phase.
            \item  Submesoscale turbulence dominates the horizontal velocity and
@@ -249,13 +249,13 @@ buhler_etal2014,rocha_etal2016}, but their seasonality has not been investigated
 The characterization of the partition between geostrophic and ageostrophic flows across
 the submesoscales and their seasonality has immediate applications for the planning
 of the Surface and Water Ocean Topography (SWOT) satellite mission.
-SWOT will measure
+SWOT will provide
 sea-surface height (SSH) with about 15 km resolution, thereby providing the
 first global SSH measurements at submesoscales \citep{fu_ubelmann2014}. A
 challenge for SWOT is the presence of ageostrophic flows that straddle the submesoscales and project
 onto SSH \citep[e.g., ][]{richman_etal2012} --- the
 nuisance\footnote{``One man's noise is
-another man's signal'' (Walter Munk).} may upset the diagnose
+another man's signal'' (Walter Munk).} may upset the estimation
 of submesoscale surface geostrophic velocities.
 
 Using the output of $1/24^\circ$ and $1/48^\circ$ global
@@ -275,7 +275,7 @@ strong seasonal modulation of upper-ocean submesoscale dynamics:
 submesoscale turbulence dominates the upper-ocean dynamics in late winter/early fall,
 whereas submesoscale IGWs prevail in late summer/early fall.
 Because submesoscale turbulence is weakest in late summer/early fall,
-the present results indicate that IGWs account for most of the
+IGWs account for most of the
 summertime submesoscale sea-surface height variability with implications for SWOT.
 
 \section{The LLC numerical simulations}
@@ -287,7 +287,7 @@ effective resolution $\approx$ 20 km) and LLC4320
 effective resolution $\approx$8 km),   are
 forward Massachusetts Institute of Technology general circulation model \citep[MITgcm; ][]{marshall_etal1997}
 numerical solutions on a LLC grid  \citep{forget_etal2015} with
-90-vertical-levels. The coarser-resolution LLC simulation was
+90 vertical levels. The coarser-resolution LLC simulation was
 spun up from an Estimating the Circulation and Climate of the Ocean, Phase II \citep[ECCO2; ][]{menemenlis_etal2008}
 adjoint-method state estimate, constrained to millions
 of observations from 2009 through 2011. Both simulations were forced by
@@ -312,8 +312,8 @@ We analyze a sub-domain of the LLC4320 and LLC2160 simulations of about 2000 km$
 spanning 155-175$^\circ$E; 25-40$^\circ$N (Figure \ref{fig1}a). The stratification
 in this mesoscale-rich subtropical region undergoes a vigorous seasonal cycle: wintertime-enhanced
 small-scale turbulence de-stratifies the upper ocean, yielding mixed layers
-as deep as 300 m (Figure \ref{fig1}d). Summertime re-stratification yields mixed layers shallower
-than 40 m (Figure \ref{fig1}e).
+as deep as 300 m (Figure \ref{fig1}b). Summertime re-stratification yields mixed layers shallower
+than 40 m (Figure \ref{fig1}c).
 Fundamentally, the upper-ocean density structure is well-captured by both LLC simulations:
 a comparison with Argo climatology shows that both simulations skillfully represent the Kuroshio
 Extension stratification and its seasonal variability  (supporting information).
@@ -412,7 +412,7 @@ smaller-scale submesoscale flows, a secondary RMS divergence peak in winter  is
 nearly as strong as in summer. Submesoscale fronts and eddies evolve
 relatively fast, and there is no clear
 temporal and spatial scale separation between those motions and IGWs
-\citep{mcwilliams2016}:
+\citep[][]{mcwilliams2016}:
 daily-averaging the velocity fields efficiently suppresses the summertime horizontally
 divergent flows, but also reduces the wintertime lateral divergence by about 50$\%$.
 Figure \ref{fig2}c also shows that most of the lateral divergence is associated
@@ -477,29 +477,53 @@ ellipse in the vorticity-Laplacian of sea-surface height joint-PDF.
 consistent with linear IGWs.
 
 \section{Wavenumber-frequency spectrum}
-To confirm that submesoscale IGWs undergo a vigorous seasonal cycle near the surface,
-we calculate wavenumber-frequency spectrum of SSH variance. Focusing on the high-frequency
+To confirm that submesoscale IGWs account for most of the super-inertial SSH variance
+and surface KE, we calculate wavenumber-frequency spectrum of SSH variance. Focusing on
+the high-frequency
 content, we compute the wavenumber-frequency spectrum  every 10 days and average
-the results to obtain a spectral estimate. Before calculating the each spectrum we
+the results to obtain a spectral estimate. Before calculating the discrete Fourier
+transform, we
 remove linear trends and multiply the data by a three-dimensional Hanning window.
 We azimuthally-average the spectrum in wavenumber.
 
 Figures \ref{fig4}a-b show the wavenumber-frequency of SSH variance for the LLC4320
 simulation. Mesoscales flows and the lunar semi-diurnal tide contain most of the
-SSH variance. But the is significant SSH variance at submesoscales, both subinertial
-and super-inertial. Subinertial SSH variance at submesoscales is larger in April, whereas
+SSH variance. But there is significant SSH variance at submesoscales, both sub-inertial
+and super-inertial. Sub-inertial SSH variance at submesoscales is larger in April, whereas
 super-inertial SSH variance at submesoscales is larger in October. At scales smaller
 than 100 km (submesoscales), there the SSH variance is 66$\%$ larger in October than in April.
 IGWs, particularly modes two through four, account for most of the SSH variance
-increase in summer, --- higher vertical
+increase in summer --- higher vertical
 modes are more sensitive to changes in near-surface stratification (supporting information).
-Similarly, the submesoscale superinertial surface KE is 63$\%$ larger in October
+In October, super-inertial IGWs account for a SSH standard deviation of about 4.9 cm,
+comparable to the April sub-inertial SSH standard deviation of $\sim$5.2 cm (Table \ref{tab1}).
+The
+Similarly, the submesoscale super-inertial surface KE is 63$\%$ larger in October
 than the April (supporting information).
 
+% table
+\begin{table}
+\label{tab1}
+\caption{The square root of the mean-square SSH at submesoscales (10-100 km)
+        estimated from the wavenumber-frequency spectrum of SSH variance in figure \ref{fig4}.
+        }
+  \begin{center}
+    \begin{tabular}{  l | c | c }
+    \hline
+    & April & October\\
+    \hline
+  sub-inertial ($<0.8f$)   & 5.2 cm & 2.0 cm  \\
+  super-inertial ($>1.2f$) & 2.9 cm  & 4.9 cm\\
+  \hline
+    \end{tabular}
+  \end{center}
+\end{table}
+
 Figure \ref{fig4}c shows the integral over frequency
-of wavenumber-frequency spectra in figures \ref{fig4}a-b. The
-SSH wavenumber spectrum approximately follows a -2 power-law at submesoscales,
-both in April and October (solid lines in figure \ref{fig4}c)  --- there is
+of wavenumber-frequency spectra in figures \ref{fig4}a-b. ,
+Both in April and October, the
+SSH wavenumber spectrum approximately follows a -2 power-law at submesoscales
+(solid lines in figure \ref{fig4}c)  --- there is
 small difference between the spectra owing to the phase cancellation between the
 seasonal cycle of submesoscale turbulence and inertia-gravity waves. The sub-inertial flow
 has steeper submesoscale SSH variance wavenumber spectrum (dashed lines in figure \ref{fig4}c).
@@ -608,9 +632,9 @@ Internal tide energy flux does not show a seasonal modulation \citep[e.g.,][]{al
 hence one expects a strong seasonality in the near-surface
 expression of internal tides and
 higher frequency IGWs if the near-surface stratification varies strongly.
-Windy near-inertial wave (NIW) generation is bursty and peaks in early winter and
+Windy near-inertial wave (NIW) generation is bursty and peaks in early winter, but
 NIW energy is similar energy level in October and April
-\citep{alford_etal2016}, but in our simulations the higher frequency inertia-gravity-wave
+\citep{alford_etal2016}. Furthermore, in our simulations the higher frequency inertia-gravity-wave
 account for most of the seasonality in super-inertial surface KE and SSH
 (Figure \ref{fig4}a-b),
 
