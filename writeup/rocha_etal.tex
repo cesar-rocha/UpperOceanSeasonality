@@ -202,14 +202,17 @@ Scripps Institution of Oceanography, University of California San Diego, La Joll
 % >> the body of the abstract.
 
 \begin{abstract}
-    We provide model-based evidence of
+    We provide evidence  of
     vigorous modulation of near-surface dynamics at submesoscales
-    (10-100 km) in the Kuroshio Extension. Consistent with recent studies, deep late-winter mixed layers
-    are prone to baroclinic instabilities, and submesoscale turbulence
+    (10-100 km) in the Kuroshio Extension. The analysis uses outputs of general
+    circulation models spun-up from a state estimate and forced by high-frequency
+    winds, surface fluxes, and tides.
+    Consistent with recent studies, deep late-winter mixed layers
+    are prone to shallow baroclinic instabilities and submesoscale turbulence
     prevails in late winter/early spring. Summertime
-    re-stratification weakens submesoscale turbulence and enhances submesoscale inertia-gravity
+    re-stratification, however, weakens submesoscale turbulence and enhances submesoscale inertia-gravity
      waves near the surface. In the Kuroshio Extension,
-    inertia-gravity waves strongly dominate the submesoscale surface kinetic energy and
+    inertia-gravity waves dominate the submesoscale surface kinetic energy and
     sea-surface height (SSH) variance in late summer/early fall, with implications for
     the accuracy of surface geostrophic currents diagnosed from SSH measured by
     high-resolution satellite altimeters.
@@ -245,13 +248,14 @@ to the near-surface variability at submesoscales \citep{richman_etal2012,
 buhler_etal2014,rocha_etal2016}, but their seasonality has not been investigated.
 
 % now SWOT
-The characterization of the partition between geostrophic and ageostrophic flows across
-the submesoscales and their seasonality has immediate applications for the planning
+The partition between geostrophic and ageostrophic flows across
+the submesoscales and their seasonality have immediate applications for the planning
 of the Surface and Water Ocean Topography (SWOT) satellite mission.
 SWOT will provide
 sea-surface height (SSH) with about 15 km resolution, thereby providing the
 first global SSH measurements at submesoscales \citep{fu_ubelmann2014}. A
-challenge for SWOT is the presence of ageostrophic flows that straddle the submesoscales and project
+challenge --- and opportunity ---  for SWOT is the presence of ageostrophic flows
+that straddle the submesoscales and project
 onto SSH \citep[e.g., ][]{richman_etal2012} thus making submesoscale geostrophic
 velocities difficult to extract from SSH.
 
@@ -340,7 +344,10 @@ To study the seasonality in the surface velocity, we calculate the lateral veloc
 \left[\begin{matrix} u_x & u_y\\ v_x&v_y \end{matrix}\right]
 \end{equation}
 using a centered
-second-order finite difference scheme. We then diagnose
+second-order finite difference scheme --- we obtain qualitatively similar results
+using spectral differentiation of velocity fields periodized with reflections;
+statistics obtained via spectral differentiation are 10-15$\%$ larger.
+We then diagnose
 the vertical vorticity
 \begin{equation}
 \zeta \equiv v_x - u_y\, ,
