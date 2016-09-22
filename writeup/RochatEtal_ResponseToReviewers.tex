@@ -676,9 +676,7 @@ comments and suggestions.
         helpful to have a reference after this statement.}
 
         \bdp
-            \textcolor{purple}{Ask Bill --- I haven't found any reference that mentions this
-            fact explicitly, but it follows from the linear boussinesq equations, which can
-            be combined to yield $\zeta_t= f_0 \delta$.}
+            We added a citation to \cite{garrett_munk1972}.
         \edp
 
 \item {\it (Section 4) I find “jPDF” odd. Try “joint-PDF” or “PDF” in general.}\\
@@ -689,7 +687,7 @@ We changed jPDF with joint-PDF; it does look much better.
         predicted by ...'' Specifically mention convergence/downwelling.}
 
         \bdp
-            We added ``convergence/downwelling'' to the text.
+            We added ``convergence/downwelling'' to the text (line xx).
         \edp
 
 \item {\it (Figure 1) ** Place panels (d) and (e) before panels (b) and (c) since this is the order
@@ -717,9 +715,13 @@ We changed jPDF with joint-PDF; it does look much better.
         paper describing this sensitivity for satellite altimetry.}
 
         \bdp
-            Wider stencils are more accurate because their order of accuracy is
-            higher. To asses the error of centered second-order scheme we periodized
-            our domain
+            To asses the error of centered second-order scheme we periodized
+            our domain with reflections. Statistics of lateral velocity gradients
+            obtained via spectral differentiation are 10-15$\%$ larger than the ones
+            obtained using second-order finite differences. But there are no qualitative
+            changes to Figure 2 and no changes in our conclusions. For simplicity, we
+            opt to use finite differences. We now report this estimate of accuracy of
+            our finite difference scheme (lines xx-xx).
         \edp
 
 \item {\it (Section 3 and Figures 2 \& 3) At what depth are you computing these quantities?}\\
