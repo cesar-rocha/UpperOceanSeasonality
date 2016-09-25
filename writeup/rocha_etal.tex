@@ -203,14 +203,14 @@ Scripps Institution of Oceanography, University of California San Diego, La Joll
 
 \begin{abstract}
     The vigorous seasonal cycle of the mixed layer modulates upper-ocean submesoscale turbulence.
-    Here we provide model evidence that the seasonally-changing upper-ocean
+    Here we provide model-based evidence that the seasonally-changing upper-ocean
     stratification in the Kuroshio Extension also modulates submesoscale  (here 10-100 km)
     inertia-gravity waves. Summertime re-stratification weakens submesoscale
     turbulence but enhances inertia-gravity waves near the surface. Thus,
     submesoscale turbulence and inertia-gravity waves undergo vigorous out-of-phase
     seasonal cycles. These results imply a strong seasonal modulation of
     the skill and accuracy of geostrophic velocity diagnosed from submesoscale
-    sea-surface height delivered by the Surface and Water Ocean Topography (SWOT)
+    sea-surface height delivered by the Surface Water and Ocean Topography (SWOT)
     satellite mission
 \end{abstract}
 
@@ -246,15 +246,15 @@ buhler_etal2014,rocha_etal2016}, but their seasonality has not been investigated
 % now SWOT
 The partition between geostrophic and ageostrophic flows across
 the submesoscales and their seasonality have immediate applications for the planning
-of the Surface and Water Ocean Topography (SWOT) satellite mission.
+of the Surface Water and Ocean Topography (SWOT) satellite mission.
 SWOT will deliver
 sea-surface height (SSH) with about 15 km resolution, thereby providing the
 first global SSH measurements at submesoscales \citep{fu_ubelmann2014}.
 The projection of energetic submesoscale ageostrophic flows, such as
 inertia-gravity waves (IGWs), onto SSH represents
-a challenged --- and an opportunity --- for SWOT. The challenge: how to diagnose
+a challenge --- and an opportunity --- for SWOT. The challenge: how to diagnose
 surface velocity from SSH. The opportunity: observations of submesoscale ageostrophic
-flows on global scale.
+flows on a global scale.
 
 
 Using the output of two comprehensive global numerical simulations, here we show
@@ -279,7 +279,7 @@ analyzed here, LLC2160 (nominal resolution 1/24$^\circ$$\approx$4.7 km;
 effective resolution $\approx$ 20 km) and LLC4320
 (nominal resolution 1/48$^\circ$$\approx$2.3 km;
 effective resolution $\approx$8 km),   are
-forward solution of the Massachussetts Institute of Technology general circulation model \citep[MITgcm; ][]{marshall_etal1997}
+forward solutions of the Massachussetts Institute of Technology general circulation model \citep[MITgcm; ][]{marshall_etal1997}
 on a LLC grid  \citep{forget_etal2015} with
 90 vertical levels. The coarser-resolution LLC simulation was
 spun up from an Estimating the Circulation and Climate of the Ocean, Phase II \citep[ECCO2; ][]{menemenlis_etal2008}
@@ -294,7 +294,7 @@ tides hourly and by 6-hourly surface atmospheric fields.
 The LLC4320 simulation is an extension of the 3-month long output used by
 \citet{rocha_etal2016} --- for details, see supporting information.
 
-Tidal forcing by the 16 most-significant components represents a key feature LLC2160 and
+Tidal forcing by the 16 most-significant components represents a key feature of the LLC2160 and
 LLC4320 simulations. Barotropic tides flowing over topography convert significant tidal energy into the internal
 wave field. Those internal waves project onto mesoscales to submesoscales
 \citep[e.g., ][]{rocha_etal2016}. Hence tidal forcing fundamentally distinguishes our analysis
@@ -382,7 +382,8 @@ and strain by about 40$\%$.
    \begin{center}
      \includegraphics[width=.65\textwidth]{figs/fig2.pdf}
   \caption{\small Time series of the root-mean-square (RMS) of surface (a) vorticity,
-  (b) rate of strain, and (c) horizontal divergence in the LLC outputs and gridded AVISO data.}
+  (b) rate of strain, and (c) horizontal divergence in the LLC outputs and gridded AVISO data.
+  The convergence of meridians account for the small RMS divergence in AVISO line in (c).}
   \label{fig2}
   \end{center}
 \end{figure*}
@@ -460,7 +461,7 @@ The April vorticity-strain joint-PDF has a shape characteristic of submesoscale 
  are largely in  geostrophic balance,
 but the hourly velocity and sea-surface height fields have an important
 ageostrophic component as depicted by the joint-PDF of vorticity-Laplacian of SSH
-winter (Figure \ref{fig3}d-e).
+winter (Figure \ref{fig3}e).
 
 The October vorticity-strain joint-PDF shows much weaker skewness (the vorticity skewness
 is 0.68 and 0.67 for hourly and daily-averaged velocities). The shape of the
@@ -499,7 +500,9 @@ We azimuthally-average the spectrum in wavenumber.
           In (a) and (b), the light gray shaded region depicts the dispersion relations for inertia-gravity
           waves from mode 1 through mode 4 across the latitudinal domain; horizontal dashed lines represent the semi-diurnal
           lunar tidal frequency ($M_2$), and the inertial frequency at mid-latitude
-          ($f_{32.5}$) and its first harmonic (2$f_{32.5}$). }
+          ($f_{32.5}$) and its first harmonic (2$f_{32.5}$). For reference, the gray curvish line represents
+          the SWOT baseline requirement $2\times 10^{-4} + 1.25\times 10^{-7} k^{-2}$ m$^2$/cpkm \citep{rodriguez2012}.
+          }
   \label{fig4}
  \end{center}
 \end{figure*}
@@ -524,6 +527,7 @@ than in April (supporting information).
 \label{tab1}
 \caption{The square root of the mean-square SSH at submesoscales (10-100 km)
         estimated from the wavenumber-frequency spectrum of SSH variance in figure \ref{fig4}.
+        The SWOT baseline requirement at 15 km is approximately $\sqrt{2}$ cm.
         }
   \begin{center}
     \begin{tabular}{  l | c | c }
@@ -544,7 +548,7 @@ SSH wavenumber spectrum approximately follows a -2 power-law at submesoscales
 (solid lines in figure \ref{fig4}c)  --- there is
 small difference between the spectra owing to the phase cancellation between the
 seasonal cycle of submesoscale turbulence and inertia-gravity waves. The sub-inertial flow
-has steeper submesoscale SSH variance wavenumber spectrum (dashed lines in figure \ref{fig4}c).
+has a steeper submesoscale SSH variance wavenumber spectrum (dashed lines in figure \ref{fig4}c).
  The difference between the SSH variance wavenumber spectrum for all frequencies and
  sub-inertial frequencies is dramatic in October when super-inertial flows account for
  about 80\% of the SSH variance and KE at submesoscales --- we obtain similar results by computing
@@ -642,7 +646,7 @@ expression of internal tides and
 higher frequency IGWs if the near-surface stratification varies strongly.
 The intermittent windy near-inertial wave (NIW) generation peaks in early winter, but
 NIW energy has a similar energy level in October and April
-\citep{alford_etal2016}. Furthermore, in our simulations the higher frequency inertia-gravity-wave
+\citep{alford_etal2016}. Furthermore, in our simulations the higher frequency inertia-gravity waves
 account for most of the seasonality in super-inertial surface KE and SSH
 (Figure \ref{fig4}a-b).
 
@@ -651,7 +655,7 @@ flows at mixed-layer deformation-radius length scale in observational programs a
 fixed resolution \citep{buckingham_etal2016}. But the mixed layer available potential energy
 is lowest in summer owing to shallow mixed-layer depths and weak lateral buoyancy
 gradients \citep{callies_etal2015}. Moreover, in baroclinic turbulence, the deformation
-radius has only a secondary, catalytic role --- most of the baroclinic convertion occurs at
+radius has only a secondary, catalytic role --- most of the baroclinic conversion occurs at
 larger scales \citep{larichev_held1995,callies_etal2016}.
 Thus, the model failure to resolve the summertime
 ML deformation radius is unlikely to account for the vigorous seasonality in submesoscale
@@ -661,14 +665,13 @@ turbulence.
 In the context of SWOT, these results imply that if one is interested
 only in the geostrophic flow, so that surface velocity can be diagnosed
 from SSH, then the noise-to-signal ratio will have a strong seasonality owing
-to the presence of IGWs --- the coherent fraction of internal tides may be removed
-efficiently.
+to the presence of IGWs (the coherent fraction of internal tides may be removed
+efficiently).
 An important caveat is that the Kuroshio Extension may be typical of a mesoscale-rich
 subtropical regions, but it is unlikely to be
 representative of other regions such as low-eddy-kinetic-energy eastern boundary
 currents.  We plan to report on the geographic variability of submesoscale
 seasonality in a future study.
-hing.
 
 
 %\begin{figure}[ht]
@@ -687,7 +690,7 @@ hing.
 
 \begin{acknowledgments}
  William R. Young and the reviewers --- Christian Buckingham and two anonymous referees ---
-  provided helpful and constructive comments. Greg Wagner
+  provided helpful and stimulating comments. Greg Wagner
  suggested that the near-surface shape of the baroclinic modes changes seasonally.
  We thank the MITgcm community and our colleagues at the NASA Advanced
 Supercomputing (NAS) Division for their awesome support.
