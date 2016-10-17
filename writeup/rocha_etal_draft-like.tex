@@ -1,4 +1,4 @@
-  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % AGUtmpl.tex: this template file is for articles formatted with LaTeX2e,
 % Modified July 2014
 %
@@ -86,7 +86,7 @@
 %
 %  Uncomment the following command to allow illustrations to print
 %   when using Draft:
-\setkeys{Gin}{draft=false}
+%\setkeys{Gin}{draft=false}
 %
 % Substitute one of the following for [dvips] above
 % if you are using a different driver program and want to
@@ -202,7 +202,8 @@ Scripps Institution of Oceanography, University of California San Diego, La Joll
 % >> the body of the abstract.
 
 \begin{abstract}
-    The vigorous seasonal cycle of the mixed layer modulates upper-ocean submesoscale turbulence.
+    Recent studies show that the vigorous seasonal cycle of the mixed layer modulates
+    upper-ocean submesoscale turbulence.
     Here we provide model-based evidence that the seasonally-changing upper-ocean
     stratification in the Kuroshio Extension also modulates submesoscale  (here 10-100 km)
     inertia-gravity waves. Summertime re-stratification weakens submesoscale
@@ -252,9 +253,9 @@ sea-surface height (SSH) with about 15 km resolution, thereby providing the
 first global SSH measurements at submesoscales \citep{fu_ubelmann2014}.
 Thus, the projection of energetic submesoscale ageostrophic flows, such as
 inertia-gravity waves (IGWs), onto SSH represents
-a challenge --- and an opportunity --- for SWOT. The challenge: how to diagnose
-surface velocity from SSH. The opportunity: observations of submesoscale ageostrophic
-flows on a global scale.
+a challenge and an opportunity for the SWOT community. The challenge: how to diagnose submesoscale
+surface velocity from SSH. The opportunity: stimulation of research on interactions
+between geostrophic and ageostrohic flows and their projection onto SSH.
 
 
 Using the output of two comprehensive global numerical simulations, here we show
@@ -301,7 +302,6 @@ wave field. Those internal waves project onto mesoscales to submesoscales
 from other modeling studies of seasonality \citep{sasaki_etal2014,qiu_etal2014}.
 
 
-
 To study seasonal variations in the upper-ocean dynamics, we focus on the northwest
 Pacific, in the vicinity of the Kuroshio
 Extension, where previous studies have shown strong mesoscale and submesoscale seasonality
@@ -314,7 +314,7 @@ deeper than 200 m to the north (Figure \ref{fig1}b). Summertime re-stratificatio
 than 40 m (Figure \ref{fig1}c).
 
 Fundamentally, the upper-ocean density structure is well-captured by both LLC simulations:
-a comparison with Argo climatology \citep[updated from ][]{roemmich_gilson2009} shows that both simulations skillfully represent the Kuroshio
+a comparison with Argo climatology \citep[updated from ][]{roemmich_gilson2009}  shows that both simulations skillfully represent the Kuroshio
 Extension stratification and its seasonal variability  (supporting information). Moreover, model smoothed
 fields have eddy kinetic energy (EKE) levels ($0.041$ m$^2$ s$^{-2}$) similar to Jason II across-track
 geostrophic EKE ($0.036$ m$^2$ s$^{-2}$) and gridded geostrophic EKE ($0.032$ m$^2$ s$^{-2}$).
@@ -347,7 +347,7 @@ Because vortices, fronts, and IGWs are ubiquitous at submesoscales, second-order
 statistics of vorticity, strain, and divergence highlight these
 fine lateral scales \citep[e.g.,][]{shcherbina_etal2013}.
 
-The model solutions depict seasonality in vorticity (Figures \ref{fig1}b-c): large values of
+The model solutions depict seasonality in vorticity (Figures \ref{fig1}d-e): large values of
 fine-grained vertical vorticity are observed in early spring with maximum
 values as large as $4f$, where $f$ is
 the local planetary vorticity, and root-mean-square (RMS) of about $0.4f$. In early
@@ -361,8 +361,6 @@ are dominated by the smallest scales in the flow (the KE spectrum is shallower t
 a $-3$ power law in winter), increasing the resolution from
 1/24$^\circ$ to 1/48$^\circ$ increases the wintertime RMS vorticity
 and strain by about 40$\%$.
-
-
 
 Subinertial flows account for the bulk of vertical vorticity and strain rate
 ($T_{32.5} = 2\pi/f_{32.5}\approx 22.3$h, where $f_{32.5}$ is the inertial frequency at
@@ -400,8 +398,6 @@ divergent flows, but also reduces the wintertime lateral divergence by about 50$
 Figure \ref{fig2}c also shows that most of the lateral divergence is associated
 with submesoscale flows: smoothing the velocity fields with a 100-km-cutoff
 suppresses more than 80$\%$ of the RMS divergence.
-
-
 
 \section{Joint probability density functions}
 
@@ -454,6 +450,7 @@ transform, we
 remove linear trends and multiply the data by a three-dimensional Hanning window.
 We azimuthally-average the spectrum in wavenumber.
 
+
 Mesoscales flows and the lunar semi-diurnal tide contain most of the
 SSH variance (Figures \ref{fig4}a-b). But there is significant SSH variance at
 submesoscales, both sub-inertial
@@ -465,9 +462,29 @@ increase in summer --- higher vertical
 modes are more sensitive to changes in near-surface stratification (supporting information).
 In October, super-inertial IGWs account for a SSH standard deviation of about 4.9 cm,
 comparable to the April sub-inertial SSH standard deviation of $\sim$5.2 cm (Table \ref{tab1}).
-The
 Similarly, the submesoscale super-inertial surface KE is 63$\%$ larger in October
 than in April (supporting information).
+
+% table
+\begin{table}
+\label{tab1}
+\caption{The square root of the mean-square SSH at submesoscales (10-100 km)
+        estimated from the wavenumber-frequency spectrum of SSH variance in figure \ref{fig4}.
+        The SWOT baseline requirement at 15 km is approximately $\sqrt{2}$ cm.
+        }
+  \begin{center}
+    \begin{tabular}{  l | c | c }
+    \hline
+    & April & October\\
+    \hline
+  sub-inertial ($<0.8f$)   & 5.2 cm & 2.0 cm  \\
+  super-inertial ($>1.2f$) & 2.9 cm  & 4.9 cm\\
+  near-$f$ ($0.8-1.2 f$) & 0.3 cm  & 0.4 cm\\
+  near-$M_2$ ($0.8-1.2 M_2$) & 1.5 cm  & 3.1 cm\\
+  \hline
+    \end{tabular}
+  \end{center}
+\end{table}
 
 Figure \ref{fig4}c shows the integral over frequency
 of wavenumber-frequency spectra in figures \ref{fig4}a-b.
@@ -475,7 +492,7 @@ Both in April and October, the
 SSH wavenumber spectrum approximately follows a -2 power-law at submesoscales
 (solid lines in figure \ref{fig4}c)  --- there is
 small difference between the spectra owing to the phase cancellation between the
-seasonal cycle of submesoscale turbulence and inertia-gravity waves. The sub-inertial flow
+seasonal cycle of submesoscale turbulence and IGWs. The sub-inertial flow
 has a steeper submesoscale SSH variance wavenumber spectrum (dashed lines in figure \ref{fig4}c).
  The difference between the SSH variance wavenumber spectrum for all frequencies and
  sub-inertial frequencies is dramatic in October when super-inertial flows account for
@@ -483,61 +500,6 @@ has a steeper submesoscale SSH variance wavenumber spectrum (dashed lines in fig
 SSH variance and KE wavenumber spectra directly from hourly and daily-averaged
 SSH velocity fields.
 
-
-
-
-%\section{Projection onto horizontal scales}
-%
-%To quantify the projection of these flows onto different horizontal
-%scales, we calculate wavenumber spectra of kinetic energy and sea-surface height
-% variance.  Before calculating the spectra, time-mean and spatial linear
-%trends were removed, and the resulting fields were multiplied by a two-dimensional Hanning window.
-%The two-dimensional spectra were averaged azimuthaly \citep[e.g., ][]{rocha_etal2016} .
-%We discuss only spectra for the 1/48$^\circ$ simulation, which extends the 1/24$^\circ$ simulation
-%towards smaller scales (supporting information).
-%
-%
-
-%
-%
-%\begin{figure*}[ht]
-%  \begin{center}
-%    \includegraphics[width=.65\textwidth]{figs/fig5.pdf}
-% \caption{\small Surface (horizontal) kinetic energy (a) and sea-surface height variance wavenumber spectra (b)
-% in the 1/48$^\circ$ simulation. Solid lines
-% are spectra based on hourly snapshots, and dashed lines are spectra based on daily-averaged
-% fields.}
-% \label{fig5}
-% \end{center}
-%\end{figure*}
-%
-%
-%Figure \ref{fig5}a depicts the horizontal wavenumber spectra of surface KE in
-%April and October. At scales larger than 20 km, the April and October spectra based on hourly
-%velocity snapshots (solid lines) are nearly indistinguishable from each other within 95$\%$ confidence level.
-%Consistent with the results of
-%\citet{rocha_etal2016}, who analyzed a 3-month output of the LLC4320 simulation in Drake Passage,
-%there is significant high-frequency variabilty at submesoscales. Daily-averaging
-%the velocity field suppresses spatial variability at scales smaller than about 250
-%km, both in April and October (compare solid lines against dashed lines in Figure
-%\ref{fig5}a). But this suppression is dramatic in October, when the IGWs peak. At scales
-%smaller than 100 km, 39$\%$ of the surface KE in April is accounted for by super-inertial
-%flows as opposed to 79$\%$ in October. The seasonality of subinertial submesoscale flows
-%is strong, consistent
-%with the results of \citet{sasaki_etal2014}, which are
-%based on daily-averaged velocity fields of a different model without tidal forcing
-%(P. Klein, personal communication).
-%
-%The IGWs project on the sea-surface.
-%There is a dramatic difference between the spectra
-%based on hourly and daily-averaged sea-surface height in October (Figure \ref{fig5}b): at scales smaller than 100 km, the spectra
-%of hourly sea-surface height roughly follows a $-2$ power-law, whereas the spectra of daily-averaged
-%sea-surface height roughly follows a $-5$ power-law. At these scales, 33$\%$ of the sea-surface height variance in April is accounted for by super-inertial
-%flows as opposed to 83$\%$ in October. Curiously, the out-of-phase seasonal cycle of submesoscale
-%turbulence and near-surface submesoscale IGWs conspire to yield weak seasonality
-%in the spectra of KE and sea-surface height variance based on hourly fields.
-%
-%
 \section{Discussion and conclusion}
 Our work adds to recent model \citep[e.g., ][]{sasaki_etal2014}
 and observational \citep[e.g., ][]{callies_etal2015,buckingham_etal2016} evidence of vigorous seasonality in
@@ -548,8 +510,8 @@ submesoscale turbulence. IGW energy and SSH variance are significantly spread ac
 the submesoscales, likely through mesoscale advection and refraction, and
 dispersion \citep[e.g.,][and references therein]{ponte_klein2015,alford_etal2016}
  and parametric
-sub-harmonic instability \citep[e.g., ][]{mackinnon_winters2005}.
-In the LLC simulations,
+sub-harmonic instability \citep[PSI, e.g., ][]{mackinnon_winters2005}, though the
+LLC simulations are unlikely to fully resolve PSI. In the LLC simulations,
 super-inertial IGWs account for most of the surface submesoscale KE and SSH variance;
 near-inertial IGWs project onto larger scales, possibly because submesoscale
 NIWs quickly propagate into the interior and weakly project onto SSH.
@@ -566,9 +528,9 @@ In summer, the shallow mixed layer overlays a strong seasonal pycnocline,
 and thus the internal waves projection onto the mixed layer may be stronger
 according to \cite{dasaro1978}'s arguments. An
 alternative explanation is that the shape of the baroclinic modes
-changes seasonally  \citep[see World Ocean Atlas 2013,
-][modal shapes in the
-supporting information]{levitus_etal2013}.
+changes seasonally \citep[see World Ocean Atlas 2013,
+][modal shapes in the supporting information]{levitus_etal2013}.
+
 
 Internal tide energy flux does not show a seasonal modulation \citep[e.g.,][]{alford2003};
 hence one expects a strong seasonality in the near-surface
@@ -603,11 +565,14 @@ representative of other regions such as low-eddy-kinetic-energy eastern boundary
 currents.  We plan to report on the geographic variability of submesoscale
 seasonality in a future study.
 
+
+
+
 %
 %  ACKNOWLEDGMENTS
 
 \begin{acknowledgments}
- William R. Young and the reviewers --- Christian Buckingham and two anonymous referees ---
+ William R. Young and three reviewers
   provided helpful and stimulating comments. Greg Wagner
  suggested that the near-surface shape of the baroclinic modes changes seasonally.
  We thank the MITgcm community and our colleagues at the NASA Advanced
@@ -619,95 +584,66 @@ Codes and output files are available online at the project repository
  (\texttt{https://github.com/crocha700/UpperOceanSeasonality}).
 \end{acknowledgments}
 
-%\bibliographystyle{agufull08}
-%\bibliography{rocha_etal}
-
-
-
- \begin{figure*}[ht]
- \begin{center}
- \hspace{-1.25cm}\includegraphics[width=.9\textwidth]{figs/fig1_1.pdf}\\
- \vspace{-.125cm}
- \includegraphics[width=.9\textwidth]{figs/fig1_2.pdf}
-  \caption{\small (a) The study region with the subregion where the LLC outputs are
-           analyzed. Colors represent the topography and white lines are contours of absolute
-           dynamic topography every 0.1 m from AVISO. LLC 4320 (1/48$^\circ$) snapshots of
-           transects
-           of potential density at 165$^\circ$E (b and c) and  surface vorticity (d and e).
-           In (b) and (c) the white line represents the mixed layer depth. The snapshots were
-           taken at 12:00 UTC.}
- \vspace{-1.5cm}
-  \label{fig1}
-  \end{center}
-  \end{figure*}
-
-  \begin{figure*}[ht]
-    \begin{center}
-      \includegraphics[width=.65\textwidth]{figs/fig2.pdf}
-   \caption{\small Time series of the root-mean-square (RMS) of surface (a) vorticity,
-   (b) rate of strain, and (c) horizontal divergence in the LLC outputs and gridded AVISO data.
-   The convergence of meridians account for the small RMS divergence in AVISO line in (c).}
-   \label{fig2}
-   \end{center}
- \end{figure*}
-
-
-
- \begin{figure*}[ht]
-   \begin{center}
-     \includegraphics[width=.8\textwidth]{figs/fig3.pdf}
-  \caption{\small Seasonal variation of joint probability distributions of
-           surface lateral velocity gradient tensor:  vorticity vs.\
-           strain rate (a through d),
-           and vorticity vs.\ Laplacian of sea-surface height (e through h) in April (a, b,
-           e, f) and October (c, d, g, h).
-           Dashed lines in (a) through (d) represent one dimensional shear flow $\alpha = \pm\zeta$,
-           characteristic of fronts. Dashed lines in (e) through
-           (h) represent geostrophic flow $\zeta = \frac{g}{f}\nabla_h^2 \eta$.}
-  \label{fig3}
-  \end{center}
- \end{figure*}
-
-
- \begin{figure*}[ht]
-   \begin{center}
-     \includegraphics[width=.9\textwidth]{figs/fig4.pdf}
-  \caption{\small LLC4320 wavenumber-frequency spectrum of SSH variance in (a) April and (b) October.
-           (c) Wavenumber spectrum of SSH variance --- the integral of (a) and (b) over frequency.
-           In (a) and (b), the light gray shaded region depicts the dispersion relations for inertia-gravity
-           waves from mode 1 through mode 4 across the latitudinal domain; horizontal dashed lines represent the semi-diurnal
-           lunar tidal frequency ($M_2$), and the inertial frequency at mid-latitude
-           ($f_{32.5}$) and its first harmonic (2$f_{32.5}$). For reference, the gray curvish line represents
-           the SWOT baseline requirement $2\times 10^{-4} + 1.25\times 10^{-7} k^{-2}$ m$^2$/cpkm \citep{rodriguez2012}.
-           }
-   \label{fig4}
-  \end{center}
- \end{figure*}
-
- % table
- \begin{table}
- \label{tab1}
- \caption{The square root of the mean-square SSH at submesoscales (10-100 km)
-         estimated from the wavenumber-frequency spectrum of SSH variance in figure \ref{fig4}.
-         The SWOT baseline requirement at 15 km is approximately $\sqrt{2}$ cm.
-         }
-   \begin{center}
-     \begin{tabular}{  l | c | c }
-     \hline
-     & April & October\\
-     \hline
-   sub-inertial ($<0.8f$)   & 5.2 cm & 2.0 cm  \\
-   super-inertial ($>1.2f$) & 2.9 cm  & 4.9 cm\\
-   \hline
-     \end{tabular}
-   \end{center}
- \end{table}
-
-
 %  this should go in a supplementary material
-%\clearpage
+\clearpage
 
-%\section{Supplemental material 1: Spectral errors}
+\begin{figure*}[ht]
+\begin{center}
+\hspace{-1.25cm}\includegraphics[width=.7\textwidth]{figs/fig1_1.pdf}\\
+\vspace{-.125cm}
+\includegraphics[width=.7\textwidth]{figs/fig1_2.pdf}
+ \caption{\small (a) The study region with the subregion where the LLC outputs are
+          analyzed. Colors represent the topography and white lines are contours of absolute
+          dynamic topography every 0.1 m from AVISO. LLC 4320 (1/48$^\circ$) snapshots of
+          transects
+          of potential density at 165$^\circ$E (b and c) and  surface vorticity (d and e).
+          In (b) and (c) the white line represents the mixed layer depth. The snapshots were
+          taken at 12:00 UTC.}
+\vspace{-1.5cm}
+ \label{fig1}
+ \end{center}
+ \end{figure*}
+
+ \begin{figure*}[ht]
+   \begin{center}
+     \includegraphics[width=.65\textwidth]{figs/fig2.pdf}
+  \caption{\small Time series of the root-mean-square (RMS) of surface (a) vorticity,
+  (b) rate of strain, and (c) horizontal divergence in the LLC outputs and gridded AVISO data.
+  The convergence of meridians account for the small RMS divergence in AVISO line in (c).}
+  \label{fig2}
+  \end{center}
+\end{figure*}
+
+\begin{figure*}[ht]
+  \begin{center}
+    \includegraphics[width=.8\textwidth]{figs/fig3.pdf}
+ \caption{\small Seasonal variation of joint probability distributions of
+          surface lateral velocity gradient tensor:  vorticity vs.\
+          strain rate (a through d),
+          and vorticity vs.\ Laplacian of sea-surface height (e through h) in April (a, b,
+          e, f) and October (c, d, g, h).
+          Dashed lines in (a) through (d) represent one dimensional shear flow $\alpha = \pm\zeta$,
+          characteristic of fronts. Dashed lines in (e) through
+          (h) represent geostrophic flow $\zeta = \frac{g}{f}\nabla_h^2 \eta$.}
+ \label{fig3}
+ \end{center}
+\end{figure*}
+
+\begin{figure*}[ht]
+  \begin{center}
+    \includegraphics[width=.9\textwidth]{figs/fig4.pdf}
+ \caption{\small LLC4320 wavenumber-frequency spectrum of SSH variance in (a) April and (b) October.
+          (c) Wavenumber spectrum of SSH variance --- the integral of (a) and (b) over frequency.
+          In (a) and (b), the light gray shaded region depicts the dispersion relations for inertia-gravity
+          waves from mode 1 through mode 4 across the latitudinal domain; horizontal dashed lines represent the semi-diurnal
+          lunar tidal frequency ($M_2$) and the inertial frequency at mid-latitude
+          ($f_{32.5}$). For reference, the gray line shows
+          the baseline requirement as specified by the SWOT science team \citep{rodriguez2012}.
+          }
+  \label{fig4}
+ \end{center}
+\end{figure*}
+
 
 
 
@@ -769,8 +705,8 @@ Codes and output files are available online at the project repository
 %
 % AGU does not want a .bib or a .bbl file. Please copy in the contents of your .bbl file here.
 
-\begin{thebibliography}{2}
 
+\begin{thebibliography}{26}
 \providecommand{\natexlab}[1]{#1}
 \expandafter\ifx\csname urlstyle\endcsname\relax
   \providecommand{\doi}[1]{doi:\discretionary{}{}{}#1}\else
@@ -848,6 +784,14 @@ Larichev, V.~D., and I.~M. Held (1995), Eddy amplitudes and fluxes in a
   homogeneous model of fully developed baroclinic instability, \textit{Journal
   of physical oceanography}, \textit{25}(10), 2285--2297.
 
+\bibitem[{\textit{Levitus et~al.}(2013)\textit{Levitus, Antonov, Baranova,
+  Boyer, Coleman, Garcia, Grodsky, Johnson, Locarnini, Mishonov
+  et~al.}}]{levitus_etal2013}
+Levitus, S., J.~Antonov, O.~K. Baranova, T.~Boyer, C.~Coleman, H.~Garcia,
+  A.~Grodsky, D.~Johnson, R.~Locarnini, A.~V. Mishonov, et~al. (2013), The
+  world ocean database, \textit{Data Science Journal}, \textit{12}(0),
+  WDS229--WDS234.
+
 \bibitem[{\textit{MacKinnon and Winters}(2005)}]{mackinnon_winters2005}
 MacKinnon, J., and K.~Winters (2005), Subtropical catastrophe: Significant loss
   of low-mode tidal energy at 28.9, \textit{Geophysical Research Letters},
@@ -899,11 +843,10 @@ Rocha, C.~B., T.~K. Chereskin, S.~T. Gille, and D.~Menemenlis (2016),
 Rodriguez, E. (2014), {Surface Water and Ocean Topography Mission (SWOT):
   Science Requirements Document}.
 
-  \bibitem[{\textit{Roemmich and Gilson}(2009)}]{roemmich_gilson2009}
-    Roemmich, D., and J.~Gilson (2009), {The 2004--2008 mean and annual cycle of
-      temperature, salinity, and steric height in the global ocean from the Argo
-      Program}, \textit{Progress in Oceanography}, \textit{82}(2), 81--100.
-
+\bibitem[{\textit{Roemmich and Gilson}(2009)}]{roemmich_gilson2009}
+Roemmich, D., and J.~Gilson (2009), {The 2004--2008 mean and annual cycle of
+  temperature, salinity, and steric height in the global ocean from the Argo
+  Program}, \textit{Progress in Oceanography}, \textit{82}(2), 81--100.
 
 \bibitem[{\textit{Sasaki et~al.}(2014)\textit{Sasaki, Klein, Qiu, and
   Sasai}}]{sasaki_etal2014}
@@ -925,8 +868,37 @@ Thompson, A.~F., A.~Lazar, C.~Buckingham, A.~C. Naveira~Garabato, G.~M.
   seasonal cycle of mixed layer instabilities from gliders}, \textit{Journal of
   Physical Oceanography}, \textit{46}(4), 1285--1307.
 
-
 \end{thebibliography}
+
+%\begin{thebibliography}{}
+
+%\providecommand{\natexlab}[1]{#1}
+%\expandafter\ifx\csname urlstyle\endcsname\relax
+%  \providecommand{\doi}[1]{doi:\discretionary{}{}{}#1}\else
+%  \providecommand{\doi}{doi:\discretionary{}{}{}\begingroup
+%  \urlstyle{rm}\Url}\fi
+%
+%\bibitem[{\textit{Atkinson and Sloan}(1991)}]{AtkinsonSloan}
+%Atkinson, K., and I.~Sloan (1991), The numerical solution of first-kind
+%  logarithmic-kernel integral equations on smooth open arcs, \textit{Math.
+%  Comp.}, \textit{56}(193), 119--139.
+%
+%\bibitem[{\textit{Colton and Kress}(1983)}]{ColtonKress1}
+%Colton, D., and R.~Kress (1983), \textit{Integral Equation Methods in
+%  Scattering Theory}, John Wiley, New York.
+%
+%\bibitem[{\textit{Hsiao et~al.}(1991)\textit{Hsiao, Stephan, and
+%  Wendland}}]{StephanHsiao}
+%Hsiao, G.~C., E.~P. Stephan, and W.~L. Wendland (1991), On the {D}irichlet
+%  problem in elasticity for a domain exterior to an arc, \textit{J. Comput.
+%  Appl. Math.}, \textit{34}(1), 1--19.
+%
+%\bibitem[{\textit{Lu and Ando}(2012)}]{LuAndo}
+%Lu, P., and M.~Ando (2012), Difference of scattering geometrical optics
+%  components and line integrals of currents in modified edge representation,
+%  \textit{Radio Sci.}, \textit{47},  RS3007, \doi{10.1029/2011RS004899}.
+
+%\end{thebibliography}
 
 %Reference citation examples:
 
@@ -969,8 +941,6 @@ Thompson, A.~F., A.~Lazar, C.~Buckingham, A.~C. Naveira~Garabato, G.~M.
  %\caption{Caption text here}
  %\label{figure_label}
  %\end{figure}
-
-
 %
 % ---------------
 % EXAMPLE TABLE
