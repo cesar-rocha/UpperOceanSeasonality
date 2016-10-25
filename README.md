@@ -35,8 +35,9 @@ satellite mission.
 
 Status
 ----------
-  The [paper](https://crocha700.github.io/UpperOceanSeasonality/) is under review for
-  publication in [Geophysical Research Letters](http://agupubs.onlinelibrary.wiley.com/agu/journal/10.1002/(ISSN)1944-8007/).
+  The [paper](https://crocha700.github.io/UpperOceanSeasonality/) is *in press* in
+  in [Geophysical Research Letters](http://agupubs.onlinelibrary.wiley.com/agu/journal/10.1002/(ISSN)1944-8007/),
+  [doi: 10.1002/2016GL071349](http://onlinelibrary.wiley.com/doi/10.1002/2016GL071349/full).
   [Supporting information](https://github.com/crocha700/UpperOceanSeasonality/blob/master/writeup/rocha_etal_supporting-info.pdf) and [figures](https://github.com/crocha700/UpperOceanSeasonality/blob/master/writeup/figs/) are also available. Comments, questions, and suggestions are extremely welcome
   and warmly appreciated. Feedback can be submitted through github [issues](https://github.com/crocha700/UpperOceanSeasonality/issues) or via e-mail to
   Cesar Rocha (crocha@ucsd.edu).
