@@ -21,21 +21,21 @@ Key Points
 
 Abstract
 --------
-Recent studies show that the vigorous seasonal cycle of the mixed layer modulates 
-upper-ocean submesoscale turbulence. 
-Here we provide model-based evidence that the seasonally-changing upper-ocean 
-stratification in the Kuroshio Extension also modulates submesoscale (here 10-100 km) 
-inertia-gravity waves. Summertime re-stratification weakens submesoscale 
-turbulence but enhances inertia-gravity waves near the surface. Thus, 
-submesoscale turbulence and inertia-gravity waves undergo vigorous out-of-phase 
-seasonal cycles. These results imply a strong seasonal modulation of 
-the accuracy of geostrophic velocity diagnosed from submesoscale 
-sea-surface height delivered by the Surface Water and Ocean Topography (SWOT) 
+Recent studies show that the vigorous seasonal cycle of the mixed layer modulates
+upper-ocean submesoscale turbulence.
+Here we provide model-based evidence that the seasonally-changing upper-ocean
+stratification in the Kuroshio Extension also modulates submesoscale (here 10-100 km)
+inertia-gravity waves. Summertime re-stratification weakens submesoscale
+turbulence but enhances inertia-gravity waves near the surface. Thus,
+submesoscale turbulence and inertia-gravity waves undergo vigorous out-of-phase
+seasonal cycles. These results imply a strong seasonal modulation of
+the accuracy of geostrophic velocity diagnosed from submesoscale
+sea-surface height delivered by the Surface Water and Ocean Topography (SWOT)
 satellite mission.
 
 Status
 ----------
-  The [paper](https://crocha700.github.io/UpperOceanSeasonality/) is *in press* in
+  The [paper](https://crocha700.github.io/UpperOceanSeasonality/) is *in press*
   in [Geophysical Research Letters](http://agupubs.onlinelibrary.wiley.com/agu/journal/10.1002/(ISSN)1944-8007/),
   [doi: 10.1002/2016GL071349](http://onlinelibrary.wiley.com/doi/10.1002/2016GL071349/full).
   [Supporting information](https://github.com/crocha700/UpperOceanSeasonality/blob/master/writeup/rocha_etal_supporting-info.pdf) and [figures](https://github.com/crocha700/UpperOceanSeasonality/blob/master/writeup/figs/) are also available. Comments, questions, and suggestions are extremely welcome
@@ -66,5 +66,5 @@ This research was funded by NSF (OCE1357047) and NASA (NNX13AE44G,NNX13AE85G,NNX
 
 Acknowledgments
 ----------------
-[William R. Young](http://www-pord.ucsd.edu/~wryoung) provided helpful feedback on the first draft. Thanks to our colleagues at the [NASA Advanced Supercomputing Division](http://www.nas.nasa.gov) and the MITgcm
+[William R. Young](http://www-pord.ucsd.edu/~wryoung) and three reviewers provided helpful feedback on the first draft. Thanks to our colleagues at the [NASA Advanced Supercomputing Division](http://www.nas.nasa.gov) and the MITgcm
 and SciPy communities for their awesome support.
