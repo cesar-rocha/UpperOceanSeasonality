@@ -111,7 +111,7 @@
 \authorrunninghead{ROCHA ET AL.}
 
 % Shorter version of title entered in capital letters:
-\titlerunninghead{Seasonality at submesoscales}
+\titlerunninghead{Seasonality at submesoscales (10-100 km)}
 
 % Author names in capital letters:
 %\authorrunninghead{BALES ET AL.}
@@ -138,6 +138,9 @@ Scripps Institution of Oceanography, University of California San Diego, La Joll
 
 %\includegraphics{agu_pubart-white_reduced.eps}
 
+
+\title{Supporting Information for
+``Seasonality of submesoscale dynamics in the Kuroshio Extension''}
 
 % \altaffilmark will produce footnote;
 % matching \altaffiltext will appear at bottom of page.
@@ -229,6 +232,9 @@ Scripps Institution of Oceanography, University of California San Diego, La Joll
       frequency spectra with spectra from available moored current meters.
 \item Figure S6 showing the seasonal variations of the near-surface amplitude
       of the vertical modes.
+\item Figure S7 Wavenumber-frequency spectrum of KE for LLC4320 simulation.
+\item Table S2 The mean-square velocity at submesoscales (10-100 km)
+        estimated from the wavenumber-frequency spectrum of SSH variance in figure S7.
 %if Tables are larger than 1 page, upload as separate excel file
 \end{enumerate}
 
@@ -248,7 +254,7 @@ simulations, comparisons with observations, and supplemental figures.
 %Delete all unused file types below. Copy/paste for multiples of each file type as needed.
 \noindent\textbf{S1: Detail of the LLC simulations}
 
-Table \ref{tab:llc} shows details of the LLC spin-up hierarchy.
+Table 1 shows details of the LLC spin-up hierarchy.
 Both simulations analyzed in the present paper, LLC2160 and LLC4320,
 were forced by surface fluxes from the 0.14$^\circ$ European Centre for
 Medium-range Weather Forecasting (ECMWF) atmospheric operational model analysis,
@@ -259,7 +265,7 @@ llc$\_$hires}). The model output can be obtained from  obtained from the ECCO pr
 
 For the LLC hierarchy, the sea-surface height is calculated
 using a linearized equation. While the nominal horizontal resolution  of the
-LLC4320 and LLC2160 simulations are 1/48$^\circ$ and 1/24$^\circ$, r
+LLC4320 and LLC2160 simulations are 1/48$^\circ$ and 1/24$^\circ$,
 horizontal wavenumber spectra suggests an effective resolution of about 8 km and 20 km,
  respectively (see figure S1).
 
@@ -274,8 +280,8 @@ out-of-phase with late summer/early fall (hence April).
 
 To assess how well the LLC simulations represents the high-frequency variability,
 we compare the model near-surface velocity field against two available
-mooring data: KEO (the data is available online at \texttt{http://www.pmel.noaa.gov/ocs/KEO})
-and KESS mooring $\#$7 (the data is available online at \texttt{http://uskess.whoi.edu}).
+mooring data records: KEO (the data are available online at \texttt{http://www.pmel.noaa.gov/ocs/KEO})
+and KESS mooring $\#$7 (the data are available online at \texttt{http://uskess.whoi.edu}).
 For proper comparison, we use model data closest to these two moorings (west of
 the region considered in the present study). Focusing on high-frequencies, we
 calculate frequency spectral estimates every month. There are about 48 independent
@@ -466,6 +472,7 @@ Rocha, C.~B., T.~K. Chereskin, S.~T. Gille, and D.~Menemenlis (2016),
  \end{figure}
 
 
+
  \begin{figure}
     \begin{center}
       \setfigurenum{S2}
@@ -502,8 +509,8 @@ Rocha, C.~B., T.~K. Chereskin, S.~T. Gille, and D.~Menemenlis (2016),
       \setfigurenum{S4}
       \includegraphics[width=40pc]{figs/figS4.pdf}
    \caption{Potential density: a comparison between Roemmich-Gilson Argo
-           climatology [updates from \cite{roemmich_gilson2009}] (a, b) and the 1/24$^\circ$ (c, d)
-           and  1/48$^\circ$ (e, f) LLC simulations. Of course, the Argo climatology is smoother,
+           climatology [updated from \cite{roemmich_gilson2009}] (a, b) and the 1/24$^\circ$ (c, d)
+           and  1/48$^\circ$ (e, f) LLC simulations. The Argo climatology is smoother
            owing to lower resolution and long-term averaging. Nonetheless, simulations reproduce the strong
            seasonality in the stratification. The upper ocean is weakly stratified in late winter/early fall
            and re-stratifies in summer. Argo climatology and LLC simulations mixed-layer depths are consistent
@@ -541,6 +548,22 @@ Rocha, C.~B., T.~K. Chereskin, S.~T. Gille, and D.~Menemenlis (2016),
  \end{figure}
 
 
+ \begin{figure}
+    \begin{center}
+      \setfigurenum{S7}
+      \includegraphics[width=40pc]{figs/figS7.pdf}
+   \caption{LLC4320 Wavenumber-frequency spectrum of KE in (a) April
+    and (b) October. (c) Wavenumber spectrum of SSH variance — the integral of (a)
+    and (b) over frequency. In (a) and (b), the light gray shaded region depicts the
+    dispersion relations for inertia-gravity waves from mode 1 through mode 4 across
+    the latitudinal domain; horizontal dashed lines represent the semi-diurnal lunar
+    tidal frequency (M2), and the inertial frequency at mid-latitude ($f_{32.5}$) and its
+    first harmonic ($2f_{32.5}$).}
+   \label{figS7}
+   \end{center}
+ \end{figure}
+
+
  \begin{table}
  \label{tab:llc}
  \settablenum{S1}
@@ -560,7 +583,25 @@ Rocha, C.~B., T.~K. Chereskin, S.~T. Gille, and D.~Menemenlis (2016),
  \end{center}
  \end{table}
 
-
+ % table
+ \begin{table}
+ \label{tab1}
+ \caption{The mean-square velocity at submesoscales (10-100 km)
+         estimated from the wavenumber-frequency spectrum of SSH variance in figure S7.
+         }
+   \begin{center}
+     \begin{tabular}{  l | c | c }
+     \hline
+     & April & October\\
+     \hline
+   sub-inertial ($<0.8f$)   & 0.32 m s$^{-1}$ & 0.20 m s$^{-1}$  \\
+   super-inertial ($>1.2f$) & 0.17 m s$^{-1}$  & 0.46 m s$^{-1}$\\
+   near-$f$ ($0.8-1.2 f$) & 0.25 m s$^{-1}$  & 0.12 m s$^{-1}$\\
+   near-$M_2$ ($0.8-1.2 M_2$) & 0.05 m s$^{-1}$  & 0.10 m s$^{-1}$\\
+   \hline
+     \end{tabular}
+   \end{center}
+ \end{table}
 
 % ---------------
 % EXAMPLE TABLE
