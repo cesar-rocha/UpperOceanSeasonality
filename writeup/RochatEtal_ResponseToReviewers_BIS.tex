@@ -1,0 +1,360 @@
+\documentclass[11pt]{article}
+
+%% WRY has commented out some unused packages %%
+%% If needed, activate these by uncommenting
+\usepackage{geometry}                % See geometry.pdf to learn the layout options. There are lots.
+%\geometry{letterpaper}                   % ... or a4paper or a5paper or ...
+\geometry{a4paper,left=2.5cm,right=2.5cm,top=2.5cm,bottom=2.5cm}
+%\geometry{landscape}                % Activate for rotated page geometry
+%\usepackage[parfill]{parskip}    % Activate to begin paragraphs with an empty line rather than an indent
+
+\usepackage{natbib}
+\bibliographystyle{chicago}
+
+\usepackage{color}
+
+%for figures
+%\usepackage{graphicx}
+
+\usepackage{color}
+\definecolor{mygreen}{RGB}{28,172,0} % color values Red, Green, Blue
+\definecolor{mylilas}{RGB}{170,55,241}
+%% for graphics this one is also OK:
+\usepackage{epsfig}
+
+%% AMS mathsymbols are enabled with
+\usepackage{amssymb,amsmath}
+
+%% more options in enumerate
+\usepackage{enumerate}
+%\usepackage{enumitem}
+
+%% insert code
+\usepackage{listings}
+
+\usepackage[utf8]{inputenc}
+\usepackage{multicol}
+\setlength{\columnsep}{1cm}
+
+\usepackage{hyperref}
+
+\usepackage{changes}
+
+
+\usepackage{fourier, heuristica}
+\usepackage{array, booktabs}
+\usepackage{graphicx}
+
+\newcommand{\R}[1]{\textbf{R}\textbf{#1}}
+\newcommand{\ie}{i.e.}
+
+\newcommand{\sZ}{\mathsf{Z}}
+\newcommand{\sE}{\mathsf{E}}
+%\newcommand{\sA}{\mathsf{A}}
+
+\newcommand{\bdp}{\begin{description}}
+\newcommand{\edp}{\end{description}}
+
+\title{{\normalfont Reply to reviewers of the manuscript \texttt{2016GL070261} }
+       ``Seasonality of submesoscale
+       dynamics \\in the Kuroshio Extension''}
+\author{Cesar B. Rocha,
+        Sarah T. Gille, Teresa K. Chereskin, \& Dimitris Menemenlis}
+\date{}
+\begin{document}
+
+%\include{symbols}
+
+\maketitle
+
+\section*{Summary}
+
+In this revised version we have addressed the remaining comments and suggestions
+by reviewers 2 and 3. We highlighted these minor changes in the file \texttt{rocha$\_$etal$\_$diff.pdf}.\\
+
+\noindent We thank the three referees for their questions, comments, and valuable suggestions.
+
+\section{Reviewer \#1}
+
+{\it The authors have adequately addressed all the questions raised in my
+previous review. I recommend the manuscript be accepted for publication in GRL.}
+
+\bdp
+  \item We thank the reviewer for constructive review.
+\edp
+
+\section{Reviewer \#2}
+
+{\it I have read the revised manuscript and the authors have adequately addressed
+     my concerns. Here I would like to point out things I noticed.
+     Please ignore those if you don't like.}
+
+\bdp
+   \item We thank the reviewer for constructive review.
+\edp
+
+\begin{enumerate}
+
+\item {\it Line 166. "super-inertial IGWs" I think IGW represents any oscillation whose
+                frequency is between f and N. If so, super-inertial is not needed.}
+
+\bdp
+  \item  \noindent{The reviewer is correct that free IGWs have frequencies between
+          the inertial and buoyancy frequencies. In line 166 (and elsewhere) we use
+          the qualifier super-inertial to emphasize the part of the IGW spectrum
+          with frequencies larger than f (as opposed to near-inertial IGWs with
+          frequencies close to $f$ ).}
+\edp
+
+\item {\it Line 174. "inertia gravity waves" should be IGWs.}
+
+\bdp
+   \item Changed.
+\edp
+
+\item {\it Line 187. I am not sure if PSI is important near surface and wonder if it
+                is resolved in this model because of the vertical resolution.
+                Authors could discuss about PSI in the model with Jen Mackinnon there.}
+
+\bdp
+  \item \noindent The reviewer is correct. The model likely only partially resolve
+        this mechanism — numerical dissipation may strongly damp the high vertical
+        shear waves created via PSI. We have added a sentence reporting this.
+\edp
+
+\item {\it Line 196. Remove "?"}
+
+\bdp
+  \item A reference  was amiss --- the ``?'' was raised during the\, \LaTeX\, compilation. Fixed.
+\edp
+
+\item {\it In supplement, page x-3 first line. Remove "r"}
+
+\bdp
+  \item Removed.
+\edp
+
+\item {\it To separate IGWs and other submesoscale motion, Ertel vorticity could be
+      used (e.g. Kunze 1993, JPO, 2567-2588). This paper is about deep ocean though.}
+
+      \bdp
+        \item {\noindent Thanks for the suggestion. We note, however, that linear waves do
+        project onto Ertel's potential vorticity. Linear waves have no \textit{available potential vorticity}
+        \citep[APV, ][]{wagner_young2015}. But APV is a new concept and its use
+        for separating IGWs and submesoscale turbulence needs to be tested in idealized
+        scenarios, which is beyond the scope of our study.}
+      \edp
+
+
+\end{enumerate}
+
+\section{Reviewer \#3}
+
+{\it The manuscript provides model-based evidence of a seasonal cycle in submesoscale motions
+in the western North Pacific (Kuroshio Extension). The manuscript summarizes the results of
+a study in which two years of moderate-resolution (1/24th degree or 4.6 km) and one year of
+high-resolution (1/48th degree or 2.3 km) model output were examined for evidence of
+submesoscale activity. Measures of submesoscale activity include vorticity, divergence and
+strain rate and the authors demonstrate that these quantities are enhanced in winter. Kinetic
+energy and sea surface height (SSH) spectra also show seasonal trends. These results are
+consistent with an existing suite of studies reporting seasonality to submesoscale flows. What
+is relevant for the present study and what distinguishes it from previous studies is that the
+authors report an increase in internal wave activity during summer and which projects onto
+the SSH variance. Because of the relevance of this study to challenges facing the upcoming
+Surface Water Ocean Topography (SWOT) mission—which aims at measuring submesoscale
+flows from space from nearly-balanced flows—this study will be of interest to readers of
+GRL.
+
+
+This is the second submission of the manuscript. The errors in the previous manuscript have
+been addressed. The authors provide a direct connection between inertia-gravity waves and
+SSH variance (Figure 4 of their manuscript) and illustrate that these undergo seasonality.
+They have also framed the manuscript in terms of SWOT, which helps the reader understand
+the importance of the results. There is no explicit connection between divergence and inertia gravity
+waves (IGWs), making the connection between the two segments of the manuscript
+tentative. (Part 1: analysis of the gradient tensor. Part 2: spectral analysis of SSH.) That is,
+other ageostrophic flows can contribute to this divergence. Nevertheless, the seasonality in the
+internal wave field is evident, complementing the observed seasonality in vorticity,
+divergence and strain rate. In summary, despite the potential for varying internal wave
+activity to be specifically tied to the Kuroshio Extension region, the implication of seasonal
+variation in internal wave activity is new, and I recommend publication pending a few
+revisions listed below.}
+
+\bdp
+   \item We thank the reviewer for the thorough and constructive review.
+\edp
+
+\begin{enumerate}
+ \item {\it I appreciate the changes made by the authors. I am happy to know that the suggestions in
+the previous review helped. Incidentally, I also appreciated the response by the authors
+regarding the resolution of the model and scales energized by baroclinic instability, citing
+work by Callies et al. (2016) and Larichev and Held (1995). Lastly, I am grateful for the
+authors’ acknowledgement toward the end of the manuscript. However, I would rather the
+authors remove me from the acknowledgements since I am involved in the formal review
+process. There is no problem with this and I appreciate the authors’ efforts to thank me.}
+
+\bdp
+   \item We have removed the referee's name from the acknowledgments.
+\edp
+
+\item {\it 2. I have been looking at the $\omega-k$ spectra in Figure 4. There is a lot of interesting
+information in these data. In particular, I have found three characteristics of interest. See
+attached figure for my definition of corresponding regions.}
+
+    \subitem {\it Region 1: If one interprets submesoscale but larger-period waves (e.g., $\omega < f_{32.5}$ \& $k >
+10-2$ km$^{-1}$
+) as associated with gradient wind- or geostrophically-balanced flows and/or
+front-related flows (note: I am not certain of this interpretation1
+), there is considerable
+change in energy from April to October, reflective of frontogenetic activity being
+enhanced in late winter/early spring. This is consistent with the authors’ depiction of
+surface fields in Figure 1d and 1e.}
+
+  \subitem {\it Region 2: Another interesting feature is the lack of energy in the inertia-gravity wave
+(IGW) band (i.e., between mode-1 at $f_{40}$ and mode-4 at $f_{25}$) in April but presence of
+this energy in October. This is a nice result.}
+
+\subitem {\it Region 3: Finally, the last feature I note is the change in energy at $\omega$ = 2f32.5 and at
+horizontal wavenumbers $k > 8 \times 10-3$ km$^{-1}$ (i.e., horizontal wavelengths $< 125$ km).
+Although these are IGWs themselves and may result from increased stratification as
+mentioned by the authors, there still does seem to be elevated energy at $2f$ during
+October. As one does not expect internal waves at the M2 frequency to change with
+season, this seasonal change in energy is most likely explained by wave-wave
+interactions. I confess I don’t know much about this topic but there is the suggestion
+of such waves generated as a result of near-inertial wave interaction with quasigeostrophic
+flows (Wagner and Young 2016). Perhaps the authors could discuss this
+with GW or BY since they are mentioned in the acknowledgements. Niwa and Hibiya
+(1999) also document such motions generated by an atmospheric disturbance and
+which Olbers (1983) suggests can propagate very long distances. (Is it possible that
+typhoon-related depressions that cross over the Kuroshio during October but not in
+April excite inertial motions of frequency $2f$ and that then propagate into the analysis
+region? The authors need not answer this in their paper ... Food for thought.) In
+summary, I think (1) it would be worth mentioning that the energy at $\omega$ = $2f$ is
+seasonally varying, as the authors are documenting, (2) that this projects onto SSH
+variance at small horizontal scales, and (3) will be a source of energy seen by the
+SWOT altimeter. This may be a result specific to the Kuroshio region but is
+nevertheless interesting.}
+
+\bdp
+    \item \noindent Our interpretation of the seasonally varying upper-ocean at
+          scales between 10-100 km focuses two regions of the spectrum: sub-inertial
+          flows (region 1) and super- inertial motions (region 2). IGWs dominate
+          both SSH variance and KE in region 2. These two regions have an out-of-phase seasonal cycle.\\
+
+          \noindent We have discussed these spectra with Young and Wagner. The $2f$
+           wave generation is indeed a possibility (it’s the first harmonic of the
+          energetic near-inertial waves). But we note that $2f_{32.5}$ is close to
+          the $M_2$ tide, and the seasonally varying signal at high-wavenumber appears
+          to be associated with the $M_2$ tide. The $2f_{32.5}$ line was added to those plots
+          because parametric subharmonic instability may take place, but this model
+          may not fully resolve PSI. To avoid misleading readers, we have removed
+          the $f_{32.5}$ reference line from the spectra.
+\edp
+
+
+\item {\it I recommend the authors use a different colormap when plotting spectra in Figure so that the
+reader can see changes in internal wave energy more easily. Or perhaps contour levels?}
+
+\bdp
+  \item \noindent We changed the colormap --- the differences are insignificant, however.
+        But, perhaps subjectively, this new colormap seems better. More importantly,
+        both the previous and the new colormaps are \href{https://en.wikipedia.org/wiki/Color_difference#Tolerance}{\tt perpetually uniform}
+        --- they accurately depict the data.
+\edp
+
+\item {\it As a side note, Reviewer 2 made a comment in the previous draft about near-inertial waves
+(NIWs). S/he hypothesized that they may be an important source of SSH variance. Given the
+above conversation, this Reviewer may be at least partly correct. It seems, though, as you say
+that the waves near f penetrate deep into the bottom, since there is virtually no SSH variance
+here}
+
+\bdp
+  \item \noindent Exactly --- that's our interpretation.
+\edp
+
+\item{\it In the previous submission, I suggested estimating the magnitude of the sea surface height
+signature within a particular band as a function of season. You have done this and it is nice.
+Table 1 is also helpful for placing these quantities into context.
+
+One question I have though is that, given that the bands described above have rather
+complicated shape in $\omega-k$ space, might you instead integrate the PSD over these contoured
+regions to determine the SSH variance found within each band and corresponding to each
+type of motion? It would be interesting, for example, to know what fraction of the SSH signal
+could be directly attributed to (1) IGWs motions within the dispersion relation curves and for
+$k > 10-2$ km$^{-1}$ (region 2) (2) motions near $\omega$ = 2$f_{32.5}$ \& $k$ > 10-2 km$^{-1}$ (region 3) and (3) the
+other portion of the spectra (region 1), which may reflect balanced and nearly-balanced
+submesoscale motions. While the authors may not anticipate understanding energy within
+these bands completely, future scientists may cite these motions as contributing to an
+appreciable amount of the submesoscale SSH signal. If the authors feel this is not necessary
+to include within the manuscript, this could be placed within the supporting material since it
+would be interesting to the SWOT community}
+
+\bdp
+\item \noindent Because IGWs dominate the submesoscale super-inertial, there are insignificant
+changes between integrating within the shaded region and the whole submesoscale
+super-inertial region. We agree, however, that integrating over different bands
+will interest the community. Hence, we have extended table 1 to account for near$-f$
+band and near$-M_2$ bands. This extended table shows that there is insignificant
+submesoscale near$-f$ waves and that waves with frequencies near $M_2$ — which contain
+$2f_{32.2}$ waves — undergo strong seasonality (see reply to point 1). We also added
+a similar supporting table (Table S2) based on the KE spectra. Thanks for the suggestion!
+\edp
+
+
+\item {\it There is no explicit connection between divergence and inertia-gravity waves (IGWs). That
+is, other ageostrophic flows can contribute to divergence. I don’t think this is a deal-breaker
+for the study. It would help with the read-ability of the two portions of the paper – i.e.,
+reporting the divergence and then computing spectra to show that IGWs matter. The authors
+could address this portion of their manuscript by bandpass-filtering the horizontal velocity u-
+fields using frequency-wavenumber bands and quantifying what fraction of the divergence is
+explicitly associated with these waves. If the authors no longer have velocity fields, there may
+be a way to do this from the polarization equations for linear internal waves but I’m not sure.}
+
+\bdp
+\item {\noindent
+We address this point in figure 2, which shows that super-inertial submesoscale
+flows account for most of the divergence. The wavenumber-frequency spectra of SSH
+variance (figure 4) and KE (supplementary figure S7) confirms that IGWs account
+for most of this super-inertial signal. We chose to show the SSH variance spectra
+in the main text (as opposed to the KE spectra) because of its applications for SWOT.
+}
+\edp
+
+
+\item{\it  There are a few wording mistakes that the authors should address prior to resubmission. I
+don’t list them all but here are a few:}
+
+  \subitem (a) {\it Figure 4, caption: “For reference, the gray curvish line represents” ==> Reword as,
+  “For reference, we provide the baseline requirement as specified by the SWOT
+  science team”, and provide a formal reference to where the reader can find this.}
+
+  \bdp
+      \item \noindent Done.
+  \edp
+
+  \subitem (b) {\it   Line 168: “The Similarly” ==> “Similarly...''}
+
+  \bdp
+      \item \noindent Fixed.
+  \edp
+
+  \subitem (c) {\it Lines 31-35: The revisit coverage of the SWOT spacecraft is on the order of 11 days
+  (https://swot.jpl.nasa.gov/files/swot/SRD$\_$021215.pdf). I don’t really see how the
+  inability to decouple geostrophic and ageostrophic motions presents an opportunity.
+  But that being said, I would eliminate hyphens from line 33. It seems very informal.
+  The colons in the sentence following this are fine.}
+
+  \bdp
+    \item {\noindent We removed the dashes. There are many opportunities associated with observations
+          of ageostrophic submesoscale SSH from SWOT. At very least, the projection of both geostrophic
+          and ageostrophic flows onto SSH --- and the interest in separating those flows --- will boost research
+          on interactions between those types of motion. We have changed that sentence to make this point clear. }
+  \edp
+
+\end{enumerate}
+
+
+\bibliography{refs.bib}
+
+
+\end{document}
