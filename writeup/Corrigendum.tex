@@ -1,0 +1,116 @@
+\documentclass[11pt]{article}
+\usepackage{geometry}
+\geometry{a4paper,left=2.5cm,right=2.5cm,top=2.5cm,bottom=2.5cm}
+\usepackage{natbib}
+
+\usepackage{scalerel,stackengine}
+\stackMath
+\newcommand\what[1]{%
+\savestack{\tmpbox}{\stretchto{%
+  \scaleto{%
+    \scalerel*[\widthof{\ensuremath{#1}}]{\kern-.6pt\bigwedge\kern-.6pt}%
+    {\rule[-\textheight/2]{1ex}{\textheight}}%WIDTH-LIMITED BIG WEDGE
+  }{\textheight}%
+}{0.5ex}}%
+\stackon[1pt]{#1}{\tmpbox}%
+}
+\parskip 1ex
+
+\usepackage{color}
+\definecolor{mygreen}{RGB}{28,172,0} % color values Red, Green, Blue
+\definecolor{mylilas}{RGB}{170,55,241}
+\usepackage{epsfig}
+\usepackage{lscape}
+\usepackage{rotating}
+
+%% AMS mathsymbols are enabled with
+\usepackage{amssymb,amsmath}
+
+%% more options in enumerate
+\usepackage{enumerate}
+%\usepackage{enumitem}
+
+%% insert code
+\usepackage{listings}
+
+\usepackage[utf8]{inputenc}
+\usepackage{multicol}
+\setlength{\columnsep}{1cm}
+
+\usepackage{hyperref}
+
+\usepackage{fourier, heuristica}
+\usepackage{array, booktabs}
+\usepackage{graphicx}
+\usepackage[x11names]{xcolor}
+\usepackage{colortbl}
+\usepackage{caption}
+\usepackage{blindtext}
+\usepackage{tasks}
+\DeclareCaptionFont{blue}{\color{LightSteelBlue3}}
+
+\newcommand{\foo}{\color{LightSteelBlue3}\makebox[0pt]{\textbullet}\hskip-0.5pt
+                        \vrule width 1pt\hspace{\labelsep}}
+
+
+% show figure and equation labels
+%\usepackage{showlabels}
+
+
+
+\newcommand{\R}[1]{\textbf{R}\textbf{#1}}
+\newcommand{\ie}{i.e.}
+
+\newcommand{\sZ}{\mathsf{Z}}
+\newcommand{\sE}{\mathsf{E}}
+\newcommand{\phis}{\phi^\star}
+
+\title{\bf \LARGE Corrigendum to Seasonality of submesoscale dynamics in the Kuroshio Extension}
+\author{Cesar B. Rocha et al.}
+\date{}
+%\affiliation{}
+%\degree{}
+%\degreedate{September 30th 2016}
+\begin{document}
+
+\include{symbols}
+
+\renewcommand{\sZ}{\mathsf{Z}}
+\renewcommand{\sE}{\mathsf{E}}
+\newcommand{\iBu}{\left(\tfrac{f_0}{N}\right)^2}
+\newcommand{\F}{\mathcal{F}}
+\newcommand{\D}{\mathcal{D}}
+\renewcommand{\P}{\mathcal{P}}
+\newcommand{\dU}{\delta U}
+\newcommand{\W}{\mathcal{W}}
+\newcommand{\cK}{\mathcal{K}}
+\newcommand{\cP}{\mathcal{P}}
+\renewcommand{\L}{\mathsf{L}}
+
+%
+% Title page
+%
+
+\maketitle
+
+\section*{Typos}
+
+\subsection*{Introduction}
+    \begin{itemize}
+        \item{The last sentence of third paragraph should read ``late winter/early spring'' in lieu of ``              late winter/early fall.''}
+    \end{itemize}
+    
+\subsection*{Supporting information}
+    \begin{itemize}
+        \item{The caption of figure S7 should read ``KE wavenumber spectrum'' in lieu of ``Wavenumber spectrum of SSH variance.''}
+    \end{itemize}
+
+%
+% Bibliography
+%
+%\clearpage
+%\bibliographystyle{chicago}
+%\renewcommand\refname{Bibliography}
+%\bibliography{writeup.bib}
+
+\end{document}
